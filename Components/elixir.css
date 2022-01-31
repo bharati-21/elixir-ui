@@ -223,9 +223,14 @@ h6 {
 }
 
 .section__sub-head {
-    font-weight: var(--weight-regular);
+    font-weight: var(--weight-sbold);
     line-height: var(--line-ht-md);
-    margin-bottom: var(--space-0-75);
+    font-size: var(--text-md);
+    margin-bottom: var(--space-0-5);
+}
+
+.section__sub-lead {
+    font-weight: var(--text-weight);
 }
 
 .flex--row {
