@@ -18,13 +18,16 @@
     -o-border-radius: var(--br-5);
 
     /* Size properties */
-    /* width: 100%; */
-
+    width: 100%;
+    
     /* Flex properties */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    word-break: break-all;
+    word-wrap: break-word;
     gap: var(--space-1);
 
     /* position properties */
