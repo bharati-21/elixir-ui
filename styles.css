@@ -82,13 +82,8 @@
     line-height: var(--line-ht-msd);
 }
 
-.sidebar,
 .main {
-    --aside-main-pad: var(--space-1-5);
-}
-
-.main {
-    padding: var(--aside-main-pad) var(--space-3);
+    padding: var(--space-3-5) var(--space-3);
     grid-area: main;
     place-items: start start;
     z-index: 1;
@@ -120,10 +115,48 @@ aside::-webkit-scrollbar-thumb {
 }
 
 .sidebar__head {
-    padding: 0 var(--aside-main-pad);
-    margin: var(--aside-main-pad) 0;
+    padding: 0 var(--space-1-5);
+    margin: var(--space-3-5) 0 var(--space-1);
 }
 
 .sidebar__nav li:hover {
     background-color:  var(--primary-bg-color);
+}
+
+.section__sub {
+    margin: var(--space-2) 0 var(--space-3);
+}
+
+.component-display {
+    margin: var(--space-1) 0;
+    padding: var(--space-1);
+    border: 2px solid var(--light-gray-color);
+    border-radius: var(--br-5);
+    -webkit-border-radius: var(--br-5);
+    -moz-border-radius: var(--br-5);
+    -ms-border-radius: var(--br-5);
+    -o-border-radius: var(--br-5);
+}
+
+.code-snippet-container {
+    margin: var(--space-2) 0;
+}
+
+.code-display {
+    margin-top: var(--space-0-5);
+    width: 100%;
+    max-height: 500px;
+    padding: var(--space-0-5) 0;
+    overflow: auto;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--br-5);
+    -webkit-border-radius: var(--br-5);
+    -moz-border-radius: var(--br-5);
+    -ms-border-radius: var(--br-5);
+    -o-border-radius: var(--br-5);
+}
+   
+.code-display iframe{
+    width: 100%;
+    border: none;
 }

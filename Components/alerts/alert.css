@@ -1,0 +1,89 @@
+:root {
+    --secondary-bg-color: #c3dbff;
+    --warning-bg-color: #fce6cf;
+    --error-bg-color: #ffd0d0;
+    --success-bg-color: #a8fcd6;
+}
+
+.alert {
+    /* Spacing properties */
+    padding: var(--space-0-75) var(--space-1);
+    margin: var(--space-1);
+
+    /* Border properties */
+    border-radius: var(--br-5);
+    -webkit-border-radius: var(--br-5);
+    -moz-border-radius: var(--br-5);
+    -ms-border-radius: var(--br-5);
+    -o-border-radius: var(--br-5);
+
+    /* Size properties */
+    /* width: 100%; */
+
+    /* Flex properties */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--space-1);
+
+    /* position properties */
+    position: relative;
+
+    /* Color properties */
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+}
+
+/* Alert variations */
+.alert-primary {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+}
+
+.alert-secondary {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-color);
+}
+
+.alert-warning {
+    background-color: var(--warning-bg-color);
+    color:  var(--warning-color);
+}
+
+.alert-error {
+    background-color: var(--error-bg-color);
+    color: var(--error-color);
+}
+
+.alert-success {
+    background-color: var(--success-bg-color);
+    color: var(--success-color);
+}
+
+.alert-text {
+    z-index: 0;
+    margin-right: 2rem;
+}
+
+.alert .icon-close {
+    outline: none;
+    border: none;
+    pointer-events: all;
+    font-size: 1.2rem;
+    position: absolute;
+    right: var(--space-1);
+    top: var(--space-0-5);
+    cursor: pointer;
+    padding: 0.2rem;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    opacity: 0.7;
+}
+
+.icon-close:hover {
+    opacity: 1;
+}
