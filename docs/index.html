@@ -69,9 +69,131 @@
                 </ul>
             </aside>
             <main class="main">
-                
+                <section class="alerts" id="alerts">
+                    <article class="section__intro">
+                        <h2 class="section__head">Alerts</h2>
+                        <p class="section__lead">
+                            Alerts communicate short, important information to the user, without interrupting their flow.
+                        </p>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Simple alerts
+                        </h3>
+                        <p class="section__sub-lead">
+                            There are 5 types of simple alerts - Primary, Secondary, Success, Warning, and Error alerts. 
+                            <br>
+                            To create an alert use the base class <span class="primary-color bold">alert</span>, and add any one of the following class variations to it- <span class="secondary-color">alert-primary</span>, <span class="secondary-color">alert-secondary</span>, <span class="secondary-color">alert-success</span>, <span class="secondary-color">alert-warning</span>, and <span class="secondary-color">alert-error</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="alert alert-primary">
+                                <p class="alert-text">This is a primary alert</p>
+                            </div>
+                            <div class="alert alert-secondary">
+                                <p class="alert-text">This is a secondary alert</p>
+                            </div>
+                            <div class="alert alert-success">
+                                <span class="icon icon-success">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <p class="alert-text">This is a success alert</p>
+                            </div>
+                            <div class="alert alert-warning">
+                                <span class="icon icon-warning">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                                <p class="alert-text">This is a warning alert</p>
+                            </div>
+                            <div class="alert alert-error">
+                                <span class="icon icon-bug">
+                                    <i class="fas fa-bug"></i>
+                                </span>
+                                <p class="alert-text">This is an error alert</p>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste  the code below to use the alerts with different variations</p>
+
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/uUNSWLE4IDf7K8vCVq6y"
+                                    style="width: 100%;"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Simple alerts with close icon
+                        </h3>
+                        <p class="section__sub-lead">
+                            These are simple alerts with a close icon which removes the alert when you click it.
+                        </p>
+                        <div class="component-display">
+                            <div class="alert alert-primary">
+                                <p class="alert-text">Primary with close icon</p>
+                                <span class="icon icon-close">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
+                            <div class="alert alert-secondary">
+                                <p class="alert-text">Secondary with close icon</p>
+                                <span class="icon icon-close">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
+                            <div class="alert alert-success">
+                                <span class="icon icon-success">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <p class="alert-text">Success with close icon</p>
+                                <span class="icon icon-close">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
+                            <div class="alert alert-warning">
+                                <span class="icon icon-warning">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                                <p class="alert-text">Warning with close icon</p>
+                                <span class="icon icon-close">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
+                            <div class="alert alert-error">
+                                <span class="icon error-icon">
+                                    <i class="fas fa-bug"></i>
+                                </span>
+                                <p class="alert-text">Error with close icon</p>
+                                <span class="icon icon-close">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste  the code below to use alerts with close icon. Also use the JavaScript code for triggering the click event.</p>
+
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/Kgt69eBiTF4wIWyl2l7F"
+                                    style="width: 100%;"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/itzybUtF63Ixf6sPZSZf"
+                                    style="width: 100%;"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                </section>
             </main>
         </div>
         <footer class="footer"></footer>
+        <script src="../Components/alerts/script.js"></script>
     </body>
 </html>
