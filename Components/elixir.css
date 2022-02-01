@@ -3,18 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
 
 
+@import url('./alerts/alert.css');
+@import url('./avatars/avatar.css');
+
 :root {
     --text-color: #0d1c29;
     /* --bg-color: #F8F8FF; */
-    --bg-color: #f4f4f4;
-    
-    /* --primary-color: #394cda; */
-    /* --primary-color: #4759dd; */
-    /* --primary-color: #576dfc; */
-    --primary-color: #4F60DE;
-    --primary-bg-color: #c6ccfc;
-    --secondary-color: #485e68;
-    --warning-color: #ff9100;
+    --bg-color: #FAFAFA;
+    --primary-color: #5c5ce0;
+    --primary-active-color: #4646c6;
+    --primary-bg-color: #d6d6ff;
+    --secondary-color: #0F52BA;
+    --light-gray-color: #e0e0e0;
+    --warning-color: #e98503;
     --error-color: #d6261c;
     --dull-success-color: #00814859;
     --success-color: #008148;
@@ -32,6 +33,9 @@
     --space-4: 4rem;
     --space-4-5: 4.5rem;
     --space-5: 5rem;
+    --space-5-5: 5.5rem;
+    --space-6: 6rem;
+    --space-6-5: 6rem;
 
     --br-50: 50%;
     --br-15: 15px;
@@ -41,7 +45,7 @@
     --d-inline-block: inline-block;
 
     --weight-light: 300;
-    --weight-regular: 450;
+    --weight-regular: 500;
     --weight-sbold: 600;
     --weight-bold: 700;
     --weight-xbold: 900;
@@ -53,12 +57,17 @@
     --text-s: 1rem;
     --text-xs: 0.5rem;
 
+
     --line-ht-xxl: 4rem;
     --line-ht-xl: 3rem;
     --line-ht-lg: 2.5rem;
     --line-ht-md: 2rem;
     --line-ht-s: 1.5rem;
     --line-ht-xs: 1rem;
+
+    --text: 1.25rem;
+    --line-height: 1.25rem;
+    --weight: 400;
 }
 
 html {
@@ -200,17 +209,28 @@ h6 {
 }
 
 .stacked-list li  a{
-    padding: var(--space-1) var(--aside-main-pad);
+    padding: var(--space-1) var(--space-1-5);
 }
 
 .section__head {
-    margin-bottom: var(--space-1-5);
-    font-weight: var(--weight-bold);
+    margin-bottom: var(--space-0-5);
 }
 
 .section__lead {
-    font-size: var(--text-lg);
-    font-weight: var(--weight-regular);
+    font-size: var(--text);
+    font-weight: var(--weight);
+    line-height: var(--line-ht-md);
+}
+
+.section__sub-head {
+    font-weight: var(--weight-sbold);
+    line-height: var(--line-ht-md);
+    font-size: var(--text-md);
+    margin-bottom: var(--space-0-5);
+}
+
+.section__sub-lead {
+    font-weight: var(--text-weight);
 }
 
 .flex--row {
@@ -235,6 +255,14 @@ h6 {
     justify-content: center;
 }
 
+.bold {
+    font-weight: var(--weight-sbold);
+}
+
 .primary-color {
     color: var(--primary-color);
+}
+
+.secondary-color{ 
+    color: var(--secondary-color);
 }
