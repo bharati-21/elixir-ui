@@ -1,0 +1,102 @@
+.badge-container {
+    width: max-content;
+    position: relative;
+    margin: var(--space-0-5);
+}
+
+.badge-container .avatar {
+    margin: 0;
+}
+
+.status-badge {
+    position: absolute;
+    position: absolute;
+    content: '';
+    border-radius: var(--br-50);
+    height: 1.25rem;
+    width: 1.25rem;
+    bottom: 0.25rem;
+    right: 0.25rem;
+    -webkit-border-radius: var(--br-50);
+    -moz-border-radius: var(--br-50);
+    -ms-border-radius: var(--br-50);
+    -o-border-radius: var(--br-50);
+    border: 2px solid var(--bg-color);
+}
+
+.avatar.avatar-xl + .status-badge {
+    height: 1.5rem;
+    width: 1.5rem;
+    bottom: 0.25rem;
+    right: 0.25rem;
+}
+
+.avatar.avatar-lg + .status-badge {
+    height: 1.25rem;
+    width: 1.25rem;
+    bottom: 0.15rem;
+    right: 0.15rem;
+}
+
+.avatar.avatar-md + .status-badge {
+    height: 1rem;
+    width: 1rem;
+    bottom: 0.12rem;
+    right: 0.12rem;
+}
+
+.avatar.avatar-sm + .status-badge {
+    height: 0.75rem;
+    width: 0.75rem;
+    bottom: 0.075rem;
+    right: 0.075rem;
+}
+
+.avatar.avatar-xs + .status-badge {
+    height: 0.5rem;
+    width: 0.5rem;
+    bottom: 0.05rem;
+    right: 0.05rem;
+    border-width: 0.1rem;
+}
+
+.avatar.avatar-xl.square + .status-badge {
+    bottom: -0.35rem;
+    right: -0.35rem;
+}
+
+.avatar.avatar-lg.square + .status-badge {
+    bottom: -0.35rem;
+    right: -0.35rem;
+}
+
+.avatar.avatar-md.square + .status-badge {
+    bottom: -0.25rem;
+    right: -0.25rem;
+}
+
+.avatar.avatar-sm.square + .status-badge {
+    bottom: -0.25rem;
+    right: -0.25rem;
+}
+
+.avatar.avatar-xs.square + .status-badge {
+    bottom: -0.15rem;
+    right: -0.15rem;
+}
+
+.status-available {
+    background-color: var(--success-color);
+}
+
+.status-idle {
+    background-color: var(--warning-color);
+}
+
+.status-busy {
+    background-color: var(--error-color);
+}
+
+.status-offline {
+    background-color: var(--gray);
+}

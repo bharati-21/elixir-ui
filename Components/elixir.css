@@ -5,6 +5,7 @@
 
 @import url('./alerts/alert.css');
 @import url('./avatars/avatar.css');
+@import url('./badges/badge.css');
 
 :root {
     --text-color: #0d1c29;
@@ -14,6 +15,7 @@
     --primary-active-color: #4646c6;
     --primary-bg-color: #d6d6ff;
     --secondary-color: #0F52BA;
+    --gray: #808080;
     --light-gray-color: #e0e0e0;
     --warning-color: #e98503;
     --error-color: #d6261c;
