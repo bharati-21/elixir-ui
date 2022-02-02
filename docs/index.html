@@ -72,7 +72,7 @@
                 </ul>
             </aside>
             <main class="main">
-                <section class="alerts component-info" id="alerts">
+                <section class="alerts component-info" id="alert">
                     <article class="section__intro">
                         <h2 class="section__head">Alerts</h2>
                         <p class="section__lead">
@@ -192,7 +192,8 @@
                     </article>
                 </section>
                 <hr class="component__separator">
-                <section class="avatars component-info" id="avatars">
+
+                <section class="avatars component-info" id="avatar">
                     <article class="section__intro">
                         <h2 class="section__head">Avatars</h2>
                         <p class="section__lead">
@@ -311,9 +312,290 @@
                         </div>
                     </article>
                 </section>
+                <hr class="component__separator">
+                <section class="badges component-info" id="badge">
+                    <article class="section__intro">
+                        <h2 class="section__head">Badges</h2>
+                        <p class="section__lead">
+                            Badges display quick and easy status, text or count information to the user.
+                        </p>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Status Badge
+                        </h3>
+                        <p class="section__sub-lead">
+                            To create avatars with status badges, create a container with class <span class="primary-color bold">badge-container</span> and add any of the avatar classes within the container.
+                            <br>
+                            To create a status badge use the base class <span class="primary-color bold">status-badge</span>, and add any one of the following class to alter the status- <span class="secondary-color">status-available</span>, <span class="secondary-color">status-idle</span>, <span class="secondary-color">status-busy</span>, and <span class="secondary-color">status-offline</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="badge-container">
+                                <img src="/Components/images/avatar-1.jpg" alt="Extra Large Size Avatar" class="avatar avatar-xl" />
+                                <span class="status-badge status-available"></span>
+                            </div>
+                            <div class="badge-container">
+                                <img src="/Components/images/avatar-1.jpg" alt="Large Size Avatar" class="avatar avatar-lg" />
+                                <span class="status-badge status-idle"></span>
+                            </div>
+                            <div class="badge-container">
+                                <img src="/Components/images/avatar-1.jpg" alt="Large Size Avatar" class="avatar avatar-md" />
+                                <span class="status-badge status-busy"></span>
+                            </div>
+                            <div class="badge-container">
+                                <img src="/Components/images/avatar-1.jpg" alt="Small Size Avatar" class="avatar avatar-sm" />
+                                <span class="status-badge status-offline"></span>
+                            </div>
+                            <div class="badge-container">
+                                <img src="/Components/images/avatar-1.jpg" alt="Extra Small Size Avatar" class="avatar avatar-xs" />
+                                <span class="status-badge status-offline"></span>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use the circled shape avatars with different status</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/kTN1FUPPzQvqPH5iVsLk"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="component-display">
+                            <div class="badge-container">
+                                <img src="/Components/images/avatar-2.jpg" alt="Extra Large Size Avatar" class="avatar avatar-xl square" />
+                                <span class="status-badge status-available"></span>
+                            </div>
+                            <div class="badge-container">
+                                <img src="/Components/images/avatar-2.jpg" alt="Large Size Avatar" class="avatar avatar-lg square" />
+                                <span class="status-badge status-idle"></span>
+                            </div>
+                            <div class="badge-container">
+                                <img src="/Components/images/avatar-2.jpg" alt="Large Size Avatar" class="avatar avatar-md square" />
+                                <span class="status-badge status-busy"></span>
+                            </div>
+                            <div class="badge-container">
+                                <img src="/Components/images/avatar-2.jpg" alt="Small Size Avatar" class="avatar avatar-sm square" />
+                                <span class="status-badge status-offline"></span>
+                            </div>
+                            <div class="badge-container">
+                                <img src="/Components/images/avatar-2.jpg" alt="Extra Small Size Avatar" class="avatar avatar-xs square" />
+                                <span class="status-badge status-offline"></span>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use the squared shape avatars with different status</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/spRDTXd6NcW4acQ8pbXj"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                        <p class="section__sub-lead">
+                            To use a notification status badge use the base class <span class="primary-color bold">status</span> and a supporting class <span class="secondary-color">badge-notification</span>
+                        </p>
+                        <div class="component-display">
+                            <div class="badge-container">
+                                <span class="badge-icon">
+                                    <i class="fas fa-bell icon-bell"></i> 
+                                </span>
+                                <span class="status-badge badge-notification badge-primary">10</span>       
+                            </div>
+                            <div class="badge-container">
+                                <span class="badge-icon">
+                                    <i class="fas fa-shopping-cart icon-cart"></i>
+                                </span>
+                                <span class="status-badge badge-notification badge-secondary">4</span>       
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use the notification status badge with 2 variations</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/y3XCUtsXCofPKUpB5lt9"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Text and Number Badge
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate text badges, use the base class <span class="primary-color bold">badge</span>. Add a <span class="secondary-color">round-pill</span> class to generate a pill shaped badge.
+                        </p>
+                        <div class="component-display">
+                            <span class="badge badge-primary">
+                                Sale
+                            </span>
+                            <span class="badge badge-secondary">
+                                Sale
+                            </span>
+                            <span class="badge badge-primary round-pill">
+                                Sale
+                            </span>
+                            <span class="badge badge-secondary round-pill">
+                                Sale
+                            </span>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use square or pill shaped badges</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/eyaejAG9OxbvwUxNd4Fs"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <hr class="component__separator">
+                <section class="badges component-info" id="badge">
+                    <article class="section__intro">
+                        <h2 class="section__head">Buttons</h2>
+                        <p class="section__lead">
+                            Buttons are components user can click to perform an action and interact with the website.
+                        </p>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Primary Buttons
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate a primary button, use the base class <span class="primary-color bold">btn.btn-primary</span> and add any of the following supporting classes to get different variations for a primary button-
+                            <br>
+                            <span class="secondary-color">btn-solid</span>, <span class="secondary-color">btn-outline</span>, <span class="secondary-color">btn-link</span>, <span class="secondary-color">btn-icon</span>, and <span class="secondary-color">btn-text-icon</span>.                          
+                        </p>
+                        <div class="component-display">
+                            <a href="#" class="btn btn-primary btn-solid">Primary Solid</a>
+                            <a href="#" class="btn btn-primary btn-outline">Primary Outline</a>
+                            <a href="" class="btn btn-primary btn-icon">
+                                <span class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </a>
+                            <a href="/" class="btn btn-primary btn-text-icon ">GitHub <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span></a>
+                            <a href="/" class="btn btn-primary btn-link">Home</a>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use the primary buttons of different variations.</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520btn-solid%2522%253EPrimary%2520Solid%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520btn-outline%2522%253EPrimary%2520Outline%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2522%2520class%253D%2522btn%2520btn-primary%2520btn-icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522btn%2520btn-primary%2520btn-text-icon%2520%2522%253EGitHub%2520%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522fab%2520fa-github%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522btn%2520btn-primary%2520btn-link%2522%253EHome%253C%252Fa%253E"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Secondary Buttons
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate secondary buttons, use the base class <span class="primary-color bold">btn.btn-secondary</span> and add any of the following supporting classes to get different variations for a primary button-
+                            <br>
+                            <span class="secondary-color">btn-solid</span>, <span class="secondary-color">btn-outline</span>, <span class="secondary-color">btn-icon</span>, and <span class="secondary-color">btn-link</span>.   
+                        </p>
+                        <div class="component-display">
+                            <a href="#" class="btn btn-secondary">Secondary Solid</a>
+                            <a href="#" class="btn btn-secondary btn-outline">Secondary Outline</a>
+                            <a href="" class="btn btn-secondary btn-icon">
+                                <span class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </a>
+                            <a href="/" class="btn btn-secondary btn-text-icon ">Twitter 
+                                <span class="icon"><i class="fab fa-twitter icon"></i></span>
+                            </a>
+                            <a href="/" class="btn btn-secondary btn-link">Home</a>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use square or pill shaped badges</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%2520Solid%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-outline%2522%253ESecondary%2520Outline%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2509%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-text-icon%2520%2522%253ETwitter%2520%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fab%2520fa-twitter%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-link%2522%253EHome%253C%252Fa%253E"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Floating Buttons
+                        </h3>
+                        <p class="section__sub-lead">
+                            Floating action buttons are used to perform primary or common actions on the screen. Circular in shape, they remain fixed on the bottom left corner of the screen and on top of all content.
+                            <br>
+                            To create a floating button, add the class <span class="primary-color bold">btn-floating</span> on top of the base class <span class="secondary-color">btn</span>.
+                        </p>
+                        <div class="component-display">
+                            <a href="#" class="btn btn-floating">
+                                <span class="icon">
+                                    <i class="fas fa-arrow-up"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use square or pill shaped badges</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-floating%2522%253E%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-arrow-up%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E"  
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Disabled Buttons
+                        </h3>
+                        <p class="section__sub-lead">
+                            To disable any button add the supplement class <span class="primary-color bold">btn-disabled</span> on the button component.
+                        </p>
+                        <div class="component-display">
+                            <a href="#" class="btn btn-primary btn-disabled">
+                                Disabled Primary
+                            </a>
+                            <a href="#" class="btn btn-secondary btn-outline btn-disabled">
+                                Disabled Secondary
+                            </a>
+                            <a href="#" class="btn btn-primary btn-icon btn-disabled">
+                                <span class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </a>
+                            <a href="#" class="btn btn-secondary btn-text-icon btn-disabled">
+                                Add to cart
+                                <span class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </a>
+                            <a href="#" class="btn btn-primary btn-link btn-disabled">
+                                Add to cart
+                            </a>
+                            <a href="#" class="btn btn-floating btn-disabled">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use square or pill shaped badges</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520btn-disabled%2522%253EDisabled%2520Primary%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-outline%2520btn-disabled%2522%253EDisabled%2520Secondary%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520btn-icon%2520btn-disabled%2522%253E%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-text-icon%2520btn-disabled%2522%253E%250A%2509Add%2520to%2520cart%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2509%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520btn-link%2520btn-disabled%2522%253EAdd%2520to%2520cart%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-floating%2520btn-disabled%2522%253E%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                </section>
             </main>
         </div>
         <footer class="footer"></footer>
-        <script src="../Components/alerts/alert.js"></script>
+        <script src="/Components/alerts/alert.js"></script>
     </body>
 </html>

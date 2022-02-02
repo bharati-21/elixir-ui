@@ -182,3 +182,7 @@ hr.component__separator {
     width: 100%;
     border: none;
 }
+
+.btn-floating {
+    position: static;
+}
