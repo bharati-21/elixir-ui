@@ -24,8 +24,8 @@
     --dull-success-color: #00814859;
     --success-color: #008148;
 
-    --box-shadow: 0 0 10px rgba(23, 42, 58, 0.2); 
-
+    --box-shadow: 0 0 10px #172a3a33; 
+    --box-shadow-color: #172a3a33;
     --space-0-5: 0.5rem;
     --space-0-75: 0.75rem; 
     --space-1: 1rem;
@@ -257,6 +257,10 @@ h6 {
 
 .flex--justify-center {
     justify-content: center;
+}
+
+.flex--justify-end {
+    justify-content: flex-end;
 }
 
 .bold {
