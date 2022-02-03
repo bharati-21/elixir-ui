@@ -205,12 +205,6 @@ hr.component__separator {
     overflow: scroll;
 }
 
-.CodeMirror-wrap pre.CodeMirror-line, .CodeMirror-wrap pre.CodeMirror-line-like {
-    width: 100% !important;
-    display: inline;
-}
-
-
 .btn-floating {
     position: static;
 }
