@@ -13,6 +13,11 @@
     <body>
         <div class="grid-container">
             <nav class="navbar flex--row flex--justify-end flex--align-center">
+                <div class="hamburger flex--col flex--justify-center flex--align-center">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </div>
                 <ul class="navlinks flex--row list-style-none flex--align-center">
                     <li class="navlink">
                         <a href="/" class="link text-link">
@@ -30,14 +35,20 @@
                 </ul>
                             
             </nav>
-            <aside class="sidebar flex--col">
-                <a href="/" class="brand flex--row flex--align-center flex--justify-center">
-                    <img 
-                        src="../logo-assets/elixir-logo.png" 
-                        alt="Elixir Logo - a violet shaded diamond" 
-                        class="brand__logo" />
-                    <h2 class="brand__name">elixir</h2>
-                </a>
+            <aside class="sidebar sidebar--close flex--col">
+                <div class="sidebar__header flex--row flex--align-center">
+                    <a href="/" class="brand flex--row flex--align-center flex--justify-center">
+                        <img 
+                            src="../logo-assets/elixir-logo.png" 
+                            alt="Elixir Logo - a violet shaded diamond" 
+                            class="brand__logo" />
+                        <h2 class="brand__name">elixir</h2>
+                    </a>
+                    <span class="sidebar__close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                
 
                 <section class="sidebar__list">
                     <h4 class="sidebar__head">
@@ -596,6 +607,7 @@
             </main>
         </div>
         <footer class="footer"></footer>
+        <script src="/docs-script/hamburger.js"></script>
         <script src="/Components/alerts/alert.js"></script>
     </body>
 </html>
