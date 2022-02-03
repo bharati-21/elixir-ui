@@ -1,0 +1,24 @@
+.img-responsive {
+    max-inline-size: 100%;
+    block-size: auto;
+    font-size: inherit;
+    display: block;
+    margin: var(--space-1);
+    max-width: 100%;
+}
+
+.round-corner {
+    border-radius: var(--br-5);
+    -webkit-border-radius: var(--br-5);
+    -moz-border-radius: var(--br-5);
+    -ms-border-radius: var(--br-5);
+    -o-border-radius: var(--br-5);
+}
+
+.img-round {
+    border-radius: var(--br-50);
+    -webkit-border-radius: var(--br-50);
+    -moz-border-radius: var(--br-50);
+    -ms-border-radius: var(--br-50);
+    -o-border-radius: var(--br-50);
+}
