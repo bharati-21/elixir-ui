@@ -163,6 +163,7 @@ hr.component__separator {
 }
 
 .component-display {
+    width: 100%;
     margin: var(--space-1) 0;
     padding: var(--space-1);
     border: 2px solid var(--light-gray-color);
@@ -200,10 +201,15 @@ hr.component__separator {
 .code-display iframe{
     width: 100%;
     border: none;
+    overflow: scroll;
 }
 
 .btn-floating {
     position: static;
+}
+
+section.images .component-display {
+    justify-content: center;
 }
 
 
