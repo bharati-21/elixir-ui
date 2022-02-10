@@ -17,7 +17,7 @@
     background-color: var(--bg-color);
     grid-area: navbar;
     min-height: 10vh;
-    z-index: 1;
+    z-index: 2;
     padding: var(--space-1) var(--space-2);
     box-shadow: var(--box-shadow);
     position: sticky;
@@ -45,6 +45,8 @@
 .main {
     padding: 0 var(--space-3);
     grid-area: main;
+    position: relative;
+    z-index: 1;
     place-items: start start;
     overflow: hidden auto;
 }
@@ -56,7 +58,7 @@
     height: 100vh;
     align-self: start;
     overflow: hidden auto;
-    z-index: 1;
+    z-index: 3;
     border-right: 0.25rem solid var(--primary-bg-color);
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -186,7 +188,7 @@ hr.component__separator {
 
 .code-display {
     margin-top: var(--space-0-5);
-    width: 100%;
+    max-width: 100%;
     max-height: 500px;
     padding: var(--space-0-5) 0;
     overflow: auto;
@@ -195,7 +197,36 @@ hr.component__separator {
     -webkit-border-radius: var(--br-5);
     -moz-border-radius: var(--br-5);
     -ms-border-radius: var(--br-5);
+    overflow: auto;
     -o-border-radius: var(--br-5);
+}
+
+.code-display::-webkit-scrollbar {
+    width: var(--space-0-75);
+    height: var(--space-0-75);
+}
+  
+.code-display::-webkit-scrollbar-thumb {
+    background-color: var(--light-gray-color);
+    border-radius: var(--br-5);
+    -webkit-border-radius: var(--br-5);
+    -moz-border-radius: var(--br-5);
+    -ms-border-radius: var(--br-5);
+    -o-border-radius: var(--br-5);
+    -webkit-border-radius: var(--br-5);
+}
+
+.code-display::-webkit-scrollbar-button {
+    margin: var(--space-0-5) 0;
+}
+
+section#card .code-display {
+    width: max-content;
+    max-width: 100%;
+}
+
+code.hljs {
+    overflow: visible;
 }
    
 .code-display iframe{
@@ -208,7 +239,12 @@ hr.component__separator {
     position: static;
 }
 
-section.images .component-display {
+section#badge .component-display .badge {
+    position: relative;
+}
+
+section.images .component-display,
+section.cards .component-display {
     justify-content: center;
 }
 
