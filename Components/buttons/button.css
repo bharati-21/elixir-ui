@@ -10,6 +10,11 @@
     -ms-border-radius: var(--br-5);
     -o-border-radius: var(--br-5);
     margin: var(--space-0-5);
+    text-align: center;
+}
+
+.btn.btn-full-width {
+    width: 100%;
 }
 
 .btn-primary {
