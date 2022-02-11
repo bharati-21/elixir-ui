@@ -8,6 +8,7 @@
 @import url('./badges/badge.css');
 @import url('./buttons/button.css');
 @import url('./images/image.css');
+@import url('./cards/card.css');
 
 :root {
     --text-color: #0d1c29;
@@ -27,6 +28,8 @@
 
     --box-shadow: 0 0 10px #172a3a33; 
     --box-shadow-color: #172a3a33;
+
+    --space-0-25: 0.25rem;
     --space-0-5: 0.5rem;
     --space-0-75: 0.75rem; 
     --space-1: 1rem;
@@ -78,7 +81,7 @@
 html {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-size: 100%;
+    font-size: 62.5%;
     color: var(--text-color);
 }
 
@@ -165,6 +168,10 @@ h5 {
 h6 {
     font-size: var(--text-xs);
     line-height: var(--line-ht-xs);
+}
+
+.text-linethrough {
+    text-decoration: line-through;
 }
 
 .navlinks {
@@ -276,3 +283,25 @@ h6 {
 .secondary-color{ 
     color: var(--secondary-color);
 }
+
+
+
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (min-width: 960px)  {
+    html {
+        font-size: 100%;
+    }
+}
+
