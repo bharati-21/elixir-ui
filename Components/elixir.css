@@ -9,6 +9,7 @@
 @import url('./buttons/button.css');
 @import url('./images/image.css');
 @import url('./cards/card.css');
+@import url('./input/input.css');
 
 :root {
     --text-color: #0d1c29;
