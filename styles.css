@@ -66,7 +66,7 @@
     padding: 0 var(--space-3);
     grid-area: main;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     place-items: start start;
     overflow: hidden auto;
 }
@@ -215,6 +215,14 @@ article.installation__content {
     overflow: auto;
 }
 
+.sidebar .sidebar__list li {
+    padding: 0;
+}
+
+.sidebar .sidebar__list li a {
+    padding: var(--space-1) var(--space-1-5);;
+}
+
 .sidebar__list::-webkit-scrollbar {
     width: 0.5rem;
 }
@@ -290,7 +298,7 @@ hr.component__separator {
 .code-display {
     margin-top: var(--space-0-5);
     max-width: 100%;
-    max-height: 500px;
+    max-height: 500px !important;
     padding: var(--space-0-5) 0;
     overflow: auto;
     border: 1px solid var(--primary-color);
@@ -342,9 +350,10 @@ section#typography code.hljs {
 
 .emgithub-container {
     max-width: 100%;
+    width: 100%;
 }
 
-.code-display iframe{
+.code-display iframe {
     width: 100%;
     border: none;
     overflow: scroll;
@@ -361,6 +370,14 @@ section#badge .component-display .badge {
 section.images .component-display,
 section.cards .component-display {
     justify-content: center;
+}
+
+section#toast .component-display .snackbar {
+    position: static;
+}
+
+.toast__demo .snackbar {
+    display: none;
 }
 
 .footer {
@@ -427,5 +444,12 @@ footer i {
         left: 0;
         width: 0;
         position: fixed;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    code.hljs {
+        white-space: pre-wrap;
     }
 }

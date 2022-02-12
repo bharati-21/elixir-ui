@@ -11,6 +11,8 @@
 @import url('./cards/card.css');
 @import url('./input/input.css');
 @import url('./typography/typography.css');
+@import url('./lists/list.css');
+@import url('./toast/toast.css');
 
 :root {
     --text-color: #0d1c29;
@@ -220,20 +222,6 @@ h6 {
 
 .icon, i {
     pointer-events: none;
-}
-
-.list-style-none {
-    list-style: none;
-}
-
-.stacked-list {
-    margin: var(--space-1-5) 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.stacked-list li  a{
-    padding: var(--space-1) var(--space-1-5);
 }
 
 .section__head {

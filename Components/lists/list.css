@@ -1,0 +1,49 @@
+.list {
+    margin: var(--space-1);
+    max-width: 100%;
+    list-style-position: inside;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.list-item, li {
+    font-size: var(--text-sm);
+}
+
+.list-spaced li::marker {
+    color: var(--primary-color);
+}
+
+.list-head {
+    margin:  0 0 var(--space-0-5);
+    font-weight: var(--weight-sbold);
+}
+
+.list-spaced li:hover {
+    color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.list-stacked {
+    margin: var(--space-1-5) 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-stacked .list-head {
+    padding: 0 var(--space-1-5);
+}
+
+.list-stacked li  {
+    padding: var(--space-1) var(--space-1-5);
+}
+
+.list-stacked li:hover {
+    background-color: var(--primary-bg-color);
+}
