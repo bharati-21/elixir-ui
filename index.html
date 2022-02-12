@@ -44,12 +44,12 @@
             </nav>
             <header class="header flex--col flex--align-center flex--justify-center">
                 <img src="/logo-assets/Static website-cuate.svg" alt="Hero Image Website and components" class="hero__img img-responsive" />
-                <h1 class="hero__head heading heading-3">
+                <h3 class="hero__head text-center">
                     Add magic to your projects with 
                     <span class="brand">
                         <a href="/" class="text-link link">elixir</a>
                     </span>
-                </h1>
+                </h3>
                 <div class="hero__button-container">
                     <a href="#main" class="btn btn-primary">
                         Get Started
@@ -58,50 +58,57 @@
                 </div>
             </header>
             <main class="main home__main" id="main">
-                <section id="introduction" class="flex--col  flex--justify-center">
-                    <h3 class="section__head text-center flex--row flex--align-center">
-                        <span class="brand__img">
-                            <img 
-                                src="../logo-assets/elixir-logo.png" 
-                                alt="Elixir Logo - a violet shaded diamond" 
-                                class="brand__logo" 
-                            />
-                        </span> 
+                <section id="introduction">
+                    <h3 class="section__head"> 
                         Introduction
                     </h3>
-                    <p class="section__lead text text-lg">
-                        Get started with <span class="brand">
-                            <a href="/" class="text-link link">elixir</a>
-                        </span>- an open source <abbr title="Cascadig Style Sheets">CSS</abbr> library aimed at quick, responsive, and simple development of webites.
-                    </p>
-                    <p class="section__sub-lead text text-reg text-justify">
-                        No more fretting about styling websites. <span class="brand">
-                            <a href="/" class="text-link link">elixir</a>
-                        </span> helps in you with a completely logic-driven development! Leave your design worries to us!
-                    </p>
-                    <h5 class="section__head text-center flex--row flex--align-center">
-                        Installation Guide
-                    </h5>
-                    <p class="text text-lg">
-                        Copy paste the below code in your head tag of your html document.
-                    </p>
-                    <div class="code-display">
-                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcomponent-links%23L1&style=atom-one-light&showCopy=on"></script>
-                    </div>
-                    <p class="text text-sm">or</p>
-                    <p class="text text-lg">
-                        Copy and paste the below code in the main stylesheet for your website.
-                    </p>
-                    <div class="code-display">
-                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcomponent-links%23L3&style=atom-one-light&showCopy=on"></script>
-                    </div>
+                    <article class="content introduction__content"> 
+                        <p class="section__lead text text-lg">
+                            Get started with <span class="navlink active">
+                                <a href="/" class="text-link link">elixir</a></span>
+                            - an open source CSS library aimed at quick, responsive, and simple development of webites.
+                        </p>
+                        <p class="section__lead text text-lg text-justify">
+                            No more fretting about styling websites. <span class="navlink active">
+                                <a href="/" class="text-link link">elixir</a></span>
+                            helps you with a completely logic-driven development! Leave your design worries to us!
+                        </p>
+                    </article>
+                    <article class="content installation__content">
+                        <h5 class="section__head"> 
+                            Installation Guide
+                        </h5>
+                        <div class="code-snippet-container">
+                            <p class="text">Paste the code below in the head tag of your html document.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcomponent-links%23L1&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                        
+                        <p class="text text-sm text-center">or</p>
+
+                        <div class="code-snippet-container">
+                            <p>Paste the code below in the main stylesheet of your website.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcomponent-links%23L3&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="content documentation__reference flex--row">
+                        <p class="text text-lg text__reference">
+                            Refer the documentation to understand the design system followed by elixir, and the components we have to offer.
+                        </p>
+                        <a href="/docs/" class="btn btn-secondary">
+                            Documentation
+                        </a>
+                    </article>
                 </section>
             </main>
         </div>
         <footer class="footer flex--col flex--align-center flex--justify-center" id="footer">
-            <p class="text text-reg">
-                Made with <span class="text-color">
-                    &lt;/&gt;
+            <p class="text text-sm text-center text__author">
+                Made with <span class="icon primary-color bold">
+                    <i class="fas fa-code"></i>
                 </span> by <a href="https://bharati-21.github.io/" class="link text-link">Bharati</a>
             </p>
             <ul class="navlinks flex--row list-style-none flex--align-center">
@@ -130,10 +137,9 @@
                     </a>
                 </li>
             </ul>
-            <p class="text text-sm text-center">
-                &copy; 2021; <span class="brand__name">
-                    <br />
-                    <a href="https://bharati-21.github.io/" class="link text-link">elixir designs</a>
+            <p class="text text-sm text-center text__copyright">
+                &copy; 2021 - <span class="brand__name">
+                    elixir designs
                 </span>
             </p>
         </footer>

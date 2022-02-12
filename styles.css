@@ -1,4 +1,4 @@
-@import url('./Components/elixir.css');
+@import url('/Components/elixir.css');
 
 /* grid-container */
 :root {
@@ -49,6 +49,8 @@
 .header {
     grid-area: header;
     min-height: calc(100vh - var(--navbar-height));
+    padding: var(--space-1);
+    max-width: 100%;
 }
 
 .hero__img {
@@ -57,7 +59,7 @@
 }
 
 .hero__head {
-    font-size: 2rem;
+    max-width: max-content;
 }
 
 .main {
@@ -69,11 +71,16 @@
     overflow: hidden auto;
 }
 
+.docs__main {
+    grid-row-start: 2;
+}
+
 .home__main .link,
 .hero__head .link,
 .footer .text-link {
     font-size: inherit;
     display: inline;
+    font-weight: inherit;
 }
 
 .footer .brand__name {
@@ -87,21 +94,45 @@
     margin: 0 auto;
 }
 
-/* .home__main section {
-    margin: var(--space-3) 0 ;
+.home__main .heading,
+.home__main .text {
+    margin: 0;
 }
 
-.home__main section:first-child {
-    margin-top: 0;
+article.content {
+    padding: var(--space-1);
 }
 
-.home__main section:last-child {
-    margin-bottom: 0;
-} */
+article.installation__content {
+    margin-top: var(--space-1);
+}
+
+.documentation__reference {
+    max-width: 100%;
+    margin: var(--space-1) auto;
+    gap: var(--space-1);
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.documentation__reference .text__reference {
+    flex: 1 1;
+    margin: 0;
+    padding: 0;
+    line-height: initial;
+}
+
+.documentation__reference .btn {
+    flex-basis: 0 0 20%;
+    margin: 0;
+}
 
 .home__main .section__head {
     gap: var(--space-0-5);
-    margin-bottom: var(--space-1-5);
+    margin-bottom: var(--space-1);
+    padding-bottom: var(--space-0-25);
+    border-bottom: 2px solid var(--light-gray-color);
 }
 
 .section__head .brand__img {
@@ -110,6 +141,8 @@
 
 .home__main .section__lead {
     text-align: justify;
+    margin: var(--space-0-5) auto;
+    font-weight: var(--weight-md);
 }
 
 .sidebar {
@@ -146,7 +179,8 @@
     width: max-content;
 }
 
-.brand:hover > .brand__name, .sidebar__close:hover {
+.brand:hover > .brand__name, .sidebar__close:hover,
+.brand__name:hover {
     color: var(--primary-color);
     opacity: 1;
 }
@@ -246,7 +280,11 @@ hr.component__separator {
 }
 
 .code-snippet-container {
-    margin: var(--space-2) 0;
+    margin: var(--space-2) auto;
+}
+
+.home__main .code-snippet-container {
+    margin: var(--space-1) 0;
 }
 
 .code-display {
@@ -323,8 +361,9 @@ section.cards .component-display {
 
 .footer {
     background-color: var(--light-gray-color);
-    padding: var(--space-2);
-    gap: var(--space-1);
+    padding: var(--space-0-5) var(--space-1);
+    /* gap: var(--space-0-5); */
+    max-height: max-content;
 }
 
 .footer .text-color {
@@ -332,11 +371,17 @@ section.cards .component-display {
     font-weight: var(--weight-xbold);
 }
 
+footer i {
+    width: max-content;
+}
+
 @media screen and (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-areas: 'navbar'
+        'header'
         'main';
+        position: relative;
     }
 
     .sidebar__header {
@@ -352,6 +397,7 @@ section.cards .component-display {
     }
 
     .sidebar--open.sidebar {
+        max-width: 100%;
         position: fixed;
         left: 0;
         width: 100%;
@@ -366,8 +412,10 @@ section.cards .component-display {
     }
 
     .sidebar--close.sidebar {
-        grid-area: unset;
         height: 0;
+        top: 0;
+        left: 0;
         width: 0;
+        position: fixed;
     }
 }
