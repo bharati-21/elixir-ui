@@ -13,34 +13,135 @@
     <body>
         <div class="grid-container">
             <nav class="navbar flex--row flex--justify-between flex--align-center">
-                <a href="/" class="brand flex--row flex--align-center">
+                <a href="/" class="brand flex--row flex--align-center flex--justify-center">
                     <img 
-                        src="./logo-assets/elixir-logo.png" 
+                        src="../logo-assets/elixir-logo.png" 
                         alt="Elixir Logo - a violet shaded diamond" 
                         class="brand__logo" />
                     <h2 class="brand__name">elixir</h2>
                 </a>
+                
                 <ul class="navlinks flex--row list-style-none flex--align-center">
-                    <!-- <li class="navlink">
+                    <li class="navlink active">
                         <a href="/" class="link text-link">
                             Home
                         </a>
-                    </li> -->
+                    </li>
                     <li class="navlink">
-                        <a href="/docs/" class="link text-link">
+                        <a href="/docs" class="link text-link">
                             Docs
                         </a>
                     </li>
                     <li class="navlink">
-                        <a href="https://github.com/bharati-21/elixir-ui" class="link icon-link"><i class="fab fa-github"></i></a>
+                        <a 
+                            href="https://github.com/bharati-21/elixir-ui"
+                            target="_blank"
+                            class="link icon-link">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </li>
-                </ul>
-                            
+                </ul>       
             </nav>
-            
-            <main class="main">
+            <header class="header flex--col flex--align-center flex--justify-center">
+                <img src="/logo-assets/Static website-cuate.svg" alt="Hero Image Website and components" class="hero__img img-responsive" />
+                <h3 class="hero__head text-center">
+                    Add magic to your projects with 
+                    <span class="brand">
+                        <a href="/" class="text-link link">elixir</a>
+                    </span>
+                </h3>
+                <div class="hero__button-container">
+                    <a href="#main" class="btn btn-primary">
+                        Get Started
+                    </a>
+                    <a href="/docs/" class="btn btn-secondary">Documentation</a>
+                </div>
+            </header>
+            <main class="main home__main" id="main">
+                <section id="introduction">
+                    <h3 class="section__head"> 
+                        Introduction
+                    </h3>
+                    <article class="content introduction__content"> 
+                        <p class="section__lead text text-lg">
+                            Get started with <span class="navlink active">
+                                <a href="/" class="text-link link">elixir</a></span>
+                            - an open source CSS library aimed at quick, responsive, and simple development of webites.
+                        </p>
+                        <p class="section__lead text text-lg text-justify">
+                            No more fretting about styling websites. <span class="navlink active">
+                                <a href="/" class="text-link link">elixir</a></span>
+                            helps you with a completely logic-driven development! Leave your design worries to us!
+                        </p>
+                    </article>
+                    <article class="content installation__content">
+                        <h5 class="section__head"> 
+                            Installation Guide
+                        </h5>
+                        <div class="code-snippet-container">
+                            <p class="text">Paste the code below in the head tag of your html document.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcomponent-links%23L1&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                        
+                        <p class="text text-sm text-center">or</p>
+
+                        <div class="code-snippet-container">
+                            <p>Paste the code below in the main stylesheet of your website.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcomponent-links%23L3&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="content documentation__reference flex--row">
+                        <p class="text text-lg text__reference">
+                            Refer the documentation to understand the design system followed by elixir, and the components we have to offer.
+                        </p>
+                        <a href="/docs/" class="btn btn-secondary">
+                            Documentation
+                        </a>
+                    </article>
+                </section>
             </main>
-            <footer class="footer"></footer>
         </div>
+        <footer class="footer flex--col flex--align-center flex--justify-center" id="footer">
+            <p class="text text-sm text-center text__author">
+                Made with <span class="icon primary-color bold">
+                    <i class="fas fa-code"></i>
+                </span> by <a href="https://bharati-21.github.io/" class="link text-link">Bharati</a>
+            </p>
+            <ul class="navlinks flex--row list-style-none flex--align-center">
+                <li class="navlink">
+                    <a 
+                        href="https://github.com/bharati-21"
+                        target="_blank"
+                        class="link icon-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="navlink">
+                    <a 
+                        href="https://twitter.com/_girlwhocodes"
+                        target="_blank"
+                        class="link icon-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="navlink">
+                    <a 
+                        href="https://www.linkedin.com/in/bharati-subramanian-29734b152/"
+                        target="_blank"
+                        class="link icon-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="text text-sm text-center text__copyright">
+                &copy; 2021 - <span class="brand__name">
+                    elixir designs
+                </span>
+            </p>
+        </footer>
     </body>
 </html>
