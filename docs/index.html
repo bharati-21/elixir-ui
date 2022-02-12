@@ -51,9 +51,9 @@
                 
 
                 <section class="sidebar__list">
-                    <h4 class="sidebar__head">
+                    <h5 class="sidebar__head">
                         Components
-                    </h4>
+                    </h5>
                     <ul class="sidebar__nav stacked-list list-style-none flex--col">
                         <li>
                             <a data-menu-item="alert" href="#alert" class="link text-link">Alert</a>
@@ -77,7 +77,7 @@
                             <a href="#input" class="link text-link">Input</a>
                         </li>    
                         <li>
-                            <a href="#text" class="link text-link">Text</a>
+                            <a href="#typography" class="link text-link">Typography</a>
                         </li>  
                     </ul>
                 </section>
@@ -1209,6 +1209,107 @@
                             </div>
                         </div>
                     </article>
+                </section>
+                <hr class="component__separator">
+
+                <section class="typography component-info" id="typography">
+                    <article class="section__intro">
+                        <h2 class="section__head">Typography</h2>
+                        <p class="section__lead">
+                            Typographies are utility classes used for designing fonts and text.
+                        </p>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Heading Utilities
+                        </h3>
+                        <p class="section__sub-lead">
+                            There are 6 types of headings - h1, h2, h3, h4, h5, and h6. 
+                            <br/>
+                            Use the base classe <span class="primary-color bold">heading</span> along with any of the supporting classes <span class="secondary-color">heading-1</span>, <span class="secondary-color">heading-2</span>, <span class="secondary-color">heading-3</span>, <span class="secondary-color">heading-4</span>, <span class="secondary-color">heading-5</span>, and <span class="secondary-color">heading-6</span> to generate variations of headings.
+                        </p>
+                        <div class="component-display">
+                            <div class="heading heading-1">Heading 1</div>
+                            <div class="heading heading-2">Heading 2</div>
+                            <div class="heading heading-3">Heading 3</div>
+                            <div class="heading heading-4">Heading 4</div>
+                            <div class="heading heading-5">Heading 5</div>
+                            <div class="heading heading-6">Heading 6</div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste  the code below to use the headings with varying sizes</p>
+
+                            <div class="component-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftypography-compoonent%2Fheadings.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article> 
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Text Utiltiies
+                        </h3>
+                        <p class="section__sub-lead">
+                            There are 3 types of text utilties - small, regular, large text. 
+                            <br/>
+                            To use the text utility add the base <span class="primary-color bold">text</span> any one of the supporting classes-  <span class="secondary-color">text-sm</span>, <span class="secondary-color">text-reg</span>, and <span class="secondary-color">text-lg</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="text text-lg">Large Text</div>
+                            <div class="text text-reg">Regular Text</div>
+                            <div class="text text-sm">Small Text</div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste  the code below to use text with varying sizes</p>
+
+                            <div class="component-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftypography-compoonent%2Ftext-utility.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>   
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Colored Text Utilities
+                        </h3>
+                        <p class="section__sub-lead">
+                            You can generate text with the following colors - <span class="primary-color">Primary Color</span>, <span class="secondary-color">Secondary Color</span>, and <span class="gray-color">Gray Color</span>.
+                            <br/>
+                            To use colored text, add the base <span class="primary-color bold">text</span> and one of the colored classes-  <span class="secondary-color">primary-color</span>, <span class="secondary-color">secondary-color</span>, and <span class="secondary-color">gray-color</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="text primary-color">Primary Colored Text</div>
+                            <div class="text secondary-color">Secondary Colored Text</div>
+                            <div class="text gray-color">Gray Colored Text</div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use text with different colors</p>
+
+                            <div class="component-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftypography-compoonent%2Fcolored-text.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>    
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Aligned Text Utilities
+                        </h3>
+                        <p class="section__sub-lead">
+                            You can generate text aligned to the right, left, center or justified. Left aligned text is the default alignment for text.
+                            <br/></br />
+                            To use aligned text, add the base class <span class="primary-color bold">text</span> and one of the alignment classes- <span class="secondary-color">text-left</span>, <span class="secondary-color">text-center</span>, <span class="secondary-color">text-right</span>, and <span class="secondary-color">text-justify</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="text text-left">Left Aligned Text</div>
+                            <div class="text text-center">Center Aligned Text</div>
+                            <div class="text text-right">Right Aligned Text</div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use aligned text.</p>
+
+                            <div class="component-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftypography-compoonent%2Faligned-text.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
+                            </div>
+                        </div>
+                    </article>                 
                 </section>
             </main>
         </div>

@@ -23,7 +23,7 @@
     position: sticky;
     top: 0;
     gap: var(--space-1);
-    font-size: var(--text-md);
+    font-size: var(--h);
 }
 
 .hamburger {
@@ -202,8 +202,8 @@ hr.component__separator {
 }
 
 .code-display::-webkit-scrollbar {
-    width: var(--space-0-75);
-    height: var(--space-0-75);
+    width: var(--space-0-5);
+    height: var(--space-0-5);
 }
   
 .code-display::-webkit-scrollbar-thumb {
@@ -227,8 +227,18 @@ section#card .code-display {
 
 code.hljs {
     overflow: visible;
+    max-width: 100%;
+    width: 100%;
 }
-   
+
+section#typography code.hljs {
+    white-space: pre-wrap;
+}
+
+.emgithub-container {
+    max-width: 100%;
+}
+
 .code-display iframe{
     width: 100%;
     border: none;
