@@ -1,0 +1,116 @@
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: var(--space-1);
+}
+
+.text-label {
+    font-size: var(--text-sm);
+}
+
+.input-text, .input-textbox {
+    padding: var(--space-0-5) var(--space-0-75);
+    border-radius: var(--br-5);
+    -webkit-border-radius: var(--br-5);
+    -moz-border-radius: var(--br-5);
+    -ms-border-radius: var(--br-5);
+    -o-border-radius: var(--br-5);
+    border: 1px solid var(--text-color);
+    background-color: #fff;
+    font-size: var(--text-sm);
+    color: var(--text-color);
+    font-weight: var(--weight-regular);
+}
+
+.textbox-group {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+textarea {
+    max-width: 100%;
+    resize: both;
+}
+
+.text-message {
+    display: none;
+}
+
+.input-default .input-text,
+.textbox-default .input-textbox {
+    border-color: var(--primary-color);
+}
+
+.input-success .input-text,
+.textbox-success .input-textbox {
+    border-color: var(--success-color);
+}
+
+.input-error .input-text,
+.textbox-error .input-textbox {
+    border-color: var(--error-color);
+}
+
+.input-warning .input-text,
+.textbox-warning .input-textbox {
+    border-color: var(--warning-color);
+}
+
+.input-error .text-message, 
+.input-warning .text-message,
+.input-success .text-message {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-top: var(--space-0-25);
+    font-weight: var(--weight-sbold);
+}
+
+.textbox-error .text-message, 
+.textbox-warning .text-message,
+.textbox-success .text-message {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-top: var(--space-0-25);
+    font-weight: var(--weight-sbold);
+}
+
+.input-error .text-message,
+.textbox-error .text-message {
+    color: var(--error-color);
+}
+
+.input-warning .text-message,
+.textbox-warning .text-message  {
+    color: var(--warning-color);
+}
+
+.input-success .text-message,
+.textbox-success .text-message  {
+    color: var(--success-color);
+}
+
+.input-text:focus {
+    outline: var(--text-color) solid 0.1rem;
+}
+
+.input-default .input-text:focus,
+.textbox-default .input-textbox:focus  {
+    outline-color: var(--primary-active-color);
+}
+
+.input-error .input-text:focus,
+.textbox-error .input-textbox:focus  {
+    outline-color: var(--error-color);
+}
+
+.input-warning .input-text:focus,
+.textbox-warning .input-textbox:focus  {
+    outline-color: var(--warning-color);
+}
+
+.input-success .input-text:focus,
+.textbox-success .input-textbox:focus  {
+    outline-color: var(--success-color);
+}
+
