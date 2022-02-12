@@ -100,7 +100,7 @@ html {
     margin: 0;
     padding: 0;
     color: inherit;
-
+    word-wrap: break-word;
     scroll-behavior: smooth;
 }
 
@@ -269,6 +269,14 @@ h6 {
 
 .flex--align-center {
     align-items: center;
+}
+
+.flex--align-start {
+    align-items:flex-start;
+}
+
+.flex--justify-start {
+    justify-content: flex-start;
 }
 
 .flex--justify-between {
