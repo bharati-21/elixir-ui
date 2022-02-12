@@ -11,6 +11,7 @@
     -o-border-radius: var(--br-5);
     margin: var(--space-0-5);
     text-align: center;
+    height: max-content;
 }
 
 .btn.btn-full-width {
