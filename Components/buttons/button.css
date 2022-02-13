@@ -23,9 +23,9 @@
     border: 2px solid var(--primary-color);
 }
 
-.btn-secondary {
-    background-color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
+.btn-accent {
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
 
 .btn-outline {
@@ -36,8 +36,8 @@
     color: var(--primary-color); 
 }
 
-.btn-outline.btn-secondary {
-    color: var(--secondary-color); 
+.btn-outline.btn-accent {
+    color: var(--accent-color); 
 }
 
 .btn-icon {
@@ -52,8 +52,8 @@
     color: var(--primary-color);
 }
 
-.btn-icon.btn-secondary {
-    color: var(--secondary-color);
+.btn-icon.btn-accent {
+    color: var(--accent-color);
 }
 
 .btn-link {
@@ -121,9 +121,9 @@
     border-color: var(--primary-active-color);
 }
 
-.btn-secondary:hover {
-    background-color: var(--secondary-active-color);
-    border-color: var(--secondary-active-color);
+.btn-accent:hover {
+    background-color: var(--accent-active-color);
+    border-color: var(--accent-active-color);
 }
 
 .btn.btn-icon:hover {
@@ -135,16 +135,16 @@
     color: var(--primary-active-color);
 }
 
-.btn-secondary.btn-icon:hover, .btn-secondary.btn-link:hover {
-    color: var(--secondary-active-color);
+.btn-accent.btn-icon:hover, .btn-accent.btn-link:hover {
+    color: var(--accent-active-color);
 }
 
 .btn-primary.btn-link.active {
     border-bottom: 2px solid var(--primary-active-color);
 }
 
-.btn-secondary.btn-link.active {
-    border-bottom: 2px solid var(--secondary-active-color);
+.btn-accent.btn-link.active {
+    border-bottom: 2px solid var(--accent-active-color);
 }
 
 .btn-link:hover {
@@ -155,8 +155,8 @@
     color: var(--primary-color);
 }
 
-.btn-secondary.btn-link:hover {
-    color: var(--secondary-color);
+.btn-accent.btn-link:hover {
+    color: var(--accent-color);
 }
 
 .btn-disabled {

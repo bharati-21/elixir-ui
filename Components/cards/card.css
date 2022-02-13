@@ -48,13 +48,13 @@
     height: max-content;
 }
 
-.card-wt-badge .badge,
+.card.card-wt-badge .badge,
 .card-wt-dismiss .btn-dismiss.btn {
     display: block;
     z-index: var(--z-index-badges);
 }
 
-.badge {
+.card .badge {
     top: 0;
     left: 0.5rem;
     display: none;
@@ -182,7 +182,7 @@
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     color: var(--light-gray-color);
     width: max-content;
     padding: var(--space-0-75);

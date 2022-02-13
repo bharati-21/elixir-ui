@@ -1,5 +1,5 @@
 :root {
-    --secondary-bg-color: #c3dbff;
+    --accent-bg-color: rgb(166, 255, 251);
     --warning-bg-color: #fce6cf;
     --error-bg-color: #ffd0d0;
     --success-bg-color: #a8fcd6;
@@ -19,7 +19,7 @@
 
     /* Size properties */
     width: 100%;
-    
+    max-width: max-content;
     /* Flex properties */
     display: flex;
     flex-direction: row;
@@ -44,9 +44,9 @@
     color: var(--primary-color);
 }
 
-.alert-secondary {
-    background-color: var(--secondary-bg-color);
-    color: var(--secondary-color);
+.alert-accent {
+    background-color: var(--accent-bg-color);
+    color: var(--accent-color);
 }
 
 .alert-warning {
@@ -66,7 +66,7 @@
 
 .alert-text {
     /* z-index: 0; */
-    margin-right: 2rem;
+    margin-right: var(--space-4);
 }
 
 .alert .icon-close {
