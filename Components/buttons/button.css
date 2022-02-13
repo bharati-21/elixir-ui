@@ -118,6 +118,7 @@
 .btn:hover {
     background-color: var(--primary-active-color);
     border-color: var(--primary-active-color);
+    color: var(--bg-color);
 }
 
 .btn-primary:hover, .btn-floating:hover  {
