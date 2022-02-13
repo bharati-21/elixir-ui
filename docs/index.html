@@ -78,6 +78,12 @@
                         </li>    
                         <li>
                             <a href="#typography" class="link text-link">Typography</a>
+                        </li>
+                        <li>
+                            <a href="#list" class="link text-link">List</a>
+                        </li>
+                        <li>
+                            <a href="#toast" class="link text-link">Toast</a>
                         </li>  
                     </ul>
                 </section>
@@ -464,7 +470,7 @@
                 </section>
                 <hr class="component__separator">
 
-                <section class="badges component-info" id="button">
+                <section class="buttons component-info" id="button">
                     <article class="section__intro">
                         <h2 class="section__head">Buttons</h2>
                         <p class="section__lead">
@@ -1116,7 +1122,7 @@
                         <div class="code-snippet-container">
                             <p>Paste  the code below to use the default input component</p>
 
-                            <div class="component-display">
+                            <div class="code-display">
                                 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Finput.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
                             </div>
                         </div>
@@ -1239,7 +1245,7 @@
                         <div class="code-snippet-container">
                             <p>Paste  the code below to use the headings with varying sizes</p>
 
-                            <div class="component-display">
+                            <div class="code-display">
                                 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftypography-compoonent%2Fheadings.html&style=atom-one-light&showCopy=on"></script>
                             </div>
                         </div>
@@ -1261,7 +1267,7 @@
                         <div class="code-snippet-container">
                             <p>Paste  the code below to use text with varying sizes</p>
 
-                            <div class="component-display">
+                            <div class="code-display">
                                 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftypography-compoonent%2Ftext-utility.html&style=atom-one-light&showCopy=on"></script>
                             </div>
                         </div>
@@ -1283,7 +1289,7 @@
                         <div class="code-snippet-container">
                             <p>Paste the code below to use text with different colors</p>
 
-                            <div class="component-display">
+                            <div class="code-display">
                                 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftypography-compoonent%2Fcolored-text.html&style=atom-one-light&showCopy=on"></script>
                             </div>
                         </div>
@@ -1305,15 +1311,162 @@
                         <div class="code-snippet-container">
                             <p>Paste the code below to use aligned text.</p>
 
-                            <div class="component-display">
+                            <div class="code-display">
                                 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftypography-compoonent%2Faligned-text.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
                             </div>
                         </div>
                     </article>                 
                 </section>
+                <hr class="component__separator">
+
+                <section class="lists component-info" id="list">
+                    <article class="section__intro">
+                        <h2 class="section__head">Lists</h2>
+                        <p class="section__lead">
+                            List is a component that displays collection of information vertically.
+                        </p>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Spaced List
+                        </h3>
+                        <p class="section__sub-lead">
+                            This is the default or basic list that displays data vertically with some space in between.
+                            <br/>
+                            Use the base class <span class="primary-color bold">list</span> along with the <span class="secondary-color">spaced-list</span> class to generate a spaced list component.
+                        </p>
+                        <div class="component-display">
+                            <ul class="list list-spaced">
+                                <p class="list-head text text-lg">Navigation</p>
+                                <li class="list-item">
+                                    Home
+                                </li>
+                                <li class="list-item">
+                                    About
+                                </li>
+                                <li class="list-item">
+                                    Products
+                                </li>
+                                <li class="list-item">
+                                    Contact
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use spaced list.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Flist-component%2Fspaced-list.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article> 
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Stacked List
+                        </h3>
+                        <p class="section__sub-lead">
+                            This is a variation of list component where the items are listed vertically without any space between them.
+                            <br/>
+                            Use the base class <span class="primary-color bold">list</span> along with the <span class="secondary-color">stacked-list</span> class to generate a stacked list component.
+                            Add the class <span class="secondary-color">list-style-none</span> to remove list item bullets.
+                        </p>
+                        <div class="component-display">
+                            <ul class="list list-stacked list-style-none">
+                                <p class="list-head text text-lg">Notifications</p>
+                                <li class="list-item">
+                                    Anonymous followed you back
+                                </li>
+                                <li class="list-item">
+                                    John Doe commented on your post
+                                </li>
+                                <li class="list-item">
+                                    Jane doe has their birthday today 
+                                </li>
+                                <li class="list-item">
+                                    You have a memory with xyz
+                                </li>  
+                            </ul>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use stacked list.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Flist-component%2Fstacked-list.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
+                            </div>
+                        </div>
+                    </article>              
+                </section>
+                <hr class="component__separator">
+
+                <section class="toast component-info" id="toast">
+                    <article class="section__intro">
+                        <h2 class="section__head">Toast</h2>
+                        <p class="section__lead">
+                            Toast or snackbar component is used to display short messages to the user that disappears after a few seconds.
+                        </p>
+                    </article> 
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Simple Toast
+                        </h3>
+                        <p class="section__sub-lead">
+                            A simple toast consists of a toast text and accompanying action buttons such as a text or icon button.
+                            <br/>
+                            Use the base class <span class="primary-color bold">snackbar</span> to generate a simple toast.
+                        </p>
+                        <div class="component-display">
+                            <div class="snackbar">
+                                <p class="snackbar-text">
+                                    Can't send photo. Retry in 5 seconds.
+                                </p>
+                                <div class="snackbar-actions">
+                                    <a href="#" class="btn btn-primary btn-icon btn-snackbar-close">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="toast__demo">
+                            <a href="#" class="btn btn-primary btn__toast__demo">
+                                Toast Demo
+                            </a>
+                            <div class="snackbar snackbar__demo">
+                                <p class="snackbar-text">
+                                    Can't send photo. Retry in 5 seconds.
+                                </p>
+                                <div class="snackbar-actions">
+                                    <a href="#" class="btn btn-primary btn-icon btn-snackbar-close">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use a snackbar/ toast component.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftoast-component%2Fsnackbar.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
+                            </div>
+                        </div>
+
+                        <div class="code-snippet-container">
+                            <p>Paste the below code for using the logic to close the snackbar when close button is clicked.</p>
+                        </div>
+                        <div class="code-display">
+                            <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftoast-component%2Fsnackbar.js&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
+                        </div>
+                    </article>              
+                </section>
             </main>
         </div>
         <script src="/docs-script/hamburger.js"></script>
         <script src="/Components/alerts/alert.js"></script>
+        <script src="/Components/toast/toast.js"></script>
     </body>
 </html>
