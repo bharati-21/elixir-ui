@@ -12,9 +12,9 @@ function showToast(e) {
     snackbarClose = document.querySelectorAll('.btn-snackbar-close');
     attachEventListener();
 
-    // To remove snackbar after 5 seconds
+    // To remove snackbar demo after 5 seconds
     setTimeout(() => {
-        snackbar.style.display = 'none';
+        document.querySelector('.snackbar__demo').style.display = 'none';
     }, 5000)
 }
 
