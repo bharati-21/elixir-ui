@@ -3,6 +3,8 @@
 /* grid-container */
 :root {
     --navbar-height: 10vh;
+    --z-index-navbar: 2;
+    --z-index-sidebar: 3;
 }
 
 .grid-container {
@@ -21,7 +23,7 @@
     background-color: var(--bg-color);
     grid-area: navbar;
     min-height: var(--navbar-height);
-    z-index: 2;
+    z-index: var(--z-index-navbar);
     padding: var(--space-1) var(--space-2);
     box-shadow: var(--box-shadow);
     position: sticky;
@@ -66,7 +68,6 @@
     padding: 0 var(--space-3);
     grid-area: main;
     position: relative;
-    /* z-index: 1; */
     place-items: start start;
     overflow: hidden auto;
 }
@@ -152,7 +153,7 @@ article.installation__content {
     height: 100vh;
     align-self: start;
     overflow: hidden auto;
-    z-index: 3;
+    z-index: var(--z-index-sidebar);
     border-right: 0.25rem solid var(--primary-bg-color);
     max-width: 250px;
     width: 250px;

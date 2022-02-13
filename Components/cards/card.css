@@ -51,7 +51,7 @@
 .card-wt-badge .badge,
 .card-wt-dismiss .btn-dismiss.btn {
     display: block;
-    z-index: 2;
+    z-index: var(--z-index-badges);
 }
 
 .badge {
@@ -177,7 +177,7 @@
     bottom: 50%;
     top: 50%;
     right: 50%;
-    z-index: 2;
+    z-index: var(--z-index-badges);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
