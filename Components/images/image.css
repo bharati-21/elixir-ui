@@ -16,9 +16,19 @@
 }
 
 .img-round {
+    width: 250px;
+    height: 250px;
+    object-position: center center;
     border-radius: var(--br-50);
     -webkit-border-radius: var(--br-50);
     -moz-border-radius: var(--br-50);
     -ms-border-radius: var(--br-50);
     -o-border-radius: var(--br-50);
+}
+
+@media screen and (max-width: 400px) {
+    .img-round {
+        width: 50vw;
+        height: 50vw;
+    }
 }
