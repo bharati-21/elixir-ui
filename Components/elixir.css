@@ -87,6 +87,8 @@
     --h4: 1.75rem;
     --h5: 1.5rem;
     --h6: 1.25rem;
+
+    --z-index-toast: 3;
 }
 
 html {
