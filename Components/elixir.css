@@ -22,8 +22,9 @@
     --primary-color: #5c5ce0;
     --primary-active-color: #4646c6;
     --primary-bg-color: #d6d6ff;
-    --accent-color:#00bdbd;
-    --accent-active-color: #009191;
+    /* --accent-color:#00bdbd; */
+    --accent-color: #009191;
+    --accent-active-color: #007474;
     --gray: #808080;
     --light-gray-color: #e0e0e0;
     --warning-color: #e98503;
