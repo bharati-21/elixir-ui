@@ -50,6 +50,39 @@
     position: relative;
 }
 
+.navlinks {
+    gap: var(--space-1);
+}
+
+.navlink {
+    line-height: 0;
+}
+
+.navlinks .icon-link {
+    font-size:var(--text-md);
+}
+
+.navlink.active {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.icon-link {
+    opacity: 0.8;
+}
+
+.link:hover {
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+.link {
+    transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+}
+
 .header {
     grid-area: header;
     min-height: calc(100vh - var(--navbar-height));
