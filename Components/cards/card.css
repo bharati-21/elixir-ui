@@ -1,6 +1,6 @@
 .card {
     --overlay-bg: hsla(0, 0%, 88%, 0.7);
-    background-color: #fff;
+    background-color: var(--bg-card-color);
     border-radius: var(--br-5);
     -webkit-border-radius: var(--br-5);
     -moz-border-radius: var(--br-5);
