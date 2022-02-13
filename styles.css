@@ -62,10 +62,6 @@
     font-size:var(--text-md);
 }
 
-.navlink.active {
-    border-bottom: 2px solid var(--primary-color);
-}
-
 .icon-link {
     opacity: 0.8;
 }

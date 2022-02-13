@@ -4,6 +4,8 @@
     padding: var(--space-0-5) var(--space-0-75);
     min-width: 80px;
     color: var(--bg-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     border-radius: var(--br-5);
     -webkit-border-radius: var(--br-5);
     -moz-border-radius: var(--br-5);
@@ -113,7 +115,8 @@
 }
 
 .btn:hover {
-    color: var(--bg-color);
+    background-color: var(--primary-active-color);
+    border-color: var(--primary-active-color);
 }
 
 .btn-primary:hover, .btn-floating:hover  {
@@ -152,11 +155,11 @@
 }
 
 .btn-primary.btn-link:hover {
-    color: var(--primary-color);
+    color: var(--primary-active-color);
 }
 
 .btn-accent.btn-link:hover {
-    color: var(--accent-color);
+    color: var(--accent-active-color);
 }
 
 .btn-disabled {
