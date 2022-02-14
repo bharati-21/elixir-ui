@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Bharati Subramanian">
         <meta name="description" content="Elixir UI documentation page.">
-        <link rel="shortcut icon" href="../logo-assets/favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/logo-assets/elixir-logo.png" type="image/x-icon">
         <title>elixir | Docs</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
@@ -476,138 +476,152 @@
                         <p class="section__lead">
                             Buttons are components user can click to perform an action and interact with the website.
                         </p>
+                        <p class="section__sub-lead mt-0-75">
+                            Elixir offers the following range of buttons - 
+                            <a href="#button--primary" class="btn btn-link btn-primary px-0-25">Primary Buttons</a>, 
+                            <a href="#button--secondary" class="btn btn-link btn-primary px-0-25">Secondary Buttons</a>,
+                            <a href="#button--floating-action" class="btn btn-link btn-primary px-0-25">Floating Action Buttons</a>,
+                            and <a href="#button--disabled" class="btn btn-link btn-primary px-0-25">Disabled Buttons</a>
+                        </p>
                     </article>
-                    <article class="section__sub">
+                    <article class="section__sub" id="button--primary">
                         <h3 class="section__sub-head">
                             Primary Buttons
                         </h3>
                         <p class="section__sub-lead">
-                            To generate a primary button, use the base class <span class="primary-color bold">btn.btn-primary</span> and add any of the following supporting classes to get different variations for a primary button-
-                            <br>
-                            <span class="accent-color bold">btn-solid</span>, <span class="accent-color bold">btn-outline</span>, <span class="accent-color bold">btn-link</span>, <span class="accent-color bold">btn-icon</span>, and <span class="accent-color bold">btn-text-icon</span>.                          
+                            To generate a primary button, use the base class <span class="primary-color bold">btn</span> and add the theme class <span class="secondary-color bold">btn-primary</span>. By default, the type of button generated is a solid one. 
+                            <br /> <br/> 
+                            To use variations of a primary button, add any of the following supporting classes to on top of the base class and button theme class-
+                            
+                            <span class="secondary-color bold">btn-outline</span>, <span class="secondary-color bold">btn-link</span>, <span class="secondary-color bold">btn-icon</span>, and <span class="secondary-color bold">btn-text-icon</span>.                          
                         </p>
                         <div class="component-display">
-                            <a href="#" class="btn btn-primary btn-solid">Primary Solid</a>
-                            <a href="#" class="btn btn-primary btn-outline">Primary Outline</a>
-                            <a href="" class="btn btn-primary btn-icon">
+                            <button class="btn btn-primary m-0-5 py-0-5 px-0-75">
+                                Primary Solid
+                            </button>
+                            <button href="#" class="btn btn-primary btn-outline m-0-5 py-0-5 px-0-75">
+                                Primary Outline
+                            </button>
+                            <button class="btn btn-primary btn-icon m-0-5">
                                 <span class="icon">
                                     <i class="fas fa-shopping-cart"></i>
                                 </span>
+                            </button>
+                            <button class="btn btn-primary btn-text-icon m-0-5 py-0-5 px-0-75">
+                                GitHub 
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                            </button>
+                            <a href="#" class="btn btn-primary btn-link m-0-5 p-0-25">
+                                Home
                             </a>
-                            <a href="/" class="btn btn-primary btn-text-icon ">GitHub <span class="icon">
-                                <i class="fab fa-github"></i>
-                            </span></a>
-                            <a href="/" class="btn btn-primary btn-link">Home</a>
                         </div>
                         <div class="code-snippet-container">
-                            <p>Paste the code below to use the primary buttons of different variations.</p>
+                            <p>Copy the code below to use primary buttons of different variations.</p>
                             <div class="code-display">
-                                <iframe
-                                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520btn-solid%2522%253EPrimary%2520Solid%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520btn-outline%2522%253EPrimary%2520Outline%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2522%2520class%253D%2522btn%2520btn-primary%2520btn-icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522btn%2520btn-primary%2520btn-text-icon%2520%2522%253EGitHub%2520%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522fab%2520fa-github%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522btn%2520btn-primary%2520btn-link%2522%253EHome%253C%252Fa%253E"
-                                    sandbox="allow-scripts allow-same-origin">
-                                </iframe>
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fbutton-component%2Fbutton-primary.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
                             </div>
                         </div>
                     </article>
-                    <article class="section__sub">
+                    <article class="section__sub" id="button--secondary">
                         <h3 class="section__sub-head">
-                            Accent Buttons
+                            Secondary Buttons
                         </h3>
                         <p class="section__sub-lead">
-                            To generate accent buttons, use the base class <span class="primary-color bold">btn.btn-accent</span> and add any of the following supporting classes to get different variations for a primary button-
-                            <br>
-                            <span class="accent-color bold">btn-solid</span>, <span class="accent-color bold">btn-outline</span>, <span class="accent-color bold">btn-icon</span>, and <span class="accent-color bold">btn-link</span>.   
+                            To generate a secondary button, use the base class <span class="primary-color bold">btn</span> and add the theme class <span class="secondary-color bold">
+                                btn-secondary
+                            </span>. By default, the type of button generated is a solid one.
+                            <br /> <br />
+                            To use variations of a secondary button, add any of the following supporting classes to on top of the base class and button theme class-
+                            <span class="secondary-color bold">btn-outline</span>, <span class="secondary-color bold">btn-link</span>, <span class="secondary-color bold">btn-icon</span>, and <span class="secondary-color bold">btn-text-icon</span>.   
                         </p>
                         <div class="component-display">
-                            <a href="#" class="btn btn-accent">Accent Solid</a>
-                            <a href="#" class="btn btn-accent btn-outline">Accent Outline</a>
-                            <a href="" class="btn btn-accent btn-icon">
+                            <button class="btn btn-secondary m-0-5 py-0-5 px-0-75">
+                                Secondary Solid
+                            </button>
+                            <button class="btn btn-secondary btn-outline m-0-5 py-0-5 px-0-75">
+                                Secondary Outline
+                            </button>
+                            <button class="btn btn-secondary btn-icon m-0-5 py-0-5 px-0-75">
                                 <span class="icon">
                                     <i class="fas fa-shopping-cart"></i>
                                 </span>
-                            </a>
-                            <a href="/" class="btn btn-accent btn-text-icon ">Twitter 
-                                <span class="icon"><i class="fab fa-twitter icon"></i></span>
-                            </a>
-                            <a href="/" class="btn btn-accent btn-link">Home</a>
+                            </button>
+                            <button class="btn btn-secondary btn-text-icon m-0-5 py-0-5 px-0-75">
+                                Twitter
+                                <span class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                            </button>
+                            <a href="#" class="btn btn-secondary btn-link p-0-25 m-0-5">Home</a>
                         </div>
                         <div class="code-snippet-container">
-                            <p>Paste the code below to use square or pill shaped badges</p>
+                            <p>
+                                Copy the code below to use secondary buttons of different variations.
+                            </p>
                             <div class="code-display">
-                                <iframe
-                                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%2520Solid%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-outline%2522%253ESecondary%2520Outline%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2509%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-text-icon%2520%2522%253ETwitter%2520%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fab%2520fa-twitter%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-link%2522%253EHome%253C%252Fa%253E"
-                                    sandbox="allow-scripts allow-same-origin">
-                                </iframe>
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fbutton-component%2Fbutton-secondary.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
                             </div>
                         </div>
                     </article>
-                    <article class="section__sub">
+                    <article class="section__sub" id="button--floating-action">
                         <h3 class="section__sub-head">
                             Floating Buttons
                         </h3>
                         <p class="section__sub-lead">
-                            Floating action buttons are used to perform primary or common actions on the screen. Circular in shape, they remain fixed on the bottom left corner of the screen and on top of all content.
-                            <br>
-                            To create a floating button, add the class <span class="primary-color bold">btn-floating</span> on top of the base class <span class="accent-color bold">btn</span>.
+                            Floating action buttons are used to perform primary or common actions on the screen. Circular in shape, they remain fixed on the bottom right corner of the screen and float on top of all content.
+                            <br /> <br />
+                            To use a floating action button, add the class <span class="primary-color bold">
+                                btn-floating
+                            </span>
+                            along with the base class <span class="secondary-color bold">btn</span>.
                         </p>
                         <div class="component-display">
-                            <a href="#" class="btn btn-floating">
+                            <button class="btn btn-floating">
                                 <span class="icon">
                                     <i class="fas fa-arrow-up"></i>
                                 </span>
-                            </a>
+                            </button>
                         </div>
                         <div class="code-snippet-container">
-                            <p>Paste the code below to use square or pill shaped badges</p>
+                            <p>Copy the code below to use a floating action button.</p>
                             <div class="code-display">
-                                <iframe
-                                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-floating%2522%253E%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-arrow-up%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E"  
-                                    sandbox="allow-scripts allow-same-origin">
-                                </iframe>
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fbutton-component%2Fbutton-floating-action.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
                             </div>
                         </div>
                     </article>
-                    <article class="section__sub">
+                    <article class="section__sub" id="button--disabled">
                         <h3 class="section__sub-head">
                             Disabled Buttons
                         </h3>
                         <p class="section__sub-lead">
-                            To disable any button add the supplement class <span class="primary-color bold">btn-disabled</span> on the button component.
+                            To disable any button add the attribute <span class="primary-color bold">disabled</span> along with the class <span class="secondary-color bold">btn-disabled</span> on any type of button.
                         </p>
                         <div class="component-display">
-                            <a href="#" class="btn btn-primary btn-disabled">
-                                Disabled Primary
-                            </a>
-                            <a href="#" class="btn btn-accent btn-outline btn-disabled">
-                                Disabled Accent
-                            </a>
-                            <a href="#" class="btn btn-primary btn-icon btn-disabled">
+                            <button class="btn btn-primary btn-disabled m-0-5 py-0-5 px-0-75" disabled>
+                                Secondary Solid
+                            </button>
+                            <button class="btn btn-secondary btn-outline m-0-5 py-0-5 px-0-75 btn-disabled" disabled>
+                                Secondary Outline
+                            </button>
+                            <button class="btn btn-primary btn-icon btn-disabled m-0-5 py-0-5 px-0-75" disabled>
                                 <span class="icon">
                                     <i class="fas fa-shopping-cart"></i>
                                 </span>
-                            </a>
-                            <a href="#" class="btn btn-accent btn-text-icon btn-disabled">
-                                Add to cart
+                            </button>
+                            <button class="btn btn-secondary btn-disabled btn-text-icon m-0-5 py-0-5 px-0-75" disabled>
+                                Twitter
                                 <span class="icon">
-                                    <i class="fas fa-shopping-cart"></i>
+                                    <i class="fab fa-twitter"></i>
                                 </span>
-                            </a>
-                            <a href="#" class="btn btn-primary btn-link btn-disabled">
-                                Add to cart
-                            </a>
-                            <a href="#" class="btn btn-floating btn-disabled">
-                                <span class="icon">
-                                    <i class="fas fa-plus"></i>
-                                </span>
-                            </a>
+                            </button>
+                            <a href="#" class="btn btn-primary btn-disabled btn-link p-0-25 m-0-5" disabled>Home</a>
                         </div>
                         <div class="code-snippet-container">
-                            <p>Paste the code below to use square or pill shaped badges</p>
+                            <p>Copy the code below to use disabled buttons of different variations.</p>
                             <div class="code-display">
-                                <iframe
-                                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520btn-disabled%2522%253EDisabled%2520Primary%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-outline%2520btn-disabled%2522%253EDisabled%2520Secondary%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520btn-icon%2520btn-disabled%2522%253E%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-secondary%2520btn-text-icon%2520btn-disabled%2522%253E%250A%2509Add%2520to%2520cart%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2509%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-primary%2520btn-link%2520btn-disabled%2522%253EAdd%2520to%2520cart%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-floating%2520btn-disabled%2522%253E%250A%2509%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E"
-                                    sandbox="allow-scripts allow-same-origin">
-                                </iframe>
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fbutton-component%2Fbutton-disabled.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
                             </div>
                         </div>
                     </article>

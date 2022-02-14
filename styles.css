@@ -317,6 +317,7 @@ hr.component__separator {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: center;
+    gap: var(--space-1);
 }
 
 .code-snippet-container {
@@ -399,6 +400,10 @@ section#badge .component-display .badge {
     position: relative;
 }
 
+section#button .section__sub-lead .btn-link {
+    display: inline-flex;
+}
+
 section.images .component-display,
 section.cards .component-display {
     justify-content: center;
@@ -414,8 +419,6 @@ section#toast .component-display .snackbar {
 
 .footer {
     background-color: var(--light-gray-color);
-    padding: var(--space-0-5) var(--space-1);
-    /* gap: var(--space-0-5); */
     max-height: max-content;
 }
 
