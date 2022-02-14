@@ -1,0 +1,665 @@
+/* padding: 0.25rem */
+.p-0-25 {
+    padding: var(--space-0-25);
+}
+
+/* padding left and right 0.25rem */
+.px-0-25 {
+    padding-left: var(--space-0-25);
+    padding-right: var(--space-0-25);
+}
+
+/* padding left, right 0.25rem */
+.pl-0-25 {
+    padding-left: var(--space-0-25);
+}
+
+.pr-0-25 {
+    padding-right: var(--space-0-25);
+}
+
+/* padding top and bottom 0.25rem */
+.py-0-25 {
+    padding-top: var(--space-0-25);
+    padding-bottom: var(--space-0-25);
+}
+
+/* padding top, bottom 0.25rem */
+.pt-0-25 {
+    padding-top: var(--space-0-25);
+}
+
+.pb-0-25 {
+    padding-bottom: var(--space-0-25);
+}
+
+/* End of padding 0.25rem values */
+
+/* padding: 0.5rem */
+.p-0-5 {
+    padding: var(--space-0-5);
+}
+
+/* padding left and right 0.5rem */
+.px-0-5 {
+    padding-left: var(--space-0-5);
+    padding-right: var(--space-0-5);
+}
+
+/* padding left, right 0.5rem */
+.pl-0-5 {
+    padding-left: var(--space-0-5);
+}
+
+.pr-0-5 {
+    padding-right: var(--space-0-5);
+}
+
+/* padding top and bottom 0.5rem */
+.py-0-5 {
+    padding-top: var(--space-0-5);
+    padding-bottom: var(--space-0-5);
+}
+
+/* padding top, bottom 0.5rem */
+.pt-0-5 {
+    padding-top: var(--space-0-5);
+}
+
+.pb-0-5 {
+    padding-bottom: var(--space-0-5);
+}
+
+/* End of padding 0.5rem values */
+
+/* padding: 0.75rem */
+.p-0-75 {
+    padding: var(--space-0-75);
+}
+
+/* padding left and right 0.75rem */
+.px-0-75 {
+    padding-left: var(--space-0-75);
+    padding-right: var(--space-0-75);
+}
+
+/* padding left, right 0.75rem */
+.pl-0-75 {
+    padding-left: var(--space-0-75);
+}
+
+.pr-0-75 {
+    padding-right: var(--space-0-75);
+}
+
+/* padding top and bottom 0.75rem */
+.py-0-75 {
+    padding-top: var(--space-0-75);
+    padding-bottom: var(--space-0-75);
+}
+
+/* padding top, bottom 0.75rem */
+.pt-0-75 {
+    padding-top: var(--space-0-75);
+}
+
+.pb-0-75 {
+    padding-bottom: var(--space-0-75);
+}
+
+/* End of padding 0.75rem values */
+
+/* padding: 1rem */
+.p-1 {
+    padding: var(--space-1);
+}
+
+/* padding left and right 1rem */
+.px-1 {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+}
+
+/* padding left, right 1rem */
+.pl-1 {
+    padding-left: var(--space-1);
+}
+
+.pr-1 {
+    padding-right: var(--space-1);
+}
+
+/* padding top and bottom 1rem */
+.py-1 {
+    padding-top: var(--space-1);
+    padding-bottom: var(--space-1);
+}
+
+/* padding top, bottom 1rem */
+.pt-1 {
+    padding-top: var(--space-1);
+}
+
+.pb-1 {
+    padding-bottom: var(--space-1);
+}
+
+/* End of padding 1rem values */
+
+/* padding: 1.5rem */
+.p-1-5 {
+    padding: var(--space-1-5);
+}
+
+/* padding left and right 1.5rem */
+.px-1-5 {
+    padding-left: var(--space-1-5);
+    padding-right: var(--space-1-5);
+}
+
+/* padding left, right 1.5rem */
+.pl-1-5 {
+    padding-left: var(--space-1-5);
+}
+
+.pr-1-5 {
+    padding-right: var(--space-1-5);
+}
+
+/* padding top and bottom 1.5rem */
+.py-1-5 {
+    padding-top: var(--space-1-5);
+    padding-bottom: var(--space-1-5);
+}
+
+/* padding top, bottom 1.5rem */
+.pt-1-5 {
+    padding-top: var(--space-1-5);
+}
+
+.pb-1-5 {
+    padding-bottom: var(--space-1-5);
+}
+
+/* End of padding 1.5rem values */
+
+/* padding: 2rem */
+.p-2 {
+    padding: var(--space-2);
+}
+
+/* padding left and right 2rem */
+.px-2 {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+}
+
+/* padding left, right 2rem */
+.pl-2 {
+    padding-left: var(--space-2);
+}
+
+.pr-2 {
+    padding-right: var(--space-2);
+}
+
+/* padding top and bottom 2rem */
+.py-2 {
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+}
+
+/* padding top, bottom 2rem */
+.pt-2 {
+    padding-top: var(--space-2);
+}
+
+.pb-2 {
+    padding-bottom: var(--space-2);
+}
+
+/* End of padding 2rem values */
+
+/* padding: 2.5rem */
+.p-2-5 {
+    padding: var(--space-2-5);
+}
+
+/* padding left and right 2.5rem */
+.px-2-5 {
+    padding-left: var(--space-2-5);
+    padding-right: var(--space-2-5);
+}
+
+/* padding left, right 2.5rem */
+.pl-2-5 {
+    padding-left: var(--space-2-5);
+}
+
+.pr-2-5 {
+    padding-right: var(--space-2-5);
+}
+
+/* padding top and bottom 2.5rem */
+.py-2-5 {
+    padding-top: var(--space-2-5);
+    padding-bottom: var(--space-2-5);
+}
+
+/* padding top, bottom 2.5rem */
+.pt-2-5 {
+    padding-top: var(--space-2-5);
+}
+
+.pb-2-5 {
+    padding-bottom: var(--space-2-5);
+}
+
+/* End of padding 2.5rem values */
+
+/* padding: 3rem */
+.p-3 {
+    padding: var(--space-3);
+}
+
+/* padding left and right 3rem */
+.px-3 {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+}
+
+/* padding left, right 3rem */
+.pl-3 {
+    padding-left: var(--space-3);
+}
+
+.pr-3 {
+    padding-right: var(--space-3);
+}
+
+/* padding top and bottom 3rem */
+.py-3 {
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+}
+
+/* padding top, bottom 3rem */
+.pt-3 {
+    padding-top: var(--space-3);
+}
+
+.pb-3 {
+    padding-bottom: var(--space-3);
+}
+
+/* End of padding 3rem values */
+
+/* padding: 3.5rem */
+.p-3-5 {
+    padding: var(--space-3-5);
+}
+
+/* padding left and right 3.5rem */
+.px-3-5 {
+    padding-left: var(--space-3-5);
+    padding-right: var(--space-3-5);
+}
+
+/* padding left, right 3.5rem */
+.pl-3-5 {
+    padding-left: var(--space-3-5);
+}
+
+.pr-3-5 {
+    padding-right: var(--space-3-5);
+}
+
+/* padding top and bottom 3.5rem */
+.py-3-5 {
+    padding-top: var(--space-3-5);
+    padding-bottom: var(--space-3-5);
+}
+
+/* padding top, bottom 3.5rem */
+.pt-3-5 {
+    padding-top: var(--space-3-5);
+}
+
+.pb-3-5 {
+    padding-bottom: var(--space-3-5);
+}
+
+/* End of padding 3.5rem values */
+
+/* padding: 4rem */
+.p-4 {
+    padding: var(--space-4);
+}
+
+/* padding left and right 4rem */
+.px-4 {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+}
+
+/* padding left, right 4rem */
+.pl-4 {
+    padding-left: var(--space-4);
+}
+
+.pr-4 {
+    padding-right: var(--space-4);
+}
+
+/* padding top and bottom 4rem */
+.py-4 {
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+}
+
+/* padding top, bottom 4rem */
+.pt-4 {
+    padding-top: var(--space-4);
+}
+
+.pb-4 {
+    padding-bottom: var(--space-4);
+}
+
+/* End of padding 4rem values */
+
+/* padding: 4.5rem */
+.p-4-5 {
+    padding: var(--space-4-5);
+}
+
+/* padding left and right 4.5rem */
+.px-4-5 {
+    padding-left: var(--space-4-5);
+    padding-right: var(--space-4-5);
+}
+
+/* padding left, right 4.5rem */
+.pl-4-5 {
+    padding-left: var(--space-4-5);
+}
+
+.pr-4-5 {
+    padding-right: var(--space-4-5);
+}
+
+/* padding top and bottom 4.5rem */
+.py-4-5 {
+    padding-top: var(--space-4-5);
+    padding-bottom: var(--space-4-5);
+}
+
+/* padding top, bottom 4.5rem */
+.pt-4-5 {
+    padding-top: var(--space-4-5);
+}
+
+.pb-4-5 {
+    padding-bottom: var(--space-4-5);
+}
+
+/* End of padding 4.5rem values */
+
+/* padding: 5rem */
+.p-5 {
+    padding: var(--space-5);
+}
+
+/* padding left and right 5rem */
+.px-5 {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+}
+
+/* padding left, right 5rem */
+.pl-5 {
+    padding-left: var(--space-5);
+}
+
+.pr-5 {
+    padding-right: var(--space-5);
+}
+
+/* padding top and bottom 5rem */
+.py-5 {
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-5);
+}
+
+/* padding top, bottom 5rem */
+.pt-5 {
+    padding-top: var(--space-5);
+}
+
+.pb-5 {
+    padding-bottom: var(--space-5);
+}
+
+/* End of padding 5rem values */
+
+/* padding: 5.5rem */
+.p-5-5 {
+    padding: var(--space-5-5);
+}
+
+/* padding left and right 5.5rem */
+.px-5-5 {
+    padding-left: var(--space-5-5);
+    padding-right: var(--space-5-5);
+}
+
+/* padding left, right 5.5rem */
+.pl-5-5 {
+    padding-left: var(--space-5-5);
+}
+
+.pr-5-5 {
+    padding-right: var(--space-5-5);
+}
+
+/* padding top and bottom 5.5rem */
+.py-5-5 {
+    padding-top: var(--space-5-5);
+    padding-bottom: var(--space-5-5);
+}
+
+/* padding top, bottom 5.5rem */
+.pt-5-5 {
+    padding-top: var(--space-5-5);
+}
+
+.pb-5-5 {
+    padding-bottom: var(--space-5-5);
+}
+
+/* End of padding 5.5rem values */
+
+/* padding: 6rem */
+.p-6 {
+    padding: var(--space-6);
+}
+
+/* padding left and right 6rem */
+.px-6 {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+}
+
+/* padding left, right 6rem */
+.pl-6 {
+    padding-left: var(--space-6);
+}
+
+.pr-6 {
+    padding-right: var(--space-6);
+}
+
+/* padding top and bottom 6rem */
+.py-6 {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6);
+}
+
+/* padding top, bottom 6rem */
+.pt-6 {
+    padding-top: var(--space-6);
+}
+
+.pb-6 {
+    padding-bottom: var(--space-6);
+}
+
+/* End of padding 6rem values */
+
+/* padding: 6.5rem */
+.p-6-5 {
+    padding: var(--space-6-5);
+}
+
+/* padding left and right 6.5rem */
+.px-6-5 {
+    padding-left: var(--space-6-5);
+    padding-right: var(--space-6-5);
+}
+
+/* padding left, right 6.5rem */
+.pl-6-5 {
+    padding-left: var(--space-6-5);
+}
+
+.pr-6-5 {
+    padding-right: var(--space-6-5);
+}
+
+/* padding top and bottom 6.5rem */
+.py-6-5 {
+    padding-top: var(--space-6-5);
+    padding-bottom: var(--space-6-5);
+}
+
+/* padding top, bottom 6.5rem */
+.pt-6-5 {
+    padding-top: var(--space-6-5);
+}
+
+.pb-6-5 {
+    padding-bottom: var(--space-6-5);
+}
+
+/* End of padding 6.5rem values */
+
+/* padding: 7rem */
+.p-7 {
+    padding: var(--space-7);
+}
+
+/* padding left and right 7rem */
+.px-7 {
+    padding-left: var(--space-7);
+    padding-right: var(--space-7);
+}
+
+/* padding left, right 7rem */
+.pl-7 {
+    padding-left: var(--space-7);
+}
+
+.pr-7 {
+    padding-right: var(--space-7);
+}
+
+/* padding top and bottom 7rem */
+.py-7 {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-7);
+}
+
+/* padding top, bottom 7rem */
+.pt-7 {
+    padding-top: var(--space-7);
+}
+
+.pb-7 {
+    padding-bottom: var(--space-7);
+}
+
+/* End of padding 7rem values */
+
+/* padding: 7.5rem */
+.p-7-5 {
+    padding: var(--space-7-5);
+}
+
+/* padding left and right 7.5rem */
+.px-7-5 {
+    padding-left: var(--space-7-5);
+    padding-right: var(--space-7-5);
+}
+
+/* padding left, right 7.5rem */
+.pl-7-5 {
+    padding-left: var(--space-7-5);
+}
+
+.pr-7-5 {
+    padding-right: var(--space-7-5);
+}
+
+/* padding top and bottom 7.5rem */
+.py-7-5 {
+    padding-top: var(--space-7-5);
+    padding-bottom: var(--space-7-5);
+}
+
+/* padding top, bottom 7.5rem */
+.pt-7-5 {
+    padding-top: var(--space-7-5);
+}
+
+.pb-7-5 {
+    padding-bottom: var(--space-7-5);
+}
+
+/* End of padding 7.5rem values */
+
+/* padding: 8rem */
+.p-8 {
+    padding: var(--space-8);
+}
+
+/* padding left and right 8rem */
+.px-8 {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+}
+
+/* padding left, right 8rem */
+.pl-8 {
+    padding-left: var(--space-8);
+}
+
+.pr-8 {
+    padding-right: var(--space-8);
+}
+
+/* padding top and bottom 8rem */
+.py-8 {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+}
+
+/* padding top, bottom 8rem */
+.pt-8 {
+    padding-top: var(--space-8);
+}
+
+.pb-8 {
+    padding-bottom: var(--space-8);
+}
+
+/* End of padding 8rem values */
