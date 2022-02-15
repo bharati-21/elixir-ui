@@ -89,34 +89,54 @@
                 </section>
             </aside>
             <main class="main docs__main">
-                <section class="avatars component-info" id="avatar">
+                <section class="alerts component-info" id="alert">
                     <article class="section__intro">
-                        <h2 class="section__head">Avatars</h2>
+                        <h2 class="section__head">Alerts</h2>
                         <p class="section__lead">
-                            Avatars displays user image or initials as profile picture.
+                            Alerts communicate short, important information to the user, without interrupting their flow.
                         </p>
                     </article>
                     <article class="section__sub">
                         <h3 class="section__sub-head">
-                            Circle Avatars
+                            Simple alerts
                         </h3>
                         <p class="section__sub-lead">
-                            There are avatars of 5 sizes - extra small, small, medium, large, and extra large.
+                            There are 5 types of simple alerts - Primary, Accent, Success, Warning, and Error alerts. 
                             <br>
-                            To create an avatar use the base class <span class="primary-color bold">avatar</span>, and add any one of the following class to alter the size- <span class="accent-color bold">avatar-xs</span>, <span class="accent-color bold">avatar-sm</span>, <span class="accent-color bold">avatar-md</span>, <span class="accent-color bold">avatar-lg</span>, and <span class="accent-color bold">avatar-xl</span>.
+                            To create an alert use the base class <span class="primary-color bold">alert</span>, and add any one of the following class variations to it- <span class="accent-color bold">alert-primary</span>, <span class="accent-color bold">alert-accent</span>, <span class="accent-color bold">alert-success</span>, <span class="accent-color bold">alert-warning</span>, and <span class="accent-color bold">alert-error</span>.
                         </p>
                         <div class="component-display">
-                            <img src="/Components/assets/avatar-1.jpg" alt="Extra Large Size Avatar" class="avatar avatar-xl" />
-                            <img src="/Components/assets/avatar-1.jpg" alt="Large Size Avatar" class="avatar avatar-lg" />
-                            <img src="/Components/assets/avatar-1.jpg" alt="Medium Size Avatar" class="avatar avatar-md" />
-                            <img src="/Components/assets/avatar-1.jpg" alt="Small Size Avatar" class="avatar avatar-sm" />
-                            <img src="/Components/assets/avatar-1.jpg" alt="Extra Small Size Avatar" class="avatar avatar-xs" />
+                            <div class="alert alert-primary">
+                                <p class="alert-text">This is a primary alert</p>
+                            </div>
+                            <div class="alert alert-accent">
+                                <p class="alert-text">This is an accent alert</p>
+                            </div>
+                            <div class="alert alert-success">
+                                <span class="icon icon-success">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <p class="alert-text">This is a success alert</p>
+                            </div>
+                            <div class="alert alert-warning">
+                                <span class="icon icon-warning">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                                <p class="alert-text">This is a warning alert</p>
+                            </div>
+                            <div class="alert alert-error">
+                                <span class="icon icon-bug">
+                                    <i class="fas fa-bug"></i>
+                                </span>
+                                <p class="alert-text">This is an error alert</p>
+                            </div>
                         </div>
                         <div class="code-snippet-container">
-                            <p>Paste the code below to use the circled shape avatars of different sizes</p>
+                            <p>Paste  the code below to use the alerts with different variations</p>
+
                             <div class="code-display">
                                 <iframe
-                                    src="https://carbon.now.sh/embed/lsRH9awE0ePVLDmH6vTP"
+                                    src="https://carbon.now.sh/embed/uUNSWLE4IDf7K8vCVq6y"
                                     sandbox="allow-scripts allow-same-origin">
                                 </iframe>
                             </div>
@@ -124,84 +144,64 @@
                     </article>
                     <article class="section__sub">
                         <h3 class="section__sub-head">
-                            Square Avatars
+                            Simple alerts with close icon
                         </h3>
                         <p class="section__sub-lead">
-                            Along with the base class and size classes mentioned above, add a <span class="primary-color bold">square</span> class to make a square shaped avatar.
+                            These are simple alerts with a close icon which removes the alert when you click it.
                         </p>
                         <div class="component-display">
-                            <img src="/Components/assets/avatar-2.jpg" alt="Extra Large Size Avatar" class="avatar avatar-xl square" />
-                            <img src="/Components/assets/avatar-2.jpg" alt="Large Size Avatar" class="avatar avatar-lg square" />
-                            <img src="/Components/assets/avatar-2.jpg" alt="Medium Size Avatar" class="avatar avatar-md square" />
-                            <img src="/Components/assets/avatar-2.jpg" alt="Small Size Avatar" class="avatar avatar-sm square" />
-                            <img src="/Components/assets/avatar-2.jpg" alt="Extra Small Size Avatar" class="avatar avatar-xs square" />
+                            <div class="alert alert-primary">
+                                <p class="alert-text">Primary with close icon</p>
+                                <span class="icon icon-close">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
+                            <div class="alert alert-accent">
+                                <p class="alert-text">Accent with close icon</p>
+                                <span class="icon icon-close">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
+                            <div class="alert alert-success">
+                                <span class="icon icon-success">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <p class="alert-text">Success with close icon</p>
+                                <span class="icon icon-close">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
+                            <div class="alert alert-warning">
+                                <span class="icon icon-warning">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                                <p class="alert-text">Warning with close icon</p>
+                                <span class="icon icon-close">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
+                            <div class="alert alert-error">
+                                <span class="icon error-icon">
+                                    <i class="fas fa-bug"></i>
+                                </span>
+                                <p class="alert-text">Error with close icon</p>
+                                <span class="icon icon-close">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
                         </div>
                         <div class="code-snippet-container">
-                            <p>Paste the code below to use squared avatars of different sizes.</p>
+                            <p>Paste  the code below to use alerts with close icon. Also use the JavaScript code for triggering the click event.</p>
+
                             <div class="code-display">
                                 <iframe
-                                    src="https://carbon.now.sh/embed/9WRnKFzgHnYo5oT5FjJZ"
+                                    src="https://carbon.now.sh/embed/Kgt69eBiTF4wIWyl2l7F"
                                     sandbox="allow-scripts allow-same-origin">
                                 </iframe>
                             </div>
-                        </div>
-                    </article>
-                    <article class="section__sub">
-                        <h3 class="section__sub-head">
-                            Text Avatars
-                        </h3>
-                        <p class="section__sub-lead">
-                            To generate a text avatar, add a class <span class="primary-color bold">text-avatar</span> along with the base and size class mentioned above.
-                        </p>
-                        <div class="component-display">
-                            <div class="avatar avatar-xl text-avatar" role="img">
-                                B
-                            </div>
-                            <div class="avatar avatar-lg text-avatar" role="img">
-                                B
-                            </div>
-                            <div class="avatar avatar-md text-avatar" role="img">
-                                B
-                            </div>
-                            <div class="avatar avatar-sm text-avatar" role="img">
-                                B
-                            </div>
-                            <div class="avatar avatar-xs text-avatar" role="img">
-                                B
-                            </div>
-                        </div>
-                        <div class="code-snippet-container">
-                            <p>Paste the code below to use circled text avatars of different sizes.</p>
                             <div class="code-display">
                                 <iframe
-                                    src="https://carbon.now.sh/embed/9R0NktHDmrmZ92Jio5Zw"
-                                    sandbox="allow-scripts allow-same-origin">
-                                </iframe>
-                            </div>
-                        </div>
-                        To generate a squared text avatar, use the base class and size classes the additional <span class="accent-color bold">square</span> class.
-                        <div class="component-display">
-                            <div class="avatar avatar-xl text-avatar square" role="img">
-                                B
-                            </div>
-                            <div class="avatar avatar-lg text-avatar square" role="img">
-                                B
-                            </div>
-                            <div class="avatar avatar-md text-avatar square" role="img">
-                                B
-                            </div>
-                            <div class="avatar avatar-sm text-avatar square" role="img">
-                                B
-                            </div>
-                            <div class="avatar avatar-xs text-avatar square" role="img">
-                                B
-                            </div>
-                        </div>
-                        <div class="code-snippet-container">
-                            <p>Paste the code below to use squared text avatars of different sizes.</p>
-                            <div class="code-display">
-                                <iframe
-                                    src="https://carbon.now.sh/embed/RKGWyEQnx3MyKBo3hb9r"
+                                    src="https://carbon.now.sh/embed/itzybUtF63Ixf6sPZSZf"
                                     sandbox="allow-scripts allow-same-origin">
                                 </iframe>
                             </div>

@@ -1,119 +1,272 @@
-<section class="alerts component-info" id="alert">
-    <article class="section__intro">
-        <h2 class="section__head">Alerts</h2>
-        <p class="section__lead">
-            Alerts communicate short, important information to the user, without interrupting their flow.
-        </p>
-    </article>
-    <article class="section__sub">
-        <h3 class="section__sub-head">
-            Simple alerts
-        </h3>
-        <p class="section__sub-lead">
-            There are 5 types of simple alerts - Primary, Accent, Success, Warning, and Error alerts. 
-            <br>
-            To create an alert use the base class <span class="primary-color bold">alert</span>, and add any one of the following class variations to it- <span class="accent-color bold">alert-primary</span>, <span class="accent-color bold">alert-accent</span>, <span class="accent-color bold">alert-success</span>, <span class="accent-color bold">alert-warning</span>, and <span class="accent-color bold">alert-error</span>.
-        </p>
-        <div class="component-display">
-            <div class="alert alert-primary">
-                <p class="alert-text">This is a primary alert</p>
-            </div>
-            <div class="alert alert-accent">
-                <p class="alert-text">This is an accent alert</p>
-            </div>
-            <div class="alert alert-success">
-                <span class="icon icon-success">
-                    <i class="fas fa-check-circle"></i>
-                </span>
-                <p class="alert-text">This is a success alert</p>
-            </div>
-            <div class="alert alert-warning">
-                <span class="icon icon-warning">
-                    <i class="fas fa-info-circle"></i>
-                </span>
-                <p class="alert-text">This is a warning alert</p>
-            </div>
-            <div class="alert alert-error">
-                <span class="icon icon-bug">
-                    <i class="fas fa-bug"></i>
-                </span>
-                <p class="alert-text">This is an error alert</p>
-            </div>
-        </div>
-        <div class="code-snippet-container">
-            <p>Paste  the code below to use the alerts with different variations</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bharati Subramanian">
+        <meta name="description" content="elixir documentation - avatar component">
+        <link rel="shortcut icon" href="/logo-assets/favicon_io/favicon.ico" type="image/x-icon">
 
-            <div class="code-display">
-                <iframe
-                    src="https://carbon.now.sh/embed/uUNSWLE4IDf7K8vCVq6y"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
-            </div>
-        </div>
-    </article>
-    <article class="section__sub">
-        <h3 class="section__sub-head">
-            Simple alerts with close icon
-        </h3>
-        <p class="section__sub-lead">
-            These are simple alerts with a close icon which removes the alert when you click it.
-        </p>
-        <div class="component-display">
-            <div class="alert alert-primary">
-                <p class="alert-text">Primary with close icon</p>
-                <span class="icon icon-close">
-                    <i class="fas fa-times"></i>
-                </span>
-            </div>
-            <div class="alert alert-accent">
-                <p class="alert-text">Accent with close icon</p>
-                <span class="icon icon-close">
-                    <i class="fas fa-times"></i>
-                </span>
-            </div>
-            <div class="alert alert-success">
-                <span class="icon icon-success">
-                    <i class="fas fa-check-circle"></i>
-                </span>
-                <p class="alert-text">Success with close icon</p>
-                <span class="icon icon-close">
-                    <i class="fas fa-times"></i>
-                </span>
-            </div>
-            <div class="alert alert-warning">
-                <span class="icon icon-warning">
-                    <i class="fas fa-info-circle"></i>
-                </span>
-                <p class="alert-text">Warning with close icon</p>
-                <span class="icon icon-close">
-                    <i class="fas fa-times"></i>
-                </span>
-            </div>
-            <div class="alert alert-error">
-                <span class="icon error-icon">
-                    <i class="fas fa-bug"></i>
-                </span>
-                <p class="alert-text">Error with close icon</p>
-                <span class="icon icon-close">
-                    <i class="fas fa-times"></i>
-                </span>
-            </div>
-        </div>
-        <div class="code-snippet-container">
-            <p>Paste  the code below to use alerts with close icon. Also use the JavaScript code for triggering the click event.</p>
+        <title>elixir | avatar</title>
 
-            <div class="code-display">
-                <iframe
-                    src="https://carbon.now.sh/embed/Kgt69eBiTF4wIWyl2l7F"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
-            </div>
-            <div class="code-display">
-                <iframe
-                    src="https://carbon.now.sh/embed/itzybUtF63Ixf6sPZSZf"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
-            </div>
+        <link rel="stylesheet" href="/styles.css" >
+    </head>
+    <body>
+        <div class="grid-container">
+            <nav class="navbar flex--row flex--justify-end flex--align-center">
+                <div class="hamburger flex--col flex--justify-center flex--align-center">
+                    <button class="btn btn-icon btn-secondary">
+                        <span class="icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                </div>
+                <ul class="navlinks flex--row list-style-none flex--align-center">
+                    <li class="navlink">
+                        <a href="/" class="link text-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navlink active">
+                        <a href="/docs" class="link text-link">
+                            Docs
+                        </a>
+                    </li>
+                    <li class="navlink">
+                        <a href="https://github.com/bharati-21/elixir-ui" target="_blank" class="link icon-link"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul>             
+            </nav>
+            <aside class="sidebar sidebar--close flex--col">
+                <div class="sidebar__header flex--row flex--align-center">
+                    <a href="/" class="brand flex--row flex--align-center flex--justify-center">
+                        <img 
+                            src="/logo-assets/elixir-logo.png" 
+                            alt="Elixir Logo - a violet shaded diamond" 
+                            class="brand__logo" />
+                        <h2 class="brand__name">elixir</h2>
+                    </a>
+                    <span class="sidebar__close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                
+
+                <section class="sidebar__list">
+                    <h5 class="sidebar__head">
+                        Components
+                    </h5>
+                    <ul class="sidebar__nav stacked-list list-style-none flex--col">
+                        <li>
+                            <a data-menu-item="alert" href="/docs/alert/" class="link text-link">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/docs/avatar/" class="link text-link">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#badge" class="link text-link">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/docs/button/" class="link text-link">Button</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#card" class="link text-link">Card</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#image" class="link text-link">Image</a>
+                        </li>
+                        <li>
+                            <a href="docs/#input" class="link text-link">Input</a>
+                        </li>    
+                        <li>
+                            <a href="/docs/#typography" class="link text-link">Typography</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#list" class="link text-link">List</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#toast" class="link text-link">Toast</a>
+                        </li>  
+                    </ul>
+                </section>
+            </aside>
+            <main class="main docs__main">
+                <section class="avatars component-info" id="avatar">
+                    <article class="section__intro">
+                        <h2 class="section__head">Avatars</h2>
+                        <p class="section__lead">
+                            Avatars displays user image or initials as profile picture.
+                        </p>
+                        
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Circle Avatars
+                        </h3>
+                        <p class="section__sub-lead">
+                            There are avatars of 5 sizes - extra small, small, medium, large, and extra large.
+                            <br>
+                            To create an avatar use the base class <span class="primary-color bold">avatar</span>, and add any one of the following class to alter the size- <span class="accent-color bold">avatar-xs</span>, <span class="accent-color bold">avatar-sm</span>, <span class="accent-color bold">avatar-md</span>, <span class="accent-color bold">avatar-lg</span>, and <span class="accent-color bold">avatar-xl</span>.
+                        </p>
+                        <div class="component-display">
+                            <img src="/Components/assets/avatar-1.jpg" alt="Extra Large Size Avatar" class="avatar avatar-xl" />
+                            <img src="/Components/assets/avatar-1.jpg" alt="Large Size Avatar" class="avatar avatar-lg" />
+                            <img src="/Components/assets/avatar-1.jpg" alt="Medium Size Avatar" class="avatar avatar-md" />
+                            <img src="/Components/assets/avatar-1.jpg" alt="Small Size Avatar" class="avatar avatar-sm" />
+                            <img src="/Components/assets/avatar-1.jpg" alt="Extra Small Size Avatar" class="avatar avatar-xs" />
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use the circled shape avatars of different sizes</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/lsRH9awE0ePVLDmH6vTP"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Square Avatars
+                        </h3>
+                        <p class="section__sub-lead">
+                            Along with the base class and size classes mentioned above, add a <span class="primary-color bold">square</span> class to make a square shaped avatar.
+                        </p>
+                        <div class="component-display">
+                            <img src="/Components/assets/avatar-2.jpg" alt="Extra Large Size Avatar" class="avatar avatar-xl square" />
+                            <img src="/Components/assets/avatar-2.jpg" alt="Large Size Avatar" class="avatar avatar-lg square" />
+                            <img src="/Components/assets/avatar-2.jpg" alt="Medium Size Avatar" class="avatar avatar-md square" />
+                            <img src="/Components/assets/avatar-2.jpg" alt="Small Size Avatar" class="avatar avatar-sm square" />
+                            <img src="/Components/assets/avatar-2.jpg" alt="Extra Small Size Avatar" class="avatar avatar-xs square" />
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use squared avatars of different sizes.</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/9WRnKFzgHnYo5oT5FjJZ"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub">
+                        <h3 class="section__sub-head">
+                            Text Avatars
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate a text avatar, add a class <span class="primary-color bold">text-avatar</span> along with the base and size class mentioned above.
+                        </p>
+                        <div class="component-display">
+                            <div class="avatar avatar-xl text-avatar" role="img">
+                                B
+                            </div>
+                            <div class="avatar avatar-lg text-avatar" role="img">
+                                B
+                            </div>
+                            <div class="avatar avatar-md text-avatar" role="img">
+                                B
+                            </div>
+                            <div class="avatar avatar-sm text-avatar" role="img">
+                                B
+                            </div>
+                            <div class="avatar avatar-xs text-avatar" role="img">
+                                B
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use circled text avatars of different sizes.</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/9R0NktHDmrmZ92Jio5Zw"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                        To generate a squared text avatar, use the base class and size classes the additional <span class="accent-color bold">square</span> class.
+                        <div class="component-display">
+                            <div class="avatar avatar-xl text-avatar square" role="img">
+                                B
+                            </div>
+                            <div class="avatar avatar-lg text-avatar square" role="img">
+                                B
+                            </div>
+                            <div class="avatar avatar-md text-avatar square" role="img">
+                                B
+                            </div>
+                            <div class="avatar avatar-sm text-avatar square" role="img">
+                                B
+                            </div>
+                            <div class="avatar avatar-xs text-avatar square" role="img">
+                                B
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Paste the code below to use squared text avatars of different sizes.</p>
+                            <div class="code-display">
+                                <iframe
+                                    src="https://carbon.now.sh/embed/RKGWyEQnx3MyKBo3hb9r"
+                                    sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="footer__nav mb-3-5">
+                    <ul class="list list-style-none flex--row flex--align-center flex--justify-between">
+                        <li class="list-item">
+                            <a href="/docs/#badge" class="btn btn-link btn-primary py-0-25 p-0-25">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                Badge
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/docs/#card" class="btn btn-link btn-primary p-0-25">
+                                Card
+                                <span class="icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <footer class="footer flex--row flex--align-center flex--justify-between px-1-5 py-1" id="footer">
+                    <p class="text-sm text-center text__author">
+                        <span class="icon primary-color bold">
+                            <i class="fas fa-code"></i>
+                        </span> by <a href="https://bharati-21.github.io/" class="link text-link">Bharati</a>
+                    </p>
+                    <ul class="navlinks flex--row list-style-none flex--align-center">
+                        <li class="navlink">
+                            <a 
+                                href="https://github.com/bharati-21"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a 
+                                href="https://twitter.com/_girlwhocodes"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a 
+                                href="https://www.linkedin.com/in/bharati-subramanian-29734b152/"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </main>
         </div>
-    </article>
-</section>
+        <script src="/docs-script/hamburger.js"></script>
+    </body>
+</html>
