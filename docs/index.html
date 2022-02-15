@@ -74,7 +74,7 @@
                             <a href="#image" class="link text-link">Image</a>
                         </li>
                         <li>
-                            <a href="#input" class="link text-link">Input</a>
+                            <a href="/docs/input/" class="link text-link">Input</a>
                         </li>    
                         <li>
                             <a href="/docs/typography/" class="link text-link">Typography</a>
@@ -712,125 +712,6 @@
                 </section>
                 <hr class="component__separator">
 
-                <section class="input component-info" id="input">
-                    <article class="section__intro">
-                        <h2 class="section__head">Input</h2>
-                        <p class="section__lead">
-                            Inputs allow users to enter information and they can be of different types - text, number, password, email, submit, etc.
-                        </p>
-                    </article>
-                    <article class="section__sub">
-                        <h3 class="section__sub-head">
-                            Default Input
-                        </h3>
-                        <p class="section__sub-lead">
-                            To create a default input, use the base class <span class="primary-color bold">input-group</span> and add the supporting class <span class="accent-color bold">default-input</span>.
-                        </p>
-                        <div class="component-display">
-                            <div class="input-group input-default">
-                                <label class="text-label" for="input-name">Name</label>
-                                <input type="text" id="input-name" class="input-text" placeholder="Enter your name...">
-                                <span class="text-message"></span>
-                            </div>
-                        </div>
-                        <div class="code-snippet-container">
-                            <p>Paste  the code below to use the default input component</p>
-
-                            <div class="code-display">
-                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Finput.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="section__sub">
-                        <h3 class="section__sub-head">
-                            Input with Succesfull Validation
-                        </h3>
-                        <p class="section__sub-lead">
-                            This input component is used to show that the information entered by the user has been validated and is in the correct format. Use the <span class="primary-color bold">input-success</span> class along with the base class to generate the input with success validation.
-                        </p>
-                        <div class="component-display">
-                            <div class="input-group input-success">
-                                <label class="text-label" for="input-strong-password">Password</label>
-                                <input type="password" id="input-strong-password" class="input-text" placeholder="Enter your password...">
-                                <span class="text-message">Strong Password</span>
-                            </div>
-                        </div>
-                        <div class="code-snippet-container">
-                            <p>Paste  the code below to use an input with successfull validation.</p>
-
-                            <div class="code-display">
-                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Finput-success.html&style=atom-one-light&showCopy=on"></script>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="section__sub">
-                        <h3 class="section__sub-head">
-                            Input with Warning Validation
-                        </h3>
-                        <p class="section__sub-lead">
-                            This input component is used to warn the user about the information they enter in the input box. To generate the input with warning, use the class <span class="primary-color bold">input-warning</span> class along with the base class to generate the input with warning validation.
-                        </p>
-                        <div class="component-display">
-                            <div class="input-group input-warning">
-                                <label class="text-label" for="input-weak-password">Password</label>
-                                <input type="password" id="input-weak-password" class="input-text" placeholder="Enter your password...">
-                                <span class="text-message">Weak Password</span>
-                            </div>
-                        </div>
-                        <div class="code-snippet-container">
-                            <p>Paste  the code below to use an input with warning validation.</p>
-
-                            <div class="code-display">
-                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Finput-warning.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="section__sub">
-                        <h3 class="section__sub-head">
-                            Input with Error Validation
-                        </h3>
-                        <p class="section__sub-lead">
-                            This input component is used to show that the information entered by the user is invalid. To generate the input with error, use the class <span class="primary-color bold">input-error</span> class along with the base class to generate the input with error validation.
-                        </p>
-                        <div class="component-display">
-                            <div class="input-group input-error">
-                                <label class="text-label" for="input-email">Email</label>
-                                <input type="email" id="input-email" class="input-text" placeholder="Enter your email...">
-                                <span class="text-message">Enter valid email</span>
-                            </div>
-                        </div>
-                        <div class="code-snippet-container">
-                            <p>Paste  the code below to use an input with error validation.</p>
-
-                            <div class="code-display">
-                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Finput-error.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="section__sub">
-                        <h3 class="section__sub-head">
-                            Default textbox
-                        </h3>
-                        <p class="section__sub-lead">
-                            This input component allows users to enter multiple lines of text. To generate a textbox use the classes, <span class="primary-color bold">textbox-default</span> and <span class="primary-color bold">textbox-group</span>  class along with the base class <span class="accent-color bold">input-group</span>.
-                        </p>
-                        <div class="component-display">
-                            <div class="input-group textbox-default textbox-group">
-                                <label for="input-comments" class="text-label">Comments</label>
-                                <textarea id="input-coments" class="input-textbox" rows="10" cols="30" placeholder="Enter your comments..."></textarea>
-                                <span class="text-message"></span>
-                            </div>
-                        </div>
-                        <div class="code-snippet-container">
-                            <p>Paste the code below to use a  default textbox.</p>
-
-                            <div class="code-display">
-                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Ftextbox-group.html&style=atom-one-light&showCopy=on&fetchFromJsDelivr=on"></script>
-                            </div>
-                        </div>
-                    </article>
-                </section>
-                <hr class="component__separator">
                 <section class="toast component-info" id="toast">
                     <article class="section__intro">
                         <h2 class="section__head">Toast</h2>
