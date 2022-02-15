@@ -1,7 +1,6 @@
 .heading {
     display: block;
     max-width: 100%;
-    margin: var(--space-1);
     font-weight: var(--weight-sbold);
 }
 
@@ -39,7 +38,6 @@
     max-width: 100%;
     font-weight: var(--weight-md);
     display: block;
-    margin: var(--space-1);
 }
 
 .text-sm {
@@ -61,12 +59,20 @@
     color: var(--primary-color);
 }
 
-.accent-color{ 
-    color: var(--accent-color);
+.secondary-color{ 
+    color: var(--secondary-color);
 }
 
-.gray-color {
-    color: var(--gray);
+.error-color {
+    color: var(--error-color);
+}
+
+.warning-color {
+    color: var(--warning-color);
+}
+
+.success-color {
+    color: var(--success-color);
 }
 
 .text-left {
