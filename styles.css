@@ -400,7 +400,7 @@ section#badge .component-display .badge {
     position: relative;
 }
 
-section#button .section__sub-lead .btn-link {
+.docs__main section .section__sub-lead .btn-link {
     display: inline-flex;
 }
 
