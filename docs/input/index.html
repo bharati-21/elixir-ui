@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bharati Subramanian">
+        <meta name="description" content="elixir documentation - input component">
+        <link rel="shortcut icon" href="/logo-assets/favicon_io/favicon.ico" type="image/x-icon">
+
+        <title>elixir | input</title>
+
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <nav class="navbar flex--row flex--justify-end flex--align-center">
+                <div class="hamburger flex--col flex--justify-center flex--align-center">
+                    <button class="btn btn-icon btn-secondary">
+                        <span class="icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                </div>
+                <ul class="navlinks flex--row list-style-none flex--align-center">
+                    <li class="navlink">
+                        <a href="/" class="link text-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navlink active">
+                        <a href="/docs" class="link text-link">
+                            Docs
+                        </a>
+                    </li>
+                    <li class="navlink">
+                        <a href="https://github.com/bharati-21/elixir-ui" target="_blank" class="link icon-link"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul>             
+            </nav>
+            <aside class="sidebar sidebar--close flex--col">
+                <div class="sidebar__header flex--row flex--align-center">
+                    <a href="/" class="brand flex--row flex--align-center flex--justify-center">
+                        <img 
+                            src="/logo-assets/elixir-logo.png" 
+                            alt="Elixir Logo - a violet shaded diamond" 
+                            class="brand__logo" />
+                        <h2 class="brand__name">elixir</h2>
+                    </a>
+                    <span class="sidebar__close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                <section class="sidebar__list">
+                    <h5 class="sidebar__head">
+                        Components
+                    </h5>
+                    <ul class="sidebar__nav stacked-list list-style-none flex--col">
+                        <li>
+                            <a data-menu-item="alert" href="/docs/alert/" class="link text-link">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/docs/avatar/" class="link text-link">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#badge" class="link text-link">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/docs/button/" class="link text-link">Button</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#card" class="link text-link">Card</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#image" class="link text-link">Image</a>
+                        </li>
+                        <li>
+                            <a href="docs/input/" class="link text-link">Input</a>
+                        </li>    
+                        <li>
+                            <a href="/docs/typography/" class="link text-link">Typography</a>
+                        </li>
+                        <li>
+                            <a href="/docs/list/" class="link text-link">List</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#toast" class="link text-link">Toast</a>
+                        </li>  
+                    </ul>
+                </section>
+            </aside>
+            <main class="main docs__main">
+                <section class="input component-info" id="input">
+                    <article class="section__intro">
+                        <h2 class="section__head">Input</h2>
+                        <p class="section__lead">
+                            Inputs allow users to enter information and they can be of different types - text, number, password, email, submit, etc.
+                        </p>
+                        <p class="section__sub-lead mt-0-75">
+                            Elixir offers the following types of input components - default input, input with validations for success, error, warning, default textbox, and inline inputs.
+                        
+                            <a href="#input--default" class="btn btn-link btn-primary px-0-25">Default Inputs</a>, 
+                            <a href="#input--inline" class="btn btn-link btn-primary px-0-25">Inline Inputs</a>,
+                            <a href="#input--success" class="btn btn-link btn-primary px-0-25">Inputs with success validations</a>,
+                            <a href="#input--warning" class="btn btn-link btn-primary px-0-25">Inputs with warning validations</a>,
+                            <a href="#input--error" class="btn btn-link btn-primary px-0-25">Inputs with error validations</a>, and 
+                            <a href="#input--textbox" class="btn btn-link btn-primary px-0-25">Textbox</a>.
+                        </p>
+                    </article>
+                    <article class="section__sub" id="input--default">
+                        <h3 class="section__sub-head">
+                            Default Input
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate a default input, use the base class <span class="primary-color bold">input</span> along with the supporting class <span class="secondary-color bold">input-default</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="input-group input-default m-1">
+                                <label class="text-label flex--col" for="input-name">
+                                    Name
+                                    <input type="text" id="input-name" class="input-text px-0-75 py-0-5" placeholder="Enter your name...">
+                                </label>
+                                <span class="text-message mt-0-5"></span>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use a default input component.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Finput.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub" id="input--inline">
+                        <h3 class="section__sub-head">
+                            Inline Input
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate an inline input, use the base class <span class="primary-color bold">input-group</span> along with the supporting class <span class="secondary-color bold">input-inline</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="input-group input-default m-1 input-inline">
+                                <label class="text-label flex--row flex--align-center px-0-75 py-0-5" for="input-inline-name">
+                                    Name
+                                    <input type="text" id="input-inline-name" class="input-text" placeholder="Enter your name...">
+                                </label>
+                                <span class="text-message mt-0-5"></span>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use an inline input component.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Finline-input.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub" id="input--success">
+                        <h3 class="section__sub-head">
+                            Input with Success Validation
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate an input that converys a success validation, use the base class <span class="primary-color bold">input-group</span> along with the supporting class <span class="secondary-color bold">input-success</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="input-group input-success m-1">
+                                <label class="text-label flex--col" for="input-strong-password">
+                                    Password
+                                    <input type="password" id="input-strong-password" class="input-text px-0-75 py-0-5" placeholder="Enter your password...">
+                                </label>
+                                <span class="text-message mt-0-5">Strong Password</span>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use an input with successfull validation.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Finput-success.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub" id="input--warning">
+                        <h3 class="section__sub-head">
+                            Input with Warning Validation
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate an input that conveys a warning validation, use the base class <span class="primary-color bold">input-group</span> class along with the supporting class <span class="secondary-color bold">input-warning</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="input-group input-warning m-1">
+                                <label class="text-label flex--col" for="input-weak-password">
+                                    Password
+                                    <input type="password" id="input-weak-password" class="input-text px-0-75 py-0-5" placeholder="Enter your password...">
+                                </label>
+                                <span class="text-message mt-0-5">Weak Password</span>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>copy the code below to use an input with warning validation.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Finput-warning.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub" id="input--error">
+                        <h3 class="section__sub-head">
+                            Input with Error Validation
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate an input that conveys an error validation, use the base class <span class="primary-color bold">input-group</span> class along with the supporting class <span class="secondary-color bold">input-error</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="input-group input-error m-1">
+                                <label class="text-label flex--col" for="input-error-email">
+                                    Email
+                                    <input type="email" id="input-error-email" class="input-text px-0-75 py-0-5" placeholder="Enter your email...">
+                                </label>
+                                <span class="text-message mt-0-5">Incorrect Email</span>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use an input with error validation.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Finput-error.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub" id="input--textbox">
+                        <h3 class="section__sub-head">
+                            Default textbox
+                        </h3>
+                        <p class="section__sub-lead">
+                            This input component allows users to enter multiple lines of text. 
+                            <br /> <br /> To generate a textbox use the base class <span class="primary-color bold">input-group</span> along with the supporting classes <span class="secondary-color bold">textbox-default</span> and <span class="secondary-color bold">textbox-group</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="input-group textbox-default textbox-group m-1">
+                                <label for="input-comments" class="text-label">Comments</label>
+                                <textarea id="input-coments" class="input-textbox p-0-75" rows="10" cols="30" placeholder="Enter your comments..."></textarea>
+                                <span class="text-message"></span>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use a default textbox.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Finput-component%2Ftextbox-group.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="footer__nav mb-3-5">
+                    <ul class="list list-style-none flex--row flex--align-center flex--justify-between">
+                        <li class="list-item">
+                            <a href="/docs/#image" class="btn btn-link btn-primary py-0-25 p-0-25">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                Image
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/docs/typography/" class="btn btn-link btn-primary p-0-25">
+                                Typography
+                                <span class="icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <footer class="footer flex--row flex--align-center flex--justify-between px-1-5 py-1" id="footer">
+                    <p class="text-sm text-center text__author">
+                        <span class="icon primary-color bold">
+                            <i class="fas fa-code"></i>
+                        </span> by <a 
+                            target="_blank" 
+                            href="https://bharati-21.github.io/" 
+                            class="link text-link">
+                            Bharati
+                        </a>
+                    </p>
+                    <ul class="navlinks flex--row list-style-none flex--align-center">
+                        <li class="navlink">
+                            <a 
+                                href="https://github.com/bharati-21"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a 
+                                href="https://twitter.com/_girlwhocodes"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a 
+                                href="https://www.linkedin.com/in/bharati-subramanian-29734b152/"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </main>
+        </div>
+        <script src="/docs-script/hamburger.js"></script>
+    </body>
+</html>
