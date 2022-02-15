@@ -20,7 +20,6 @@
 
     /* Text properties */
     text-align: center;
-    font-size: var(--text-reg);
 
     /* Cursor properties */
     cursor: pointer;
@@ -53,15 +52,15 @@
 .btn.btn-link {
     background-color: transparent;
     color: var(--text-color);
+    border-radius: 0;
     border: none;
-    border-radius: var(--br-4);
-    -webkit-border-radius: var(--br-4);
-    -moz-border-radius: var(--br-4);
-    -ms-border-radius: var(--br-4);
-    -o-border-radius: var(--br-4);
     font-weight: var(--weight-sbold);
     min-width: max-content;
     min-height: max-content;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
 /* Button that occupies entire width of parent */
@@ -77,14 +76,10 @@
 }
 
 /* General button with icon or link only hover when no theme specified */
-.btn.btn-icon:hover {
+.btn.btn-icon:hover,
+.btn.btn-link:hover {
     color: var(--text-active-color);
     background-color: transparent;
-}
-
-.btn.btn-link:hover {
-    color: var(--bg-color);
-    background-color: var(--text-active-color);
 }
 
 /* General outlined button hover when no theme specified */
@@ -131,12 +126,9 @@
     color: var(--primary-color);
 }
 
-.btn-primary.btn-icon:hover {
+.btn-primary.btn-icon:hover,
+.btn-primary.btn-link:hover  {
     color: var(--primary-active-color);
-}
-
-.btn-primary.btn-link:hover {
-    background-color: var(--primary-active-color);
 }
 
 /* Secondary button icon */
@@ -144,12 +136,9 @@
     color: var(--secondary-color);
 }
 
-.btn-secondary.btn-icon:hover {
+.btn-secondary.btn-icon:hover,
+.btn-secondary.btn-link:hover  {
     color: var(--secondary-active-color);
-}
-
-.btn-secondary.btn-link:hover {
-    background-color: var(--secondary-active-color);
 }
 
 /* Floating button fixed to the right bottom */
