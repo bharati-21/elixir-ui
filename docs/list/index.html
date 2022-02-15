@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bharati Subramanian">
+        <meta name="description" content="elixir documentation - list component">
+        <link rel="shortcut icon" href="/logo-assets/favicon_io/favicon.ico" type="image/x-icon">
+
+        <title>elixir | list</title>
+
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <nav class="navbar flex--row flex--justify-end flex--align-center">
+                <div class="hamburger flex--col flex--justify-center flex--align-center">
+                    <button class="btn btn-icon btn-secondary">
+                        <span class="icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                </div>
+                <ul class="navlinks flex--row list-style-none flex--align-center">
+                    <li class="navlink">
+                        <a href="/" class="link text-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navlink active">
+                        <a href="/docs" class="link text-link">
+                            Docs
+                        </a>
+                    </li>
+                    <li class="navlink">
+                        <a href="https://github.com/bharati-21/elixir-ui" target="_blank" class="link icon-link"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul>             
+            </nav>
+            <aside class="sidebar sidebar--close flex--col">
+                <div class="sidebar__header flex--row flex--align-center">
+                    <a href="/" class="brand flex--row flex--align-center flex--justify-center">
+                        <img 
+                            src="/logo-assets/elixir-logo.png" 
+                            alt="Elixir Logo - a violet shaded diamond" 
+                            class="brand__logo" />
+                        <h2 class="brand__name">elixir</h2>
+                    </a>
+                    <span class="sidebar__close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                <section class="sidebar__list">
+                    <h5 class="sidebar__head">
+                        Components
+                    </h5>
+                    <ul class="sidebar__nav stacked-list list-style-none flex--col">
+                        <li>
+                            <a href="/docs/alert/" class="link text-link">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/docs/avatar/" class="link text-link">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#badge" class="link text-link">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/docs/button/" class="link text-link">Button</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#card" class="link text-link">Card</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#image" class="link text-link">Image</a>
+                        </li>
+                        <li>
+                            <a href="docs/input/" class="link text-link">Input</a>
+                        </li>    
+                        <li>
+                            <a href="/docs/typography/" class="link text-link">Typography</a>
+                        </li>
+                        <li>
+                            <a href="/docs/list/" class="link text-link">List</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#toast" class="link text-link">Toast</a>
+                        </li>  
+                    </ul>
+                </section>
+            </aside>
+            <main class="main docs__main">
+                <section class="lists component-info" id="list">
+                    <article class="section__intro">
+                        <h2 class="section__head">Lists</h2>
+                        <p class="section__lead">
+                            List is a component that displays collection of information vertically or horizontally.
+                        </p>
+                        <p class="section__sub-lead mt-0-75">
+                            Elixir offers the following type of lists - 
+                            <a href="#list--spaced" class="btn btn-link btn-primary px-0-25">Spaced List</a>, 
+                            <a href="#list--stacked" class="btn btn-link btn-primary px-0-25">Stacked List</a>,
+                            and <a href="#list--inline" class="btn btn-link btn-primary px-0-25">Inline List</a>
+                        </p>
+                    </article>
+                    <article class="section__sub" id="list--spaced">
+                        <h3 class="section__sub-head">
+                            Spaced List
+                        </h3>
+                        <p class="section__sub-lead">
+                            This is the default or basic list that displays data vertically with some space in between.
+                            <br/> <br />
+                            To generate a spaced list, use the base class <span class="primary-color bold">list</span> along with the supporing class <span class="secondary-color bold">list-spaced</span>.
+                        </p>
+                        <div class="component-display">
+                            <ul class="list list-spaced m-1">
+                                <p class="list-head text text-lg mb-0-5">Navigation</p>
+                                <li class="list-item">
+                                    Home
+                                </li>
+                                <li class="list-item">
+                                    About
+                                </li>
+                                <li class="list-item">
+                                    Products
+                                </li>
+                                <li class="list-item">
+                                    Contact
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use a spaced list.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Flist-component%2Fspaced-list.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article> 
+                    <article class="section__sub" id="list--stacked">
+                        <h3 class="section__sub-head">
+                            Stacked List
+                        </h3>
+                        <p class="section__sub-lead">
+                            This is a variation of list component where the items are stacked vertically without any bullets.
+                            <br/> <br/>
+                            To generate a stacked list, use the base class <span class="primary-color bold">list</span> along with the supporting <span class="secondary-color bold">stacked-list</span>.
+                            Add the class <span class="secondary-color bold">list-style-none</span> to remove list item bullets.
+                        </p>
+                        <div class="component-display">
+                            <ul class="list list-stacked list-style-none m-1">
+                                <p class="list-head text text-lg p-0-75">Notifications</p>
+                                <li class="list-item p-1">
+                                    Anonymous followed you back.
+                                </li>
+                                <li class="list-item p-1">
+                                    John Doe commented on your post.
+                                </li>
+                                <li class="list-item p-1">
+                                    Jane doe has their birthday today. Wish them well. 
+                                </li>
+                                <li class="list-item p-1">
+                                    You have a memory with xyz.
+                                </li>  
+                            </ul>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use stacked list.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Flist-component%2Fstacked-list.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>   
+                    <article class="section__sub" id="list--inline">
+                        <h3 class="section__sub-head">
+                            Inline List
+                        </h3>
+                        <p class="section__sub-lead">
+                            This is a variation of list component where the items are stacked horizontally without any bullets.
+                            <br/> <br/>
+                            To generate an inline list, use the base class <span class="primary-color bold">list</span> along with the supporting <span class="secondary-color bold">list-inline</span>.
+                            Add the class <span class="secondary-color bold">list-style-none</span> to remove list item bullets.
+                        </p>
+                        <div class="component-display">
+                            <ul class="list list-inline list-style-none m-1">
+                                <li class="list-item mx-0-25">
+                                    <a href="#" class="btn btn-link btn-primary">Home</a>
+                                </li>
+                                <li class="list-item mx-0-5">
+                                    <a href="#" class="btn btn-link btn-primary">About</a>
+                                </li>
+                                <li class="list-item mx-0-5">
+                                    <a href="#" class="btn btn-link btn-primary">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use inline list.</p>
+
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Flist-component%2Finline-list.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>           
+                </section>
+                <section class="footer__nav mb-3-5">
+                    <ul class="list list-style-none flex--row flex--align-center flex--justify-between">
+                        <li class="list-item">
+                            <a href="/docs/typography/" class="btn btn-link btn-primary py-0-25 p-0-25">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                Typography
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/docs/toast" class="btn btn-link btn-primary p-0-25">
+                                Toast
+                                <span class="icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <footer class="footer flex--row flex--align-center flex--justify-between px-1-5 py-1" id="footer">
+                    <p class="text-sm text-center text__author">
+                        <span class="icon primary-color bold">
+                            <i class="fas fa-code"></i>
+                        </span> by <a href="https://bharati-21.github.io/" class="link text-link">Bharati</a>
+                    </p>
+                    <ul class="navlinks flex--row list-style-none flex--align-center">
+                        <li class="navlink">
+                            <a 
+                                href="https://github.com/bharati-21"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a 
+                                href="https://twitter.com/_girlwhocodes"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a 
+                                href="https://www.linkedin.com/in/bharati-subramanian-29734b152/"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </main>
+        </div>
+        <script src="/docs-script/hamburger.js"></script>
+    </body>
+</html>

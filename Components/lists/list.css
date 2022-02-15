@@ -1,5 +1,4 @@
 .list {
-    margin: var(--space-1);
     max-width: 100%;
     list-style-position: inside;
 }
@@ -8,17 +7,16 @@
     list-style: none;
 }
 
+.list-head {
+    font-weight: var(--weight-sbold);
+}
+
 .list-item, li {
     font-size: var(--text-sm);
 }
 
 .list-spaced li::marker {
     color: var(--primary-color);
-}
-
-.list-head {
-    margin:  0 0 var(--space-0-5);
-    font-weight: var(--weight-sbold);
 }
 
 .list-spaced li:hover {
@@ -31,19 +29,19 @@
 }
 
 .list-stacked {
-    margin: var(--space-1-5) 0;
     display: flex;
     flex-direction: column;
 }
 
 .list-stacked .list-head {
-    padding: 0 var(--space-1-5);
-}
-
-.list-stacked li  {
-    padding: var(--space-1) var(--space-1-5);
+    background-color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .list-stacked li:hover {
     background-color: var(--primary-bg-color);
+}
+
+.list-inline .list-item, .list-inline li {
+    display: inline-block;
 }
