@@ -1,49 +1,46 @@
 .btn {
-    width: max-content;
+    /* Size properties */
     display: inline-block;
-    padding: var(--space-0-5) var(--space-0-75);
+    vertical-align: middle;
+    width: max-content;
     min-width: 80px;
-    color: var(--bg-color);
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    height: max-content;
+
+    /* Space properties */
+    border: 2px solid var(--text-color);
     border-radius: var(--br-5);
     -webkit-border-radius: var(--br-5);
     -moz-border-radius: var(--br-5);
     -ms-border-radius: var(--br-5);
     -o-border-radius: var(--br-5);
-    margin: var(--space-0-5);
+    
+    /* Color properties */
+    color: var(--bg-color);
+    background-color: var(--text-color);
+
+    /* Text properties */
     text-align: center;
-    height: max-content;
+
+    /* Cursor properties */
     cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-0-5) var(--space-0-75);
 }
 
-.btn.btn-full-width {
-    width: 100%;
-}
-
-.btn-primary {
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-}
-
-.btn-accent {
-    background-color: var(--accent-color);
-    border: 2px solid var(--accent-color);
-}
-
-.btn-outline {
+/* Button with outline and transparent background */
+.btn.btn-outline {
     background-color: transparent;
+    color: var(--text-color);
 }
 
-.btn-outline.btn-primary {
-    color: var(--primary-color); 
-}
-
-.btn-outline.btn-accent {
-    color: var(--accent-color); 
-}
-
-.btn-icon {
+/* Button with icon only */
+.btn.btn-icon {
+    color: var(--text-color);
     background-color: transparent;
     border: none;
     font-size: var(--text-md);
@@ -51,22 +48,13 @@
     min-width: max-content;
 }
 
-.btn-icon.btn-primary {
-    color: var(--primary-color);
-}
-
-.btn-icon.btn-accent {
-    color: var(--accent-color);
-}
-
-.btn-link {
+/* Button with link */
+.btn.btn-link {
     background-color: transparent;
-    border: none;
-    border-radius: 0;
     color: var(--text-color);
-    border-bottom: 2px solid var(--text-color);
+    border-radius: 0;
+    border: none;
     font-weight: var(--weight-sbold);
-    padding: 0;
     min-width: max-content;
     min-height: max-content;
     -webkit-border-radius: 0;
@@ -75,96 +63,127 @@
     -o-border-radius: 0;
 }
 
-.btn-text-icon {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-0-5);
+/* Button that occupies entire width of parent */
+.btn.btn-full-width {
+    width: 100%;
 }
 
+/* General button hover when no theme specified */
+.btn:hover {
+    background-color: var(--text-active-color);
+    border-color: var(--text-active-color);
+    color: var(--bg-color);
+}
+
+/* General button with icon or link only hover when no theme specified */
+.btn.btn-icon:hover,
+.btn.btn-link:hover {
+    color: var(--text-active-color);
+    background-color: transparent;
+}
+
+/* General outlined button hover when no theme specified */
+.btn.btn-outline:hover {
+    color: var(--bg-color);
+}
+
+/* Button with primary background color */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+/* Primary button hover */
+.btn-primary:hover {
+    background-color: var(--primary-active-color);
+    border-color: var(--primary-active-color);
+}
+
+/* Button with secondary background color */
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+/* Secondary button hover */
+.btn-secondary:hover {
+    background-color: var(--secondary-active-color);
+    border-color: var(--secondary-active-color);
+}
+
+/* Primary outline button */
+.btn-outline.btn-primary {
+    color: var(--primary-color); 
+}
+
+/* Secondary outline button */
+.btn-outline.btn-secondary {
+    color: var(--secondary-color); 
+}
+
+/* Primary button icon */
+.btn-icon.btn-primary {
+    color: var(--primary-color);
+}
+
+.btn-primary.btn-icon:hover,
+.btn-primary.btn-link:hover  {
+    color: var(--primary-active-color);
+}
+
+/* Secondary button icon */
+.btn-icon.btn-secondary {
+    color: var(--secondary-color);
+}
+
+.btn-secondary.btn-icon:hover,
+.btn-secondary.btn-link:hover  {
+    color: var(--secondary-active-color);
+}
+
+/* Floating button fixed to the right bottom */
 .btn-floating {
     border-radius: var(--br-50);
     -webkit-border-radius: var(--br-50);
     -moz-border-radius: var(--br-50);
     -ms-border-radius: var(--br-50);
     -o-border-radius: var(--br-50);
+    border: none;
+
     width: var(--space-3);
     height: var(--space-3);
     min-width: var(--space-3);
     min-height: var(--space-3);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     background-color: var(--primary-color);
     color: var(--bg-color);
-    border: none;
-
+    
     position: fixed;
     bottom: var(--space-2);
     right: var(--space-2);
-
 }
 
+/* Floating button hover */
+.btn-floating:hover  {
+    background-color: var(--primary-active-color);
+    border-color: var(--primary-active-color);
+}
 
-.btn > .icon {
+/* The icon in button with text and icon */
+.btn.btn-text-icon > .icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: var(--text-md);
-}
-
-.btn:hover {
-    background-color: var(--primary-active-color);
-    border-color: var(--primary-active-color);
-    color: var(--bg-color);
-}
-
-.btn-primary:hover, .btn-floating:hover  {
-    background-color: var(--primary-active-color);
-    border-color: var(--primary-active-color);
-}
-
-.btn-accent:hover {
-    background-color: var(--accent-active-color);
-    border-color: var(--accent-active-color);
-}
-
-.btn.btn-icon:hover {
-    border: none;
-    background-color: transparent;
-}
-
-.btn-primary.btn-icon:hover, .btn-primary.btn-link:hover {
-    color: var(--primary-active-color);
-}
-
-.btn-accent.btn-icon:hover, .btn-accent.btn-link:hover {
-    color: var(--accent-active-color);
-}
-
-.btn-primary.btn-link.active {
-    border-bottom: 2px solid var(--primary-active-color);
-}
-
-.btn-accent.btn-link.active {
-    border-bottom: 2px solid var(--accent-active-color);
-}
-
-.btn-link:hover {
-    background-color: transparent;
-}
-
-.btn-primary.btn-link:hover {
-    color: var(--primary-active-color);
-}
-
-.btn-accent.btn-link:hover {
-    color: var(--accent-active-color);
+    font-size: var(--text-reg);
 }
 
 .btn-disabled {
-    opacity: 0.7;
     pointer-events: none;
+    opacity: 0.7;
 }
