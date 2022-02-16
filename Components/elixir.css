@@ -147,13 +147,6 @@ iframe {
 }
 
 /* font utilities */
-
-a {
-    font-weight: var(--weight-regular);
-    font-size: inherit;
-    line-height: var(--line-ht-s);
-}
-
 p,
 div,
 section,
@@ -164,6 +157,13 @@ nav,
 main {
     font-weight: var(--weight-regular);
     font-size: var(--text-sm);
+    line-height: var(--line-ht-s);
+}
+
+
+a {
+    font-weight: var(--weight-regular);
+    font-size: inherit;
     line-height: var(--line-ht-s);
 }
 
