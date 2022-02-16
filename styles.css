@@ -107,6 +107,11 @@
     grid-row-start: 2;
 }
 
+.hero__button-container {
+    gap: var(--space-1);
+    max-width: 100%;
+}
+ 
 .home__main .link,
 .hero__head .link,
 .footer .text-link {
