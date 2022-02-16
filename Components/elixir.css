@@ -149,8 +149,8 @@ iframe {
 /* font utilities */
 
 a {
-    font-weight: inherit;
-    font-size: var(--text-sm);
+    font-weight: var(--weight-regular);
+    font-size: inherit;
     line-height: var(--line-ht-s);
 }
 
