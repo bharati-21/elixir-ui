@@ -3,7 +3,6 @@
     block-size: auto;
     font-size: inherit;
     display: block;
-    margin: var(--space-1);
     max-width: 100%;
 }
 
