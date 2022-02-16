@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bharati Subramanian">
+        <meta name="description" content="elixir documentation - card component">
+        <link rel="shortcut icon" href="/logo-assets/favicon_io/favicon.ico" type="image/x-icon">
+
+        <title>elixir | card</title>
+
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <nav class="navbar flex--row flex--justify-end flex--align-center">
+                <div class="hamburger flex--col flex--justify-center flex--align-center">
+                    <button class="btn btn-icon btn-secondary">
+                        <span class="icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                </div>
+                <ul class="navlinks flex--row list-style-none flex--align-center">
+                    <li class="navlink">
+                        <a href="/" class="link text-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navlink active">
+                        <a href="/docs" class="link text-link">
+                            Docs
+                        </a>
+                    </li>
+                    <li class="navlink">
+                        <a href="https://github.com/bharati-21/elixir-ui" target="_blank" class="link icon-link"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul>             
+            </nav>
+            <aside class="sidebar sidebar--close flex--col">
+                <div class="sidebar__header flex--row flex--align-center">
+                    <a href="/" class="brand flex--row flex--align-center flex--justify-center">
+                        <img 
+                            src="/logo-assets/elixir-logo.png" 
+                            alt="Elixir Logo - a violet shaded diamond" 
+                            class="brand__logo" />
+                        <h2 class="brand__name">elixir</h2>
+                    </a>
+                    <span class="sidebar__close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                <section class="sidebar__list">
+                    <h5 class="sidebar__head">
+                        Components
+                    </h5>
+                    <ul class="sidebar__nav stacked-list list-style-none flex--col">
+                        <li>
+                            <a data-menu-item="alert" href="/docs/alert/" class="link text-link">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/docs/avatar/" class="link text-link">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/docs/badge/" class="link text-link">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/docs/button/" class="link text-link">Button</a>
+                        </li>
+                        <li>
+                            <a href="/docs/card/" class="link text-link">Card</a>
+                        </li>
+                        <li>
+                            <a href="/docs/image/" class="link text-link">Image</a>
+                        </li>
+                        <li>
+                            <a href="docs/input/" class="link text-link">Input</a>
+                        </li>    
+                        <li>
+                            <a href="/docs/typography/" class="link text-link">Typography</a>
+                        </li>
+                        <li>
+                            <a href="/docs/list/" class="link text-link">List</a>
+                        </li>
+                        <li>
+                            <a href="/docs/#toast" class="link text-link">Toast</a>
+                        </li>  
+                    </ul>
+                </section>
+            </aside>
+            <main class="main docs__main">
+                <section class="cards component-info" id="card">
+                    <article class="section__intro">
+                        <h2 class="section__head">Cards</h2>
+                        <p class="section__lead">
+                            Cards groups and displays information related to a product, category or service using components like text, images, badges, etc to grab the user's attention.
+                        </p>
+                        <p class="section__sub-lead mt-0-75">
+                            Elixir offers the following range of cards - vertical card, horizontal card, card with badge, card with dismiss button, card with overlay text, card with only text, and card with shadow.
+                        
+                            <a href="#card--vertical" class="btn btn-link btn-primary px-0-25">Verical card</a>, 
+                            <a href="#card--horizontal" class="btn btn-link btn-primary px-0-25">Horizontal card</a>,
+                            <a href="#card--badge" class="btn btn-link btn-primary px-0-25">Card with badge</a>,
+                            <a href="#card--dismiss" class="btn btn-link btn-primary px-0-25">Card with dismiss button</a>,
+                            <a href="#card--overlay-text" class="btn btn-link btn-primary px-0-25">Card with overlay text</a>, <a href="#card--text-only" class="btn btn-link btn-primary px-0-25">Card with only text</a>, and 
+                            <a href="#card--shadow" class="btn btn-link btn-primary px-0-25">Card with shadow</a>.
+                        </p>
+                    </article>
+
+                    <article class="section__sub" id="card--vertical">
+                        <h3 class="section__sub-head">
+                            Vertical Card
+                        </h3>
+                        <p class="section__sub-lead">
+                            This is a basic, vertical card with an image, title, subtitle, description, price, and buttons. 
+                            <br /> <br />
+                            To generate a vertical card, use the base class <span class="primary-color bold">card</span> along with the supporting class <span class="secondary-color bold">card-vertical</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="card card-vertical">
+                                <div class="card-main">
+                                    <button class="btn btn-primary btn-icon btn-dismiss mx-0-75 my-0-75">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </button>
+                                    <div class="card-header">
+                                        <span class="badge badge-primary mx-0-5 my-0-75 py-0-5 px-0-75">Hardcover</span>
+                                        <img src="/Components/assets/hp_philosopher_stone.jpg" alt="Harry Potter and the Philosopher's Stone Cover" class="card-img img-responsive">
+                                    </div>
+                                     <div class="card-content">
+                                        <div class="card-body py-0-75 px-1">
+                                            <h5 class="card-title">Harry Potter and the Philosopher's Stone</h5>
+                                            <h6 class="card-subtitle mt-0-75">J. K. Rowling</h6>
+                                            <p class="card-description mt-1-5 mb-0-75">Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.
+                                            </p>
+                                            <div class="card-price">
+                                                <p class="price-discounted">
+                                                    ₹299.00
+                                                </p>
+                                                <p class="price-original">
+                                                   <span class="text-linethrough">₹499.00</span>  <span class="primary-color percentage-discount">(40%)</span> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay p-1">
+                                            <span class="overlay-text p-0-75">
+                                                Out of Stock
+                                            </span>
+                                        </div>
+                                        <div class="card-footer py-0-75 px-1">
+                                            <button  class="btn btn-primary btn-text-icon btn-full-width p-0-5">
+                                                Add to cart <span class="icon">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </span>
+                                            </button>
+                                            <button  class="btn btn-primary btn-outline btn-full-width p-0-5">
+                                                Buy Now
+                                            </button>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>                         
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to generate a basic, vertical card.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcard-component%2Fcard-vertical.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="section__sub" id="card--horizontal">
+                        <h3 class="section__sub-head">
+                            Horizontal Card
+                        </h3>
+                        <p class="section__sub-lead">
+                            This is a basic, horizontal card with an image, title, subtitle, description, price, and buttons. 
+                            <br /> <br />
+                            To generate a horizontal card, use the base class <span class="primary-color bold">card</span> along with the supporting horizontal card class <span class="secondary-color bold">card-horizontal</span>.
+                            <br />
+                            <span class="bold">Please not that in small screens, a horizontal card appears as a vertical card.</span>
+                        </p>
+                        <div class="component-display">
+                            <div class="card card-horizontal py-0-75 p-1">
+                                <div class="card-main">
+                                    <button class="btn btn-primary btn-icon btn-dismiss mx-0-75 my-0-75">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </button>
+                                    <div class="card-header">
+                                        <span class="badge badge-primary mx-0-5 my-0-75 py-0-5 px-0-75">Hardcover</span>
+                                        <img src="/Components/assets/hp_philosopher_stone.jpg" alt="Harry Potter and the Philosopher's Stone Cover" class="card-img img-responsive">
+                                    </div>
+                                    <div class="card-content mr-1">
+                                        <div class="card-body py-0-75 px-1">
+                                            <h5 class="card-title">Harry Potter and the Philosopher's Stone</h5>
+                                            <h6 class="card-subtitle mt-0-75">J. K. Rowling</h6>
+                                            <p class="card-description mt-1-5 mb-0-75">
+                                                Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. 
+                                                Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.
+                                            </p>
+                                            <div class="card-price">
+                                                <p class="price-discounted">₹299.00</p>
+                                                <p class="price-original">
+                                                    <span class="text-linethrough">₹499.00</span>  <span class="primary-color percentage-discount">(40%)</span> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay p-1">
+                                            <span class="overlay-text p-0-75">Out of Stock</span>
+                                        </div>
+                                        <div class="card-footer py-0-75 px-1">
+                                            <button class="btn btn-primary btn-text-icon btn-full-width p-0-5">
+                                                Add to cart
+                                                <span class="icon">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </span>
+                                            </button>
+                                            <button class="btn btn-primary btn-outline btn-full-width p-0-5">Buy Now</button>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use a basic, horizontal card.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcard-component%2Fcard-horizontal.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="section__sub" id="card--badge">
+                        <h3 class="section__sub-head">
+                            Card with Badge
+                        </h3>
+                        <p class="section__sub-lead">
+                            This card contains a text badge that specfies short information to the user.
+                            <br /><br />
+                            To generate a card with badge, add the base classs <span class="primary-color bold">card</span> and the vertical/ horizontal card classes, along with the supporting class, <span class="secondary-color bold">card-wt-badge</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="card card-vertical card-wt-badge">
+                                <div class="card-main">
+                                    <button class="btn btn-primary btn-icon btn-dismiss mx-0-75 my-0-75">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </button>
+                                    <div class="card-header">
+                                        <span class="badge badge-primary mx-0-5 my-0-75 py-0-5 px-0-75">Hardcover</span>
+                                        <img src="/Components/assets/hp_philosopher_stone.jpg" alt="Harry Potter and the Philosopher's Stone Cover" class="card-img img-responsive">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body py-0-75 px-1">
+                                            <h5 class="card-title">Harry Potter and the Philosopher's Stone</h5>
+                                            <h6 class="card-subtitle mt-0-75">J. K. Rowling</h6>
+                                            <p class="card-description mt-1-5 mb-0-75">
+                                                Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. 
+                                                Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.
+                                            </p>
+                                            <div class="card-price">
+                                                <p class="price-discounted">₹299.00</p>
+                                                <p class="price-original">
+                                                    <span class="text-linethrough">₹499.00</span>  <span class="primary-color percentage-discount">(40%)</span> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay p-1">
+                                            <span class="overlay-text p-0-75">Out of Stock</span>
+                                        </div>
+                                        <div class="card-footer py-0-75 px-1">
+                                            <button class="btn btn-primary btn-text-icon btn-full-width p-0-5">
+                                                Add to cart
+                                                <span class="icon">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </span>
+                                            </button>
+                                            <button class="btn btn-primary btn-outline btn-full-width p-0-5">Buy Now</button>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use a card with badge.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcard-component%2Fcard-badge.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="section__sub" id="card--dismiss">
+                        <h3 class="section__sub-head">
+                            Card with Dismiss Button
+                        </h3>
+                        <p class="section__sub-lead">
+                            This card contains a dismiss button icon to close the card.
+                            <br /><br />
+                            To generate a card with dismiss icon, add the base classs <span class="primary-color bold">card</span> and the vertical/ horizontal card classes, along with the supporting class, <span class="secondary-color bold">card-wt-dismiss</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="card card-vertical card-wt-dismiss">
+                                <div class="card-main">
+                                    <button class="btn btn-primary btn-icon btn-dismiss mx-0-75 my-0-75">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </button>
+                                    <div class="card-header">
+                                        <span class="badge badge-primary mx-0-5 my-0-75 py-0-5 px-0-75">Hardcover</span>
+                                        <img src="/Components/assets/hp_philosopher_stone.jpg" alt="Harry Potter and the Philosopher's Stone Cover" class="card-img img-responsive">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body py-0-75 px-1">
+                                            <h5 class="card-title">Harry Potter and the Philosopher's Stone</h5>
+                                            <h6 class="card-subtitle mt-0-75">J. K. Rowling</h6>
+                                            <p class="card-description mt-1-5 mb-0-75">
+                                                Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. 
+                                                Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.
+                                            </p>
+                                            <div class="card-price">
+                                                <p class="price-discounted">₹299.00</p>
+                                                <p class="price-original">
+                                                    <span class="text-linethrough">₹499.00</span>  <span class="primary-color percentage-discount">(40%)</span> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay p-1">
+                                            <span class="overlay-text p-0-75">Out of Stock</span>
+                                        </div>
+                                        <div class="card-footer py-0-75 px-1">
+                                            <button class="btn btn-primary btn-text-icon btn-full-width p-0-5">
+                                                Add to cart
+                                                <span class="icon">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </span>
+                                            </button>
+                                            <button class="btn btn-primary btn-outline btn-full-width p-0-5">Buy Now</button>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use a card with a dismiss button.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcard-component%2Fcard-dismiss.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="section__sub" id="card--overlay-text">
+                        <h3 class="section__sub-head">
+                            Card with Overlay Text
+                        </h3>
+                        <p class="section__sub-lead">
+                            This card contains an overlay text that to highlight some important information.
+                            <br /><br />
+                            To generate a card with overlay text, add the base classs <span class="primary-color bold">card</span> and the vertical/ horizontal card classes, along with the supporting class, <span class="secondary-color bold">card-overlay</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="card card-vertical card-overlay">
+                                <div class="card-main overlay-container">
+                                    <button class="btn btn-primary btn-icon btn-dismiss mx-0-75 my-0-75">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </button>
+                                    <div class="card-header">
+                                        <span class="badge badge-primary mx-0-5 my-0-75 py-0-5 px-0-75">Hardcover</span>
+                                        <img src="/Components/assets/hp_philosopher_stone.jpg" alt="Harry Potter and the Philosopher's Stone Cover" class="card-img img-responsive">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body py-0-75 px-1">
+                                            <h5 class="card-title">Harry Potter and the Philosopher's Stone</h5>
+                                            <h6 class="card-subtitle mt-0-75">J. K. Rowling</h6>
+                                            <p class="card-description mt-1-5 mb-0-75">
+                                                Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. 
+                                                Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.
+                                            </p>
+                                            <div class="card-price">
+                                                <p class="price-discounted">₹299.00</p>
+                                                <p class="price-original">
+                                                    <span class="text-linethrough">₹499.00</span>  <span class="primary-color percentage-discount">(40%)</span> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay p-1">
+                                            <span class="overlay-text p-0-75">Out of Stock</span>
+                                        </div>
+                                        <div class="card-footer py-0-75 px-1">
+                                            <button class="btn btn-primary btn-text-icon btn-full-width p-0-5">
+                                                Add to cart
+                                                <span class="icon">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </span>
+                                            </button>
+                                            <button class="btn btn-primary btn-outline btn-full-width p-0-5">Buy Now</button>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use cards with overlay and a text on it.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcard-component%2Fcard-overlay.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="section__sub" id="card--text-only">
+                        <h3 class="section__sub-head">
+                            Card with Text Only
+                        </h3>
+                        <p class="section__sub-lead">
+                            This card contains only text content ant buttons.
+                            <br /><br />
+                            To generate a card with only text, add the base classs <span class="primary-color bold">card</span> and the vertical/ horizontal card classes, along with the supporting class, <span class="secondary-color bold">card-text-only</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="card card-vertical card-text-only">
+                                <div class="card-main">
+                                    <button class="btn btn-primary btn-icon btn-dismiss mx-0-75 my-0-75">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </button>
+                                    <div class="card-header">
+                                        <span class="badge badge-primary mx-0-5 my-0-75 py-0-5 px-0-75">Hardcover</span>
+                                        <img src="/Components/assets/hp_philosopher_stone.jpg" alt="Harry Potter and the Philosopher's Stone Cover" class="card-img img-responsive">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body py-0-75 px-1">
+                                            <h5 class="card-title">Harry Potter and the Philosopher's Stone</h5>
+                                            <h6 class="card-subtitle mt-0-75">J. K. Rowling</h6>
+                                            <p class="card-description mt-1-5 mb-0-75">
+                                                Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. 
+                                                Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.
+                                            </p>
+                                            <div class="card-price">
+                                                <p class="price-discounted">₹299.00</p>
+                                                <p class="price-original">
+                                                    <span class="text-linethrough">₹499.00</span>  <span class="primary-color percentage-discount">(40%)</span> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay p-1">
+                                            <span class="overlay-text p-0-75">Out of Stock</span>
+                                        </div>
+                                        <div class="card-footer py-0-75 px-1">
+                                            <button class="btn btn-primary btn-text-icon btn-full-width p-0-5">
+                                                Add to cart
+                                                <span class="icon">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </span>
+                                            </button>
+                                            <button  class="btn btn-primary btn-outline btn-full-width p-0-5">Buy Now</button>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use cards with only text content.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcard-component%2Fcard-only-text.html&style=atom-one-light&showCopy=on"></script>
+                        </div>
+                    </article>
+                    
+                    <article class="section__sub" id="card--shadow">
+                        <h3 class="section__sub-head">
+                            Card with Shadow
+                        </h3>
+                        <p class="section__sub-lead">
+                            This card contains a shadow around it.
+                            <br /><br />
+                            To generate a card with shadow, add the base classs <span class="primary-color bold">card</span> and the vertical/ horizontal card classes, along with the supporting class, <span class="secondary-color bold">card-shadow</span>.
+                        </p>
+                        <div class="component-display">
+                            <div class="card card-vertical card-shadow">
+                                <div class="card-main">
+                                    <button class="btn btn-primary btn-icon btn-dismiss mx-0-75 my-0-75">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </button>
+                                    <div class="card-header">
+                                        <span class="badge badge-primary mx-0-5 my-0-75 py-0-5 px-0-75">Hardcover</span>
+                                        <img src="/Components/assets/hp_philosopher_stone.jpg" alt="Harry Potter and the Philosopher's Stone Cover" class="card-img img-responsive">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body py-0-75 px-1">
+                                            <h5 class="card-title">Harry Potter and the Philosopher's Stone</h5>
+                                            <h6 class="card-subtitle mt-0-75">J. K. Rowling</h6>
+                                            <p class="card-description mt-1-5 mb-0-75">
+                                                Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. 
+                                                Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.
+                                            </p>
+                                            <div class="card-price">
+                                                <p class="price-discounted">₹299.00</p>
+                                                <p class="price-original">
+                                                    <span class="text-linethrough">₹499.00</span>  <span class="primary-color percentage-discount">(40%)</span> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay p-1">
+                                            <span class="overlay-text p-0-75">Out of Stock</span>
+                                        </div>
+                                        <div class="card-footer py-0-75 px-1">
+                                            <button class="btn btn-primary btn-text-icon btn-full-width p-0-5">
+                                                Add to cart
+                                                <span class="icon">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </span>
+                                            </button>
+                                            <button class="btn btn-primary btn-outline btn-full-width p-0-5">Buy Now</button>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use cards with a shadow.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fcard-component%2Fcard-shadow.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="footer__nav mb-3-5">
+                    <ul class="list list-style-none flex--row flex--align-center flex--justify-between">
+                        <li class="list-item">
+                            <a href="/docs/button/" class="btn btn-link btn-primary py-0-25 p-0-25">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                Button
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/docs/image/" class="btn btn-link btn-primary p-0-25">
+                                Image
+                                <span class="icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <footer class="footer flex--row flex--align-center flex--justify-between px-1-5 py-1" id="footer">
+                    <p class="text-sm text-center text__author">
+                        <span class="icon primary-color bold">
+                            <i class="fas fa-code"></i>
+                        </span> by <a 
+                            target="_blank" 
+                            href="https://bharati-21.github.io/" 
+                            class="link text-link">
+                            Bharati
+                        </a>
+                    </p>
+                    <ul class="navlinks flex--row list-style-none flex--align-center">
+                        <li class="navlink">
+                            <a 
+                                href="https://github.com/bharati-21"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a 
+                                href="https://twitter.com/_girlwhocodes"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a 
+                                href="https://www.linkedin.com/in/bharati-subramanian-29734b152/"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </main>
+        </div>
+        <script src="/docs-script/hamburger.js"></script>
+    </body>
+</html>
