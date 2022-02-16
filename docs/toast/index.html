@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Bharati Subramanian">
-        <meta name="description" content="Elixir UI documentation page - Toast component.">
+        <meta name="description" content="Elixir UI documentation - Toast component.">
         <link rel="shortcut icon" href="/logo-assets/elixir-logo.png" type="image/x-icon">
         <title>Elixir Docs | Toast</title>
         <link rel="stylesheet" href="/styles.css">
@@ -14,9 +14,11 @@
         <div class="grid-container">
             <nav class="navbar flex--row flex--justify-end flex--align-center">
                 <div class="hamburger flex--col flex--justify-center flex--align-center">
-                    <span class="hamburger-top"></span>
-                    <span class="hamburger-middle"></span>
-                    <span class="hamburger-bottom"></span>
+                    <button class="btn btn-icon btn-primary">
+                        <span class="icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
                 </div>
                 <ul class="navlinks flex--row list-style-none flex--align-center">
                     <li class="navlink">
@@ -48,8 +50,6 @@
                         <i class="fas fa-times"></i>
                     </span>
                 </div>
-                
-
                 <section class="sidebar__list">
                     <h5 class="sidebar__head">
                         Components
@@ -75,12 +75,12 @@
                         </li>
                         <li>
                             <a href="/docs/input/" class="link text-link">Input</a>
-                        </li>    
-                        <li>
-                            <a href="/docs/typography/" class="link text-link">Typography</a>
-                        </li>
+                        </li> 
                         <li>
                             <a href="/docs/list/" class="link text-link">List</a>
+                        </li>   
+                        <li>
+                            <a href="/docs/typography/" class="link text-link">Typography</a>
                         </li>
                         <li>
                             <a href="/docs/toast/" class="link text-link">Toast</a>
@@ -90,7 +90,7 @@
             </aside>
             <main class="main docs__main">
                 <section class="toast component-info" id="toast">
-                    <article class="section__intro">
+                    <article class="section__intro" id="toast--simple">
                         <h2 class="section__head">Toast</h2>
                         <p class="section__lead">
                             Toast or snackbar component is used to display short messages to the user that disappears after a few seconds.
@@ -158,13 +158,21 @@
                     </article>              
                 </section>
                 <section class="footer__nav mb-3-5">
-                    <ul class="list list-style-none flex--row flex--align-center flex--justify-start">
+                    <ul class="list list-style-none flex--row flex--align-center flex--justify-between">
                         <li class="list-item">
                             <a href="/docs/list/" class="btn btn-link btn-primary py-0-25 p-0-25">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
                                 List
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/docs/typography/" class="btn btn-link btn-primary p-0-25">
+                                Typography
+                                <span class="icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
                             </a>
                         </li>
                     </ul>
@@ -175,8 +183,8 @@
                             <i class="fas fa-code"></i>
                         </span> by <a 
                             href="https://bharati-21.github.io/" 
-                            class="link text-link"
-                            target="_blank">
+                            target="_blank"
+                            class="link text-link">
                             Bharati
                         </a>
                     </p>

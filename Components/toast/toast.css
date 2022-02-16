@@ -12,8 +12,8 @@
     align-items: center;
     width: 100%;
     width: max-content;
-    min-height: 50px;
     height: max-content;
+    max-height: max-content;
     gap: 2rem;
     
     align-items: center;
