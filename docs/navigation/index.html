@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Bharati Subramanian">
-        <meta name="description" content="Elixir UI documentation - Image component.">
+        <meta name="description" content="Elixir UI documentation - Navigation component.">
         <link rel="shortcut icon" href="/logo-assets/elixir-logo.png" type="image/x-icon">
-        <title>Elixir Docs | Image</title>
+        <title>Elixir Docs | Navigation</title>
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
@@ -70,7 +70,7 @@
                         <li>
                             <a href="/docs/card/" class="link text-link">Card</a>
                         </li>
-                        <li class="link--active">
+                        <li>
                             <a href="/docs/image/" class="link text-link">Image</a>
                         </li>
                         <li>
@@ -82,7 +82,7 @@
                         <li>
                             <a href="/docs/modal/" class="link text-link">Modal</a>
                         </li> 
-                        <li>
+                        <li class="link--active">
                             <a href="/docs/navigation/" class="link text-link">Navigation</a>
                         </li> 
                         <li>
@@ -95,87 +95,104 @@
                 </section>
             </aside>
             <main class="main docs__main">
-                <section class="images component-info" id="image">
+                <section class="navigation component-info" id="navigation">
                     <article class="section__intro">
-                        <h2 class="section__head">Images</h2>
+                        <h2 class="section__head">Modal</h2>
                         <p class="section__lead">
-                            Images are the most important component of a website as they attract the user's attention and, therefore, should be responsive. 
+                            A navigation bar helps in navigating across various pages in a website. They are also referred to as a navbar.
                         </p>
                         <p class="section__sub-lead mt-0-75">
-                            Elixir offers the following types of images - 
-                            <a href="#image--responsive" class="btn btn-link btn-primary px-0-25">Responsive images</a>, 
-                            <a href="#image--rounded-corner" class="btn btn-link btn-primary px-0-25">Images rounded corner</a>, and
-                            <a href="#image--round" class="btn btn-link btn-primary px-0-25">Round Images</a>.
+                            Elixir offers a basic navigation component which contains the following parts - 
+                            Brand logo or title, search bar, navigation links, and an optional hamburger for medium and small screens.
+                            <a href="#navigation--basic" class="btn btn-link btn-primary px-0-25">Basic Navigation</a> 
                         </p>
                     </article>
-                    <article class="section__sub" id="image--responsive">
+                    <article class="section__sub" id="navigation--basic">
                         <h3 class="section__sub-head">
-                            Responsive Images
+                            Navigation
                         </h3>
                         <p class="section__sub-lead">
-                            To generate a responsive image, add the class <span class="primary-color bold">img-responsive</span> to any image in your website. 
-                            <br /> <br />
-                            The width and height scale down depending on the size of the screen while maintaining the aspect ratio.
+                            The basic navigation consists of a brand name or logo, a search bar, links and an optional hamburger that appears on small/ medium sized screens.
                         </p>
                         <div class="component-display">
-                            <img src="https://picsum.photos/960/500" alt="Responsive Image Landscape" class="img-responsive m-1" />                            
+                            <nav class="navigation-bar py-1 px-2">
+                                <div class="navbar-desktop">
+                                    <h4 class="logo brand-name">
+                                        <a href="#" class="btn btn-link btn-primary">
+                                            bookery
+                                        </a>
+                                    </h4>
+                                    <form class="navbar-query input-group input-default input-inline">
+                                        <label class="text-label px-0-75 py-0-25" for="navbar-search-query">
+                                            <button type="submit"  class="btn btn-icon">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                            <input type="search" id="navbar-search-query" class="input-text p-0-25" placeholder="Search...">
+                                        </label>
+                                        <span class="text-message mt-0-25"></span>
+                                    </form>
+                                    <div class="nav-hamburger">
+                                        <button class="btn btn-primary btn-icon">
+                                            <span class="icon">
+                                                <i class="fas fa-bars"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="navbar-actions">
+                                        
+                                        <a href="#" class="btn btn-icon btn-login">
+                                            <span class="icon icon-account">
+                                                <i class="fas fa-user"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="btn btn-icon badge-container btn-wishlist">
+                                            <span class="badge-status badge-notification badge-primary">4</span> 
+                                            <span class="icon icon-heart badge-icon">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="btn btn-icon badge-container btn-cart">
+                                            <span class="badge-status badge-notification badge-primary">2</span> 
+                                            <span class="icon icon-cart badge-icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="navbar-mobile">
+                                    <form class="navbar-query input-group input-default input-inline">
+                                        <label class="text-label flex--row flex--align-center px-0-75 py-0-25" for="navbar-search-query">
+                                            <button type="submit"  class="btn btn-icon">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                            <input type="search" id="navbar-search-query" class="input-text p-0-25" placeholder="Search...">
+                                        </label>
+                                        <span class="text-message mt-0-25"></span>
+                                    </form>
+                                </div>
+                            </nav> 
                         </div>
                         <div class="code-snippet-container">
-                            <p>Copy the code below to generate a responsive image.</p>
+                            <p>Copy the code below to use the basic navigation.</p>
                             <div class="code-display">
-                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fimage-component%2Fresponsive-image.html&style=atom-one-light&showCopy=on"></script>
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fnavigation%2Fnavigation.html&style=atom-one-light&showCopy=on"></script>
                             </div>
                         </div>
-                    </article>
-                    <article class="section__sub" id="image--rounded-corner">
-                        <h3 class="section__sub-head">
-                            Images with Rounded Corners
-                        </h3>
-                        <p class="section__sub-lead">
-                            To generate an image with rounded cornders, add the base class <span class="primary-color bold">img-responsive</span> along with the supporting class <span class="primary-color bold">round-corner</span>.
-                        </p>
-                        <div class="component-display img--rounded-corner">
-                            <img src="https://picsum.photos/300/300
-                            " alt="Responsive Image with Rounded Corners" class="img-responsive round-corner m-1" />
-                        </div>
-                        <div class="code-snippet-container">
-                            <p>Copy the code below to use responsive images with round corners.</p>
-                            <div class="code-display">
-                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fimage-component%2Fimage-round-corner.html&style=atom-one-light&showCopy=on"></script>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="section__sub" id="image--round">
-                        <h3 class="section__sub-head">
-                            Round Images
-                        </h3>
-                        <p class="section__sub-lead">
-                            To generate a a round image, use the base class <span class="primary-color bold">img-round</span> along with the base class <span class="secondary-color bold">img-responsive</span>.
-                        </p>
-                        <div class="component-display">
-                            <img src="https://picsum.photos/200/300" alt="Round Image" class="img-round img-responsive m-1" />
-                        </div>
-                        <div class="code-snippet-container">
-                            <p>Copy the code below to use round shaped image.</p>
-                            <div class="code-display">
-                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fimage-component%2Fimage-round.html&style=atom-one-light&showCopy=on"></script>
-                            </div>
-                        </div>
-                    </article>
+                    </article>          
                 </section>
                 <section class="footer__nav mb-3-5">
                     <ul class="list list-style-none flex--row flex--align-center flex--justify-between">
                         <li class="list-item">
-                            <a href="/docs/card/" class="btn btn-link btn-primary py-0-25 p-0-25">
+                            <a href="/docs/modal/" class="btn btn-link btn-primary py-0-25 p-0-25">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
-                                Card
+                                Modal
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="/docs/input/" class="btn btn-link btn-primary p-0-25">
-                                Input
+                            <a href="/docs/toast/" class="btn btn-link btn-primary py-0-25 p-0-25">
+                                Toast
                                 <span class="icon">
                                     <i class="fas fa-chevron-right"></i>
                                 </span>
