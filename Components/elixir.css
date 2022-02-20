@@ -17,6 +17,7 @@
 @import url('./grid/grid.css');
 @import url('./modal/modal.css');
 @import url('./navigation/navigation.css');
+@import url('./flex/flex.css');
 
 :root {
     --text-color: #0d1c29;
