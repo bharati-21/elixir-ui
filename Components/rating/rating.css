@@ -1,0 +1,68 @@
+.rating-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-1);
+    border-radius: var(--br-5);
+    -webkit-border-radius: var(--br-5);
+    -moz-border-radius: var(--br-5);
+    -ms-border-radius: var(--br-5);
+    -o-border-radius: var(--br-5);
+    font-size: var(--text-md);
+}
+
+.rating-star {
+    background-color: var(--gray);
+    flex-direction: row-reverse;
+    font-size: var(--text-lg);
+    border: 0.15rem solid var(--light-gray-color);
+}
+
+.rating-badge {
+    background-color: var(--light-gray-color);
+    border: 0.12rem solid var(--gray);
+    
+}
+
+.rating-badge:hover {
+    background-color: var(--box-shadow-color);
+}
+
+.rating-star input {
+    display: none;
+}
+
+.rating-star label {
+    color: var(--bg-card-color);
+    cursor: pointer;
+}
+
+.rating-star input:not(:checked) ~ label:hover,
+.rating-star input:not(:checked) ~ label:hover  ~ label {
+    color: var(--rating-color);
+    opacity: 0.8;
+} 
+
+.rating-star input:checked ~ label {
+    color: var(--rating-color);
+}
+
+.rating-star label:active {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transition: 0.3s ease cubic-bezier(0.215, 0.610, 0.355, 1);
+    -webkit-transition: 0.3s ease cubic-bezier(0.215, 0.610, 0.355, 1);
+    -moz-transition: 0.3s ease cubic-bezier(0.215, 0.610, 0.355, 1);
+    -ms-transition: 0.3s ease cubic-bezier(0.215, 0.610, 0.355, 1);
+    -o-transition: 0.3s ease cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@media screen and (max-width: 280px) {
+    .star-rating-container label, .rating-badge {
+        font-size: var(--text-sm);
+    }
+}

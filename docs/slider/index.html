@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Bharati Subramanian">
-        <meta name="description" content="Elixir UI documentation - Toast Component.">
+        <meta name="description" content="Elixir UI documentation - Slider Component.">
         <link rel="shortcut icon" href="/logo-assets/elixir-logo.png" type="image/x-icon">
-        <title>Elixir Docs | Toast</title>
+        <title>Elixir Docs | Slider</title>
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
@@ -81,7 +81,7 @@
                         </li> 
                         <li>
                             <a href="/docs/list/" class="link text-link">List</a>
-                        </li> 
+                        </li>  
                         <li>
                             <a href="/docs/modal/" class="link text-link">Modal</a>
                         </li> 
@@ -91,99 +91,67 @@
                         <li>
                             <a href="/docs/rating/" class="link text-link">Rating</a>
                         </li> 
-                        <li>
-                            <a href="/docs/slider/" class="link text-link">Slider</a>
-                        </li>
                         <li class="link--active">
+                            <a href="/docs/slider/" class="link text-link">Slider</a>
+                        </li> 
+                        <li>
                             <a href="/docs/toast/" class="link text-link">Toast</a>
-                        </li>   
+                        </li> 
                         <li>
                             <a href="/docs/typography/" class="link text-link">Typography</a>
-                        </li>
+                        </li> 
                     </ul>
                 </section>
             </aside>
-            <main class="main docs__main">
-                <section class="toast component-info" id="toast">
-                    <article class="section__intro" id="toast--simple">
-                        <h2 class="section__head">Toast</h2>
+            <main class="main slider__main docs__main">
+                <section class="slider component-info" id="slider">
+                    <article class="section__intro">
+                        <h2 class="section__head">Slider</h2>
                         <p class="section__lead">
-                            Toast or snackbar component is used to display short messages to the user that disappears after a few seconds.
+                            Sliders are input component that helps user enter range of values. For e.g., sliders for volume control or price in an e-commerce website.
                         </p>
                         <p class="section__sub-lead mt-0-75">
-                            Elixir offers one toast - a <a href="#toast--simple" class="btn btn-link btn-primary px-0-25">Simple Toast</a> which is dark themed and appears in the bottom left corner.
+                            Elixir offers one simple input slider - 
+                            <a href="#slider--simple" class="btn btn-link btn-primary px-0-25">Simple Slider</a>.
                         </p>
-                    </article> 
-                    <article class="section__sub">
+                    </article>
+                    <article class="section__sub" id="image--responsive">
                         <h3 class="section__sub-head">
-                            Simple Toast
+                            Simple Slider
                         </h3>
                         <p class="section__sub-lead">
-                            A simple toast consists of a toast text and accompanying action buttons such as a text or icon button.
-                            <br/> <br/>
-                            To generate a simple toast, use the base class <span class="primary-color bold">snackbar</span>.
+                            To generate a custom slider, use the class <span class="primary-color bold">slider-container</span> and add the input slider within this container.
+                            <br /> <br />
                         </p>
                         <div class="component-display">
-                            <div class="snackbar px-1 py-0-5">
-                                <p class="snackbar-text">
-                                    Can't send photo. Retry in 5 seconds.
-                                </p>
-                                <div class="snackbar-actions">
-                                    <button class="btn btn-primary btn-icon btn-snackbar-close p-0-25">
-                                        <span class="icon">
-                                            <i class="fas fa-times"></i>
-                                        </span>
-                                    </button>
-                                </div>
-                           </div>
-                        </div>
-                        <div class="toast__demo">
-                            <a href="#" class="btn btn-primary btn__toast__demo px-0-75 py-0-5">
-                                Toast Demo
-                            </a>
-                            <div class="snackbar snackbar__demo px-1 py-0-5">
-                                <p class="snackbar-text">
-                                    Can't send photo. Retry in 5 seconds.
-                                </p>
-                                <div class="snackbar-actions">
-                                    <button class="btn btn-primary btn-icon btn-snackbar-close">
-                                        <span class="icon">
-                                            <i class="fas fa-times"></i>
-                                        </span>
-                                    </button>
-                                </div>
-                           </div>
-                        </div>
-                        
-                        
-                        <div class="code-snippet-container">
-                            <p>Copy the code below to use a snackbar/ toast component.</p>
-                            <div class="code-display">
-                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftoast-component%2Fsnackbar.html&style=atom-one-light&showCopy=on"></script>
+                            <div class="slider-container">
+                                <div class="slider-min-value">0</div>
+                                <input type="range" class="input-range" id="slider-range" min="0" max="100" step="1" />
+                                <div class="slider-max-value">100</div>
                             </div>
                         </div>
-
                         <div class="code-snippet-container">
-                            <p>Copy the below code to use the logic for closing the snackbar when the button is clicked.</p>
+                            <p>Copy the code below to generate a custom styles input range slider.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fslider%2Fslider.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
                         </div>
-                        <div class="code-display">
-                            <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Ftoast-component%2Fsnackbar.js&style=atom-one-light&showCopy=on"></script>
-                        </div>
-                    </article>              
+                    </article>
+                    
                 </section>
                 <section class="footer__nav mb-3-5">
                     <ul class="list list-style-none flex--row flex--align-center flex--justify-between">
                         <li class="list-item">
-                            <a href="/docs/slider/" class="btn btn-link btn-primary py-0-25 p-0-25">
+                            <a href="/docs/rating/" class="btn btn-link btn-primary py-0-25 p-0-25">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
-                                Slider
+                                Rating
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="/docs/typography/" class="btn btn-link btn-primary p-0-25">
-                                Typography
+                            <a href="/docs/toast/" class="btn btn-link btn-primary p-0-25">
+                                Toast
                                 <span class="icon">
                                     <i class="fas fa-chevron-right"></i>
                                 </span>
@@ -232,6 +200,5 @@
             </main>
         </div>
         <script src="/docs-script/hamburger.js"></script>
-        <script src="/Components/toast/toast.js"></script>
     </body>
 </html>

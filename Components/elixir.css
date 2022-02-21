@@ -18,6 +18,8 @@
 @import url('./modal/modal.css');
 @import url('./navigation/navigation.css');
 @import url('./flex/flex.css');
+@import url('./rating/rating.css');
+@import url('./slider/slider.css');
 
 :root {
     --text-color: #0d1c29;
@@ -39,6 +41,7 @@
     --error-color: #d6261c;
     --dull-success-color: #00814859;
     --success-color: #008148;
+    --rating-color: #ffe400;
 
     --box-shadow: 0 0 10px #172a3a33; 
     --box-shadow-color: #172a3a33;
