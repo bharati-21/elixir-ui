@@ -320,4 +320,4 @@ Check out my developer portfolio 🌐-
 > [Bharati Subramanian](https://bharati-21.github.io/) 
 
 <hr />
-Copyright (c) 2022 [Bharati Subramanian](https://github.com/bharati-21) 👩‍💻
+Copyright (c) 2022 👩‍💻 [Bharati Subramanian](https://github.com/bharati-21)
