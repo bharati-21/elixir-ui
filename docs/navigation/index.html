@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Bharati Subramanian">
-        <meta name="description" content="Elixir UI documentation - Navigation component.">
+        <meta name="description" content="Elixir UI documentation - navigation component.">
         <link rel="shortcut icon" href="/logo-assets/elixir-logo.png" type="image/x-icon">
-        <title>Elixir Docs | Navigation</title>
+        <title>Elixir Docs | navigation</title>
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
@@ -86,7 +86,7 @@
                             <a href="/docs/modal/" class="link text-link">Modal</a>
                         </li> 
                         <li class="link--active">
-                            <a href="/docs/navigation/" class="link text-link">Navigation</a>
+                            <a href="/docs/navigation/" class="link text-link">navigation</a>
                         </li> 
                         <li>
                             <a href="/docs/toast/" class="link text-link">Toast</a>
@@ -100,49 +100,53 @@
             <main class="main docs__main">
                 <section class="navigation component-info" id="navigation">
                     <article class="section__intro">
-                        <h2 class="section__head">Modal</h2>
+                        <h2 class="section__head">navigation</h2>
                         <p class="section__lead">
                             A navigation bar helps in navigating across various pages in a website. They are also referred to as a navbar.
                         </p>
                         <p class="section__sub-lead mt-0-75">
                             Elixir offers a basic navigation component which contains the following parts - 
                             Brand logo or title, search bar, navigation links, and an optional hamburger for medium and small screens.
-                            <a href="#navigation--basic" class="btn btn-link btn-primary px-0-25">Basic Navigation</a> 
+                            <a href="#navigation--basic" class="btn btn-link btn-primary px-0-25">Basic navigation</a> 
                         </p>
                     </article>
                     <article class="section__sub" id="navigation--basic">
                         <h3 class="section__sub-head">
-                            Navigation
+                            navigation
                         </h3>
                         <p class="section__sub-lead">
                             The basic navigation consists of a brand name or logo, a search bar, links and an optional hamburger that appears on small/ medium sized screens.
                         </p>
                         <div class="component-display">
-                            <nav class="navigation-bar py-1 px-2">
-                                <div class="navbar-desktop">
+                            <nav class="navigation-bar navigation-open py-1 px-2">
+                                <button class="btn-navigation-close btn btn-icon btn-primary">
+                                    <span class="icon">
+                                        <i class="fas fa-times fa-2x"></i>
+                                    </span>
+                                </button>
+                                <div class="navigation-desktop">
                                     <h4 class="logo brand-name">
                                         <a href="#" class="btn btn-link btn-primary">
                                             bookery
                                         </a>
                                     </h4>
-                                    <form class="navbar-query input-group input-default input-inline">
-                                        <label class="text-label px-0-75 py-0-25" for="navbar-search-query">
+                                    <form class="navigation-query input-group input-default input-inline">
+                                        <label class="text-label px-0-75 py-0-25" for="navigation-search-query">
                                             <button type="submit"  class="btn btn-icon">
                                                 <i class="fas fa-search"></i>
                                             </button>
-                                            <input type="search" id="navbar-search-query" class="input-text p-0-25" placeholder="Search...">
+                                            <input type="search" id="navigation-search-query" class="input-text p-0-25" placeholder="Search...">
                                         </label>
                                         <span class="text-message mt-0-25"></span>
                                     </form>
-                                    <div class="nav-hamburger">
+                                    <div class="navigation-bar-hamburger">
                                         <button class="btn btn-primary btn-icon">
                                             <span class="icon">
                                                 <i class="fas fa-bars"></i>
                                             </span>
                                         </button>
                                     </div>
-                                    <div class="navbar-actions">
-                                        
+                                    <div class="navigation-actions">
                                         <a href="#" class="btn btn-icon btn-login">
                                             <span class="icon icon-account">
                                                 <i class="fas fa-user"></i>
@@ -162,13 +166,13 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="navbar-mobile">
-                                    <form class="navbar-query input-group input-default input-inline">
-                                        <label class="text-label flex--row flex--align-center px-0-75 py-0-25" for="navbar-search-query">
+                                <div class="navigation-mobile">
+                                    <form class="navigation-query input-group input-default input-inline">
+                                        <label class="text-label flex--row flex--align-center px-0-75 py-0-25" for="navigation-search-query">
                                             <button type="submit"  class="btn btn-icon">
                                                 <i class="fas fa-search"></i>
                                             </button>
-                                            <input type="search" id="navbar-search-query" class="input-text p-0-25" placeholder="Search...">
+                                            <input type="search" id="navigation-search-query" class="input-text p-0-25" placeholder="Search...">
                                         </label>
                                         <span class="text-message mt-0-25"></span>
                                     </form>
@@ -179,6 +183,12 @@
                             <p>Copy the code below to use the basic navigation.</p>
                             <div class="code-display">
                                 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fnavigation%2Fnavigation.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use the JavaScript logic to toggle between navigation bar open and close.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fnavigation%2Fnavigation.js&style=atom-one-light&showCopy=on"></script>
                             </div>
                         </div>
                     </article>          
@@ -244,5 +254,6 @@
             </main>
         </div>
         <script src="/docs-script/hamburger.js"></script>
+        <script src="/Components/navigation/navigation.js"></script>
     </body>
 </html>
