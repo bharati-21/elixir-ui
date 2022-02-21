@@ -114,11 +114,93 @@
                         </p>
                         <p class="section__sub-lead mt-0-75">
                             Elixir offers the following range of buttons - 
+                            <a href="#button--dark" class="btn btn-link btn-primary px-0-25">Dark Buttons</a>, 
+                            <a href="#button--light" class="btn btn-link btn-primary px-0-25">Light Buttons</a>, 
                             <a href="#button--primary" class="btn btn-link btn-primary px-0-25">Primary Buttons</a>, 
                             <a href="#button--secondary" class="btn btn-link btn-primary px-0-25">Secondary Buttons</a>,
                             <a href="#button--floating-action" class="btn btn-link btn-primary px-0-25">Floating Action Buttons</a>,
-                            and <a href="#button--disabled" class="btn btn-link btn-primary px-0-25">Disabled Buttons</a>
+                            and <a href="#button--disabled" class="btn btn-link btn-primary px-0-25">Disabled Buttons</a>.
                         </p>
+                    </article>
+                    <article class="section__sub" id="button--dark">
+                        <h3 class="section__sub-head">
+                            Dark Buttons
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate a dark button, use the base class <span class="primary-color bold">btn</span>. Dark buttons are the default themed button. The button generated is a solid one. 
+                            <br /> <br/> 
+                            To use variations of a dark button, add any of the following supporting classes to on top of the base class and button theme class-
+                            
+                            <span class="secondary-color bold">btn-outline</span>, <span class="secondary-color bold">btn-link</span>, <span class="secondary-color bold">btn-icon</span>, and <span class="secondary-color bold">btn-text-icon</span>.                          
+                        </p>
+                        <div class="component-display">
+                            <button class="btn m-0-5 py-0-5 px-0-75">
+                                Dark Solid
+                            </button>
+                            <button class="btn btn-outline m-0-5 py-0-5 px-0-75">
+                                Dark Outline
+                            </button>
+                            <button class="btn btn-icon m-0-5">
+                                <span class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </button>
+                            <button class="btn btn-text-icon m-0-5 py-0-5 px-0-75">
+                                GitHub 
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                            </button>
+                            <a href="#" class="btn btn-link m-0-5 p-0-25">
+                                Home
+                            </a>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use dark buttons of different variations.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fbutton-component%2Fbutton-dark.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__sub" id="button--light">
+                        <h3 class="section__sub-head">
+                            Light Buttons
+                        </h3>
+                        <p class="section__sub-lead">
+                            To generate a light themed button, use the base class <span class="primary-color bold">btn</span> along with the support class <span class="secondary-color bold">btn-light</span>. The default button generated is of the type solid. 
+                            <br /> <br/> 
+                            To use variations of a dark button, add any of the following supporting classes to on top of the base class and button theme class-
+                            
+                            <span class="secondary-color bold">btn-outline</span>, <span class="secondary-color bold">btn-link</span>, <span class="secondary-color bold">btn-icon</span>, and <span class="secondary-color bold">btn-text-icon</span>. 
+                        </p>
+                        <div class="component-display button__demo--light">
+                            <button class="btn btn-light m-0-5 py-0-5 px-0-75">
+                                Dark Solid
+                            </button>
+                            <button class="btn btn-light btn-outline m-0-5 py-0-5 px-0-75">
+                                Dark Outline
+                            </button>
+                            <button class="btn btn-light btn-icon m-0-5">
+                                <span class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </button>
+                            <button class="btn btn-light btn-text-icon m-0-5 py-0-5 px-0-75">
+                                GitHub 
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                            </button>
+                            <a href="#" class="btn btn-light btn-link m-0-5 p-0-25">
+                                Home
+                            </a>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use light buttons of different variations.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fbutton-component%2Fbutton-light.html&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
                     </article>
                     <article class="section__sub" id="button--primary">
                         <h3 class="section__sub-head">
@@ -135,7 +217,7 @@
                             <button class="btn btn-primary m-0-5 py-0-5 px-0-75">
                                 Primary Solid
                             </button>
-                            <button href="#" class="btn btn-primary btn-outline m-0-5 py-0-5 px-0-75">
+                            <button class="btn btn-primary btn-outline m-0-5 py-0-5 px-0-75">
                                 Primary Outline
                             </button>
                             <button class="btn btn-primary btn-icon m-0-5">

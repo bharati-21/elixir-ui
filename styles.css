@@ -419,6 +419,10 @@ section#typography code.hljs {
     position: static;
 }
 
+.button__demo--light {
+    background-color: var(--secondary-color);
+}
+
 section#badge .component-display .badge {
     position: relative;
 }

@@ -20,6 +20,7 @@
 
     /* Text properties */
     text-align: center;
+    font-weight: var(--weight-regular); 
 
     /* Cursor properties */
     cursor: pointer;
@@ -80,6 +81,7 @@
 .btn.btn-link:hover {
     color: var(--text-active-color);
     background-color: transparent;
+    opacity: 0.8;
 }
 
 /* General outlined button hover when no theme specified */
@@ -111,6 +113,19 @@
     border-color: var(--secondary-active-color);
 }
 
+/* Light button */
+.btn-light {
+    background-color: var(--bg-card-color);
+    border-color: var(--bg-card-color);
+    color: var(--text-color);
+}
+
+.btn-light:hover {
+    background-color: var(--primary-bg-color);
+    border-color: var(--primary-bg-color);
+    color: var(--text-color);
+}
+
 /* Primary outline button */
 .btn-outline.btn-primary {
     color: var(--primary-color); 
@@ -119,6 +134,19 @@
 /* Secondary outline button */
 .btn-outline.btn-secondary {
     color: var(--secondary-color); 
+}
+
+/* Light outline button */
+.btn-light.btn-outline {
+    background-color: var(--bg-card-color);
+    border-color: var(--bg-card-color);
+    color: var(--text-color);
+}
+
+.btn-light.btn-outline:hover {
+    background-color: var(--primary-bg-color);
+    border-color: var(--primary-bg-color);
+    color: var(--text-color);
 }
 
 /* Primary button icon */
@@ -139,6 +167,16 @@
 .btn-secondary.btn-icon:hover,
 .btn-secondary.btn-link:hover  {
     color: var(--secondary-active-color);
+}
+
+/* Light icon button */
+.btn-icon.btn-light, .btn-link.btn-light {
+    color: var(--bg-card-color);
+}
+
+.btn-light.btn-icon:hover,
+.btn-light.btn-link:hover  {
+    color: var(--primary-bg-color);
 }
 
 /* Floating button fixed to the right bottom */
