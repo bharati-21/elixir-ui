@@ -74,9 +74,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     - To use alerts in your project, add the following URL-
     - in the HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/alerts/alert.css" />
-
     ```
     - OR, in the CSS file
     ```CSS
@@ -93,9 +91,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     - To use avatars in your project, add the folloeing URL in-
     - the HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/avatars/avatar.css" />
-
     ```
     - OR, the CSS file
     ```CSS
@@ -114,9 +110,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     - To use badges in your project, add the following URL in -
     - the  HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/badges/badge.css" />
-
     ```
     - OR, in the CSS file
     ```CSS
@@ -133,9 +127,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     - To use buttons in your project, add the following URL in-
     - the HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/buttons/button.css" />
-
     ```
     - OR, in the CSS file
     ```CSS
@@ -150,9 +142,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     - To use cards in your project, add the following URL in the -
     - HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/cards/card.css" />
-
     ```
     - OR, CSS file
     ```CSS
@@ -167,9 +157,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     - To create grid layouts in your project, add the following URL in the-
     - HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/grid/grid.css" />
-
     ```
     - OR, CSS file
     ```CSS
@@ -185,9 +173,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     - To use the image component in your project, add the following URL in the-
     - HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/images/image.css" />
-
     ```
     - OR, CSS file
     ```CSS
@@ -205,7 +191,6 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/input/input.css" />
-
     ```
     - OR, CSS file
     ```CSS
@@ -223,7 +208,6 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/lists/list.css" />
-
     ```
     - OR, CSS file
     ```CSS
@@ -241,7 +225,6 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/modal/modal.css" />
-
     ```
     - OR, CSS file
     ```CSS
@@ -259,7 +242,6 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/navigation/navigation.css" />
-
     ```
     - OR, CSS file
     ```CSS
@@ -277,7 +259,6 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/rating/rating.css" />
-
     ```
     - OR, CSS file
     ```CSS
@@ -296,7 +277,6 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/slider/slider.css" />
-
     ```
     - OR, CSS file
     ```CSS
@@ -312,8 +292,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
     - HTML file
     ```HTML
 
-        <link rel="stylesheet" href="hhttps://elixir-ui.netlify.app/Components/toast/toast.css />
-
+        <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/toast/toast.css />
     ```
     - OR, CSS file
     ```CSS
