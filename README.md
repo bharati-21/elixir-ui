@@ -21,8 +21,7 @@
         <li><a href="#components">Components</a></li>
         <li><a href="#technology-languages-used">Technology/ Languages Used</a></li>
         <li><a href="#how-to-contribute">How to Contribute</a></li>
-        <li><a href="#acknowledgements">Acknowledgements</a></li>
-        <li><a href="#license">License</a></li>
+        <li><a href="#social-links">Social Links</a></li>
     </ol>
 </details>
 
@@ -307,17 +306,18 @@ If you want to contribute or have ideas for this project, just fork the repo and
 <br />
 
 
-Copyright (c) 2022 [Bharati Subramanian](https://github.com/bharati-21) 👩‍💻
-
-<br />
-
-
+## **Social Links**
 <!-- SOCIAL LINKS -->
 Let's connect and talk about development, music, books and much more 🌠! 
 > [GitHub Profile](https://github.com/bharati-21) &nbsp;&middot;&nbsp; 
 > [LinkedIn Profile](https://www.linkedin.com/in/bharati-subramanian-29734b152/) &nbsp;&middot;&nbsp;
-> [Twitter Profile](https://twitter.com/_girlwhocodes)
-> [Dev.to Blogs](https://dev.to/bharati21)
+> [Twitter Profile](https://twitter.com/_girlwhocodes) &nbsp;&middot;&nbsp;
+> [Dev.to Blogs](https://dev.to/bharati21) &nbsp;&middot;&nbsp;
+
+<br />
 
 Check out my developer portfolio 🌐-
-> [Bharati Subramanian](https://bharati-21.github.io/) &nbsp;&middot;&nbsp;
+> [Bharati Subramanian](https://bharati-21.github.io/) 
+
+<hr />
+Copyright (c) 2022 [Bharati Subramanian](https://github.com/bharati-21) 👩‍💻
