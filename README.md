@@ -42,7 +42,7 @@
 
 <!-- HOW TO USE -->
 
-## **📌 How To Use**
+## **How To Use**
 
 Visit [Elixir UI Documentation Website](https://elixir-ui.netlify.app/) and check out the documentation for the library. To use Elixir in your project, include the CSS file in the main stylesheet using `@import` or in the `<head>` of your `index.html` file using `<link>`. 
 <br />
@@ -66,7 +66,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
 
 <!-- COMPONENTS -->
 
-## **📌 Components**
+## **Components**
 
 - [Alert](https://elixir-ui.netlify.app/docs/alert/)
     - Elixir offers simple alerts and alerts with a close icon in the following themes - primary, secondary, success, warning, and error.
@@ -281,7 +281,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
 <br />
 
 <!-- BUILT WITH -->
-## **📌 Technology/ Languages Used**
+## **Technology/ Languages Used**
 
 - HTML
 - CSS
@@ -290,7 +290,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
 <br />
 
 <!-- CONTRIBUTING -->
-## **📌 How to Contribute**
+## **How to Contribute**
 
 Contributions and ideas to this library are more than welcome! <br />
 If you want to contribute or have ideas for this project, just fork the repo and create a PR. If you spot a bug, you are more than welcome to open an issue! Do ⭐ this project! 
@@ -306,7 +306,7 @@ If you want to contribute or have ideas for this project, just fork the repo and
 <br />
 
 
-## **📌 Social Links**
+## **Social Links**
 <!-- SOCIAL LINKS -->
 Let's connect and talk about development, music, books and much more 🌠! 
 > [GitHub Profile](https://github.com/bharati-21) &nbsp;&middot;&nbsp; 
