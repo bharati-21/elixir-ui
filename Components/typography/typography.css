@@ -40,6 +40,10 @@
     display: block;
 }
 
+.text-xs {
+    font-size: 0.65rem;
+}
+
 .text-sm {
     font-size: 0.85rem;
     line-height: var(--line-ht-sm);
@@ -75,6 +79,10 @@
     color: var(--success-color);
 }
 
+.gray-color {
+    color: var(--gray);
+}
+
 .text-left {
     text-align: left;
 }
@@ -89,4 +97,12 @@
 
 .text-justify {
     text-align: justify;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-linethrough {
+    text-decoration: line-through;
 }

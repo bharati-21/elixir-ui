@@ -205,10 +205,6 @@ h6 {
     line-height: var(--line-ht-xs);
 }
 
-.text-linethrough {
-    text-decoration: line-through;
-}
-
 .navlink.active {
     border-bottom: 2px solid var(--primary-color);
 }
