@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bharati Subramanian">
+        <meta name="description" content="Elixir UI documentation - Rating Component.">
+        <link rel="shortcut icon" href="/logo-assets/elixir-logo.png" type="image/x-icon">
+        <title>Elixir Docs | Rating</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <nav class="navbar flex--row flex--justify-end flex--align-center">
+                <div class="hamburger flex--col flex--justify-center flex--align-center">
+                    <button class="btn btn-icon btn-primary">
+                        <span class="icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                </div>
+                <ul class="navlinks flex--row list-style-none flex--align-center">
+                    <li class="navlink">
+                        <a href="/" class="link text-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navlink active">
+                        <a href="/docs" class="link text-link">
+                            Docs
+                        </a>
+                    </li>
+                    <li class="navlink">
+                        <a href="https://github.com/bharati-21/elixir-ui" target="_blank" class="link icon-link"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+                            
+            </nav>
+            <aside class="sidebar sidebar--close flex--col">
+                <div class="sidebar__header flex--row flex--align-center">
+                    <a href="/" class="brand flex--row flex--align-center flex--justify-center">
+                        <img 
+                            src="/logo-assets/elixir-logo.png" 
+                            alt="Elixir Logo - a violet shaded diamond" 
+                            class="brand__logo" />
+                        <h2 class="brand__name">elixir</h2>
+                    </a>
+                    <span class="sidebar__close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                <section class="sidebar__list">
+                    <h5 class="sidebar__head">
+                        Components
+                    </h5>
+                    <ul class="sidebar__nav stacked-list list-style-none flex--col">
+                        <li>
+                            <a href="/docs/alert/" class="link text-link">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/docs/avatar/" class="link text-link">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/docs/badge/" class="link text-link">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/docs/button/" class="link text-link">Button</a>
+                        </li>
+                        <li>
+                            <a href="/docs/card/" class="link text-link">Card</a>
+                        </li>
+                        <li>
+                            <a href="/docs/grid/" class="link text-link">Grid</a>
+                        </li>
+                        <li>
+                            <a href="/docs/image/" class="link text-link">Image</a>
+                        </li>
+                        <li>
+                            <a href="/docs/input/" class="link text-link">Input</a>
+                        </li> 
+                        <li>
+                            <a href="/docs/list/" class="link text-link">List</a>
+                        </li>  
+                        <li>
+                            <a href="/docs/modal/" class="link text-link">Modal</a>
+                        </li> 
+                        <li>
+                            <a href="/docs/navigation/" class="link text-link">Navigation</a>
+                        </li> 
+                        <li class="link--active">
+                            <a href="/docs/rating/" class="link text-link">Rating</a>
+                        </li> 
+                        <li>
+                            <a href="/docs/slider/" class="link text-link">Slider</a>
+                        </li> 
+                        <li>
+                            <a href="/docs/toast/" class="link text-link">Toast</a>
+                        </li> 
+                        <li>
+                            <a href="/docs/typography/" class="link text-link">Typography</a>
+                        </li> 
+                    </ul>
+                </section>
+            </aside>
+            <main class="main docs__main">
+                <section class="navigation component-info" id="navigation">
+                    <article class="section__intro">
+                        <h2 class="section__head">Rating</h2>
+                        <p class="section__lead">
+                            Rating components are used in forms or product rating section for users to provide feedback.  
+                        </p>
+                        <p class="section__sub-lead mt-0-75">
+                            Elixir offers 2 types of rating components - rating badge and star product rating.
+                        </p>
+                        <p class="section__sub-lead mt-0-75">
+                            <a href="#rating--badge" class="btn btn-link btn-primary">Rating Badge</a> and <a href="#rating--start" class="btn btn-link btn-primary">Star Product Rating</a>.
+                        </p>
+                    </article>
+                    <article class="section__sub" id="rating--badge">
+                        <h3 class="section__sub-head">
+                            Rating Badge
+                        </h3>
+                        <p class="section__sub-lead">
+                            This basic read only rating badge gives an overview on the average rating of a product or service. 
+                        </p>
+                        <p class="section__sub-lead mt-1">
+                            To generate a read only rating badge, use the base class <span class="primary-color bold">rating-container</span> along with the supporting class <span class="secondary-color bold">rating-badge</span>.
+                            <br />
+                            Use the classes <span class="secondary-color bold">rating-value</span>, <span class="secondary-color bold">rating-icon</span>, and <span class="secondary-color bold">rating-count</span> to display the rating average, star icon and rating review count respectively.
+                        </p>
+                        <div class="component-display">
+                            <div class="rating-container rating-badge m-1 px-0-75 py-0-5">
+                                <span class="rating-value">
+                                    4.25
+                                </span>
+                                <span class="icon rating-icon">
+                                    <i class="fas fa-star success-color"></i>
+                                </span>
+                                |
+                                <span class="rating-count">
+                                    175
+                                </span>                 
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use a basic rating badge.</p>
+                            <div class="code-display">
+                                
+                            </div>
+                        </div>
+                    </article>  
+                    <article class="section__sub" id="rating--star">
+                        <h3 class="section__sub-head">
+                            Star Product Rating
+                        </h3>
+                        <p class="section__sub-lead">
+                            This rating component is used when user feedback is required say for a product or service. 
+                        </p>
+                        <p class="section__sub-lead mt-1">
+                            To generate a star product rating component, use the base class <span class="primary-color bold">rating-container</span> along with the supporting class <span class="secondary-color bold">rating-star</span>.
+                            <br />
+                            Use the classes <span class="secondary-color bold">rating-input</span>, <span class="secondary-color bold">rating-icon</span> for the radio buttons and star icon respectively.
+                        </p>
+                        <div class="component-display">
+                            <div class="rating-container rating-star px-1 py-0-75 m-1">
+                                <input type="radio" class="input-radio rating-input" id="rating-1" />
+                                <label for="rating-1" class="rating-icon">
+                                    <i class="fas fa-star"></i>
+                                </label>
+                                <input type="radio" class="input-star-radio" id="rating-2" />
+                                <label for="rating-2" class="star-icon">
+                                    <i class="fas fa-star"></i>
+                                </label>
+                                <input type="radio" class="input-star-radio" id="rating-3" />
+                                <label for="rating-3" class="star-icon">
+                                    <i class="fas fa-star"></i>
+                                </label>
+                                <input type="radio" class="input-star-radio" id="rating-4" />
+                                <label for="rating-4" class="star-icon">
+                                    <i class="fas fa-star"></i>
+                                </label>
+                                <input type="radio" class="input-star-radio" id="rating-5" />
+                                <label for="rating-5" class="star-icon">
+                                    <i class="fas fa-star"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to use a star product rating component.</p>
+                            <div class="code-display">
+                                
+                            </div>
+                        </div>
+                    </article>          
+                </section>
+                <section class="footer__nav mb-3-5">
+                    <ul class="list list-style-none flex--row flex--align-center flex--justify-between">
+                        <li class="list-item">
+                            <a href="/docs/navigation/" class="btn btn-link btn-primary py-0-25 p-0-25">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                Navigation
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/docs/slider/" class="btn btn-link btn-primary py-0-25 p-0-25">
+                                Slider
+                                <span class="icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <footer class="footer flex--row flex--align-center flex--justify-between px-1-5 py-1" id="footer">
+                    <p class="text-sm text-center text__author">
+                        <span class="icon primary-color bold">
+                            <i class="fas fa-code"></i>
+                        </span> by <a 
+                            href="https://bharati-21.github.io/" 
+                            target="_blank"
+                            class="link text-link">
+                            Bharati
+                        </a>
+                    </p>
+                    <ul class="navlinks flex--row list-style-none flex--align-center">
+                        <li class="navlink">
+                            <a 
+                                href="https://github.com/bharati-21"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a 
+                                href="https://twitter.com/_girlwhocodes"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a 
+                                href="https://www.linkedin.com/in/bharati-subramanian-29734b152/"
+                                target="_blank"
+                                class="link icon-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </main>
+        </div>
+        <script src="/docs-script/hamburger.js"></script>
+    </body>
+</html>
