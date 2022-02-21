@@ -457,6 +457,10 @@ section#toast .component-display .snackbar {
     width: 100%;
 }
 
+.slider__main .component-info{
+    min-height: 85vh;
+}
+
 .footer {
     background-color: var(--light-gray-color);
     max-height: max-content;
