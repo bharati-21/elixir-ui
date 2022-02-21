@@ -111,20 +111,7 @@
 }
 
 .card-description {
-    text-overflow: ellipsis;
     width: 100%;
-    max-height: 5rem;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -moz-box-orient: vertical;
-      -ms-box-orient: vertical;
-      box-orient: vertical;
-      -webkit-line-clamp: 3;
-      -moz-line-clamp: 3;
-      -ms-line-clamp: 3;
-      line-clamp: 3;
-      max-lines: 3;
-      overflow: hidden;
     font-size: 0.85rem;
 }
 
@@ -132,7 +119,8 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 0 var(--space-1-5);
     flex-wrap: wrap;
 }
