@@ -71,213 +71,256 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
 
 - [Alert](https://elixir-ui.netlify.app/docs/alert/)
     - Elixir offers simple alerts and alerts with a close icon in the following themes - primary, secondary, success, warning, and error.
-    - To add alerts to your project, use the following url-
-    - Import using HTML
+    - To use alerts in your project, add the following URL-
+    - in the HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/alerts/alert.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, in the CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/alerts/alert.css";
 
     ```
+    - Screenshot - ![Screenshot of Alert component in the documentation page](https://user-images.githubusercontent.com/51514137/154958420-7bca14a1-b30c-42c0-967d-7724435eb765.png)
+
+    
     
 - [Avatar](https://elixir-ui.netlify.app/docs/avatar/)
     - Elixir offers the following range of avatars - Circle Avatars, Square Avatars, and Text Avatars in 5 different sizes - extra small, small, medium, large, and extra large.
-    - To add avatars to your project, use the following url-
-    - Import using HTML
+    - To use avatars in your project, add the folloeing URL in-
+    - the HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/avatars/avatar.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, the CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/avatars/avatar.css";
 
     ```
+    - Screenshot - ![Screenshot of Avatar component in the documentation page](https://user-images.githubusercontent.com/51514137/154958942-eed023e9-c3cd-4f48-836c-c73eb3abd058.png)
+
     
 - [Badge](https://elixir-ui.netlify.app/docs/badge/)
     - Elixir offers the following range of badges - Status badges, Notification/ Number badges, and Text Badges.
     - Status badges come with 4 different status - available, idle, do not disturb, and away.
     - Notification badges work with icons/ buttons of small sizes and come with 2 themes- primary and secondary
     - Text badges can be of 2 types - square or pill shaped.
-    - To add badges to your project, use the following url-
-    - Import using HTML
+    - To use badges in your project, add the following URL in -
+    - the  HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/badges/badge.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, in the CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/badges/badge.css";
 
     ``` 
+    - Screenshot - ![Screenshot of Badge component in the documentation page](https://user-images.githubusercontent.com/51514137/154960736-208b8f89-a957-460d-9134-98fe23c73d4f.png)
+
     
 - [Button](https://elixir-ui.netlify.app/docs/button/)
     - Elixir offers the following range of buttons - Solid buttons, Outlined buttons, Button with icon, Link buttons, Buttons with text and icon, and Floating action buttons.
     - Buttons can be of the following themes- dark, light, primary, and secondary.
-    - To add buttons to your project, use the following url-
-    - Import using HTML
+    - To use buttons in your project, add the following URL in-
+    - the HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/buttons/button.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, in the CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/buttons/button.css";
 
     ``` 
+    - Screenshot - ![Screenshot of Button component in the documentation page](https://user-images.githubusercontent.com/51514137/154966962-8dcaf17f-034f-4ccb-a690-0a1062135ea4.png)
+
 - [Card](https://elixir-ui.netlify.app/docs/card/)
     - Elixir offers the following range of cards - vertical card, horizontal card, card with badge, card with dismiss button, card with overlay text, card with only text, and card with shadow.
-    - To add cards to your project, use the following url-
-    - Import using HTML
+    - To use cards in your project, add the following URL in the -
+    - HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/cards/card.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/cards/card.css";
 
     ``` 
+    - Screenshot - ![Screenshot of Card component in the documentation page](https://user-images.githubusercontent.com/51514137/154971037-a2febafd-0b3e-4345-898f-67c4cdd41d37.png)
+
 - [Grid](https://elixir-ui.netlify.app/docs/grid/)
     - Elixir offers the following grid layouts as classes - 2 column grid, 3 column grid, and 4 column grid.
-    - To create grid layouts in your project, use the following url-
-    - Import using HTML
+    - To create grid layouts in your project, add the following URL in the-
+    - HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/grid/grid.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/grid/grid.css";
 
     ``` 
+    - Screenshot - ![Screenshot of Grid component in the documentation page](https://user-images.githubusercontent.com/51514137/154973992-94b0e463-aebf-4acf-be60-f5c5c1d8cea1.png)
+
+
 - [Image](https://elixir-ui.netlify.app/docs/image/)
     - Elixir offers the following types of image components - Responsive image, Image with rounded corners, and Round images.
-    - To add image component to your project, use the following url-
-    - Import using HTML
+    - To use the image component in your project, add the following URL in the-
+    - HTML file
     ```HTML
-
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/images/image.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/images/image.css";
 
     ``` 
+    - Screenshot - ![Screenshot of Image component on the documentation page](https://user-images.githubusercontent.com/51514137/154971474-3ab13c10-d375-454f-95d2-dc6e472a6d2e.png)
+
+
 - [Input](https://elixir-ui.netlify.app/docs/input/)
     - Elixir offers the following types of input components - Default Inputs, Inline Inputs, Inputs with success validations, Inputs with warning validations, Inputs with error validations, and Textbox.
-    - To add input component to your project, use the following url-
-    - Import using HTML
+    - To use the input component in your project, add the following URL in the-
+    - HTML file
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/input/input.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/input/input.css";
 
     ``` 
+    - Screenshot - ![Screenshot of Input component in the documentation page](https://user-images.githubusercontent.com/51514137/154974328-6f750b10-38a8-4dce-9ff9-6afbaa5d210a.png)
+
 
 - [List](https://elixir-ui.netlify.app/docs/list/)
     - Elixir offers the following type of lists - Spaced List, Stacked List, and Inline List.
-    - To add list component to your project, use the following url-
-    - Import using HTML
+    - To use the list component to your project, add the following URL in the -
+    - HTML file
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/lists/list.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/lists/list.css";
 
     ``` 
+    - Screenshot - ![Screenshot of List componentin the documentation page](https://user-images.githubusercontent.com/51514137/154975132-7a268663-3110-43bb-bc61-1b3eea55286b.png)
+
     
 - [Modal](https://elixir-ui.netlify.app/docs/modal/)
     - Elixir offers a simple modal with text and action buttons.
-    - To add a modal to your project, use the following url-
-    - Import using HTML
+    - To use a modal in your project, add the following URL in the-
+    - HTML file
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/modal/modal.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/modal/modal.css";
 
     ``` 
+    - Screenshot - ![Screenshot of Modal component in the documentation page](https://user-images.githubusercontent.com/51514137/154975805-bd9d0b1f-7593-48e9-843d-a18be02a38d6.png)
+
     
 - [Navigation](https://elixir-ui.netlify.app/docs/navigation/)
-     - Elixir offers a simple, responsive navigation that contains the following parts - a logo/ brand name, search bar, and navbar actions/ navigation links.
-    - To add a navbar to your project, use the following url-
-    - Import using HTML
+    - Elixir offers a simple, responsive navigation bar that contains the following parts - a logo/ brand name, search bar, and navbar actions/ navigation links.
+    - To use the navbar in your project, add the following URL in the-
+    - HTML file
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/navigation/navigation.css" />
-
     ```
-    - OR, Import using CSS
+    - OR, CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/navigation/navigation.css";
 
     ``` 
-    
-- [Toast](https://elixir-ui.netlify.app/docs/toast/)
-    - Elixir offers a simple toast with some text and a close icon which disappears after 5 seconds.
-    - To add a snackbar/ toast to your project, use the following url-
-    - Import using HTML
+    - Screenshot - ![Screenshot of Navigation component in the documentation page](https://user-images.githubusercontent.com/51514137/154979132-6af59822-26a8-4b0a-b659-c2edb7342d46.png)
+
+
+- [Rating](https://elixir-ui.netlify.app/docs/rating/)
+    - Elixir offers 2 types of ratings components - rating badge and star product rating.
+    - To use the rating components in your project, add the following URL in the-
+    - HTML file
     ```HTML
 
-        <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/toast/toast.css" />
-
+        <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/rating/rating.css" />
     ```
-    - OR, Import using CSS
+    - OR, CSS file
+    ```CSS
+
+    @import "https://elixir-ui.netlify.app/Components/rating/rating.css";
+
+    ``` 
+    - Screenshot - ![Screenshot of Rating component in the documentation page](https://user-images.githubusercontent.com/51514137/154979750-8176cb44-8ce5-4141-8f62-528c7979bc20.png)
+
+
+    
+- [Slider](https://elixir-ui.netlify.app/docs/slider/)
+    - Elixir offers a simple range slider that displays the min value, max value and a customized slider.
+    - To use a slider in your project, add the following URL in the-
+    - HTML file
+    ```HTML
+
+        <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/slider/slider.css" />
+    ```
+    - OR, CSS file
+    ```CSS
+
+    @import "https://elixir-ui.netlify.app/Components/slider/slider.css";
+
+    ``` 
+    - Screenshot - ![Screenshot of Slider component in the documentation page](https://user-images.githubusercontent.com/51514137/154980352-0ce88613-0b7b-4b63-80e7-22240334b854.png)
+
+- [Toast](https://elixir-ui.netlify.app/docs/toast/)
+    - Elixir offers one toast - a Simple Toast which is dark themed and appears in the bottom left corner.
+    - To use a toast in your project, add the following URL in the -
+    - HTML file
+    ```HTML
+
+        <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/toast/toast.css />
+    ```
+    - OR, CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/toast/toast.css";
 
     ``` 
+  
+  ![Screenshot of Toast component in the documentation page](https://user-images.githubusercontent.com/51514137/154980941-158cefb8-8704-4cdc-bc34-7d295786af16.png)
+
     
 - [Typography](https://elixir-ui.netlify.app/docs/typography/)
     - Elixir offers the following typography utilities - Heading Utilities, Text Utilities, Colored Text Utilities, and Aligned Text Utilities.
-    - To create text content with the typograpgy utility to your project, use the following url-
-    - Import using HTML
+    - To create text content with the typograpgy utility to your project, add the following URL in the-
+    - HTML file
     ```HTML
 
         <link rel="stylesheet" href="https://elixir-ui.netlify.app/Components/typography/typography.css" />
 
     ```
-    - OR, Import using CSS
+    - OR, CSS file
     ```CSS
 
     @import "https://elixir-ui.netlify.app/Components/typography/typography.css";
 
     ``` 
 <br />
-- Other utilities for - Flexbox layout, margin, padding, and variables.
+- Other utilities include - Flexbox layout, margin, padding, and variables.
 
 <br />
 
