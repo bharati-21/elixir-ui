@@ -19,6 +19,7 @@
 @import url('./navigation/navigation.css');
 @import url('./flex/flex.css');
 @import url('./rating/rating.css');
+@import url('./slider/slider.css');
 
 :root {
     --text-color: #0d1c29;
