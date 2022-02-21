@@ -97,7 +97,7 @@
                     </ul>
                 </section>
             </aside>
-            <main class="main docs__main">
+            <main class="main docs__main modal__main">
                 <section class="modal component-info" id="modal">
                     <article class="section__intro">
                         <h2 class="section__head">Modal</h2>
@@ -116,27 +116,75 @@
                         <p class="section__sub-lead">
                             A simple modal consists of a text conveying information along with action buttons.
                             <br /> <br />
-                            To generate a modal use the base class <span class="primary-color bold">modal-container</span>. Use the following classes - <span class="secondary-color bold">modal-text</span> and <span class="secondary-color bold">modal-action-buttons</span> - for the modal text and acrion buttons respectively.
+                            To generate a modal use the base class <span class="primary-color bold">modal-container</span>. Add the modal text and action buttons within the <span class="secondary-color bold">modal-content</span> container. And use the following classes - <span class="secondary-color bold">modal-text</span> and <span class="secondary-color bold">modal-action-buttons</span> - for the modal text and acrion buttons respectively.
                         </p>
-                        <div class="component-display">
-                            <div class="modal-container p-1">
-                                <div class="modal-text text-reg py-1">
-                                    Discard draft?
-                                </div>
-                                <div class="modal-action-buttons">
-                                    <button class="btn btn-primary btn-outline px-0-75 py-0-25 text-sm">Cancel</button>
-                                    <button class="btn btn-primary px-0-75 py-0-25 text-sm">Discard</button>
+                        <p class="section__sub-lead my-1">
+                            <em>Please note:</em> For displaying the active modal and disabling the scroll in the body you can add the following code - 
+                        </p>
+                        <div class="code-display">
+<pre>
+    <code>
+        body {
+            overflow: hidden;
+        }
+    </code>
+</pre>                                                   
+                        </div>
+                        <div class="component-display py-1">
+                            <div class="modal-container active-modal">
+                                <div class="modal-content p-1">
+                                    <div class="modal-text text-reg py-1">
+                                        Discard draft?
+                                    </div>
+                                    <button class="btn btn-icon btn-primary btn-modal-close">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </button>
+                                    <div class="modal-action-buttons">
+                                        <button class="btn btn-primary btn-outline px-0-75 py-0-25 text-sm">Cancel</button>
+                                        <button class="btn btn-primary px-0-75 py-0-25 text-sm">Discard</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal__demo">
+                            <button class="btn btn-primary btn-modal-demo px-0-75 py-0-5 mt-2">
+                                Show Modal Demo
+                            </button>
+                            <div class="modal-container modal-demo-container p-1">
+                                <div class="modal-content p-1">
+                                    <div class="modal-text text-reg mr-1-5">
+                                        Discard draft? Lorem ipsum dolor sit amet consectetur adipisicing elit. A eius accusamus distinctio assumenda pariatur dicta molestiae officiis velit, possimus voluptatum repudiandae repellat hic id asperiores facere, recusandae, inventore quod. Aliquam.
+                                    </div>
+                                    <button class="btn btn-icon btn-primary btn-modal-close">
+                                        <span class="icon">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </button>
+                                    <div class="modal-action-buttons mt-1-5">
+                                        <button class="btn btn-primary btn-outline px-0-75 py-0-25 text-sm">Cancel</button>
+                                        <button class="btn btn-primary px-0-75 py-0-25 text-sm">Discard</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
                         <div class="code-snippet-container">
                             <p>Copy the code below to use a simple modal</p>
                             <div class="code-display">
                                 <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fmodal%2Fmodal.html&style=atom-one-light&showCopy=on"></script>
                             </div>
                         </div>
-                    </article> 
-                                   
+
+                        <div class="code-snippet-container">
+                            <p>Copy the code below to for the close button click JavaScript functionality.</p>
+                            <div class="code-display">
+                                <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fbharati-21%2Felixir-ui-code%2Fblob%2Fmain%2Fmodal%2Fmodal.js&style=atom-one-light&showCopy=on"></script>
+                            </div>
+                        </div>
+                    </article>                     
                 </section>
                 <section class="footer__nav mb-3-5">
                     <ul class="list list-style-none flex--row flex--align-center flex--justify-between">
@@ -199,6 +247,7 @@
             </main>
         </div>
         <script src="/docs-script/hamburger.js"></script>
+        <script src="/Components/modal/modal.js"></script>
     </body>
 </html>
 

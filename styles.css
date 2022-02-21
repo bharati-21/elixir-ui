@@ -434,10 +434,27 @@ section.cards .component-display {
 
 section#toast .component-display .snackbar {
     position: static;
+    z-index: unset;
 }
 
 .toast__demo .snackbar {
     display: none;
+}
+
+.modal__demo .modal-demo-container {
+    display: none;
+}
+
+.component-display .modal-container {
+    position: relative;
+    background-color: transparent;
+    display: block;
+    z-index: unset;
+    max-width: 500px;
+}
+
+.component-display .modal-container .modal-content {
+    width: 100%;
 }
 
 .footer {
@@ -509,5 +526,28 @@ footer i {
 @media screen and (max-width: 450px) {
     code.hljs {
         white-space: pre-wrap;
+    }
+    
+    .component-display .modal-container {
+        max-width:max-content;
+    }
+    
+    .component-display .modal-container .modal-content {
+        min-width: min-content;
+    }
+}
+
+@media screen and (max-width: 270px) {
+
+    .component-display .modal-container {
+        flex-direction: column;
+    }
+
+    .component-display .modal-container .modal-content {
+        min-width: 100%;
+    }
+
+    .component-display .modal-container .modal-action-buttons {
+        flex-direction: column;
     }
 }
