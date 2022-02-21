@@ -20,6 +20,7 @@
         <li><a href="#how-to-use">How To Use</a></li>
         <li><a href="#components">Components</a></li>
         <li><a href="#technology-languages-used">Technology/ Languages Used</a></li>
+        <li><a href="#how-to-run-locally">How to Run Locally</a></li>
         <li><a href="#how-to-contribute">How to Contribute</a></li>
         <li><a href="#social-links">Social Links</a></li>
     </ol>
@@ -287,7 +288,22 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
 - CSS
 - JavaScript
 
+
 <br />
+<br />
+<!-- HOW TO RUN LOCALLY -->
+
+## **How to Run locally**:
+- To run this project locally, use the following command in your CLI:
+
+```bash 
+    git clone https://github.com/bharati-21/elixir-ui.git
+```
+- Open your favorite code editor and run locally!
+
+<br />
+<br />
+
 
 <!-- CONTRIBUTING -->
 ## **How to Contribute**
