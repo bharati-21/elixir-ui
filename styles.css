@@ -390,7 +390,6 @@ section#typography .component-display > * {
 }
 
 section#card .code-display {
-    width: max-content;
     max-width: 100%;
 }
 
