@@ -35,8 +35,6 @@
 <p>
     Elixir UI is an open source CSS library aimed at quick, responsive, and simple development of webites.
     With Elixir, you can leave your design worries and get started with a completely logic-driven development for your websites!
-<!--   <img width="100%" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI-Docs/development/assets/LandingPage.gif" alt="vispa-ui walkthrough"/>
-  <img width="100%" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI-Docs/development/assets/DocsPage.gif" alt="vispa-ui walkthrough"/> -->
 </p>
 
 <br />
@@ -342,7 +340,7 @@ Copy-paste the below code in the `<head>` section of your HTML files to load pre
 ```bash 
     git clone https://github.com/bharati-21/elixir-ui.git
 ```
-- Open your favorite code editor and run locally!
+- Open any code editor of your choice and run locally.
 
 <br />
 <br />
