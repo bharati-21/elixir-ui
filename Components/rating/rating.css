@@ -69,7 +69,13 @@
 }
 
 @media screen and (max-width: 280px) {
-    .star-rating-container label, .rating-badge {
+    .rating-container label, .rating-badge {
         font-size: var(--text-sm);
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .rating-container {
+        flex-wrap: wrap;
     }
 }
