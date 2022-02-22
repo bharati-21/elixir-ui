@@ -10,23 +10,23 @@
     -ms-border-radius: var(--br-5);
     -o-border-radius: var(--br-5);
     font-size: var(--text-md);
+    --rating-hover-color: gold;
 }
 
 .rating-star {
-    background-color: var(--gray);
+    background-color: var(--warning-color);
     flex-direction: row-reverse;
     font-size: var(--text-lg);
-    border: 0.15rem solid var(--light-gray-color);
+    border: 0.12rem solid var(--error-color);
 }
 
 .rating-badge {
-    background-color: var(--light-gray-color);
-    border: 0.12rem solid var(--gray);
-    
+    background-color: var(--rating-color);
+    border: 0.12rem solid var(--warning-color);
 }
 
 .rating-badge:hover {
-    background-color: var(--box-shadow-color);
+    background-color: var(--rating-hover-color);
 }
 
 .rating-star input {
@@ -40,12 +40,19 @@
 
 .rating-star input:not(:checked) ~ label:hover,
 .rating-star input:not(:checked) ~ label:hover  ~ label {
-    color: var(--rating-color);
+    color: var(--rating-hover-color);
+    text-shadow: -3px -2px var(--gray);
     opacity: 0.8;
 } 
 
 .rating-star input:checked ~ label {
     color: var(--rating-color);
+}
+
+.rating-star input:checked ~ label:hover,
+.rating-star input:checked ~ label:hover ~ label {
+    color: var(--rating-color);
+    text-shadow: 3px 2px var(--error-color);
 }
 
 .rating-star label:active {
