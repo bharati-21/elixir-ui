@@ -16,7 +16,7 @@
 }
 
 .card-horizontal {
-    max-height: 500px;
+    max-height: max-content;
     position: relative;
     max-width: 100%;
 }
